@@ -1,0 +1,2 @@
+#alias {cor} {evoke corpse drain;#if {$autobag == 1} {divvy gold;get all} {divvy gold}}
+
