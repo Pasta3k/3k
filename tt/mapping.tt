@@ -1,0 +1,32 @@
+#alias {go} {#map run %1}
+#alias {mg} {#map goto %1}
+#alias {mm} {#map map}
+#alias {mr} {#map read maps/%1.map}
+#alias {mw} {#map write maps/%1.map}
+
+#act {You cannot go %1.} {#map undo}
+#act {A board breaks as you climb the stairs, you fall.} {#map undo}
+
+#alias {createmap} {#map create;#map goto 1;#map name exit;yellow;mw %1}
+
+#pathdir {q} {v} {9}
+#pathdir {v} {q} {6}
+#pathdir {z} {r} {12}
+#pathdir {r} {z} {3} 
+
+#var {areaname} {none}
+
+#alias {loadmap} {#var areaname %0;#map read maps/%0.map;#map go 1;#delay 1 #map map}
+
+#nop Go/Return alias. -- Doesn't work.
+#alias {gr} {go exit;#delay 1 f$areaname;#delay 2 cs;#delay 3 $areaname}
+
+#alias {black}   {#map set roomcolor <100>}
+#alias {red}     {#map set roomcolor <110>}
+#alias {green}   {#map set roomcolor <120>}
+#alias {yellow}  {#map set roomcolor <130>}
+#alias {blue}    {#map set roomcolor <140>}
+#alias {magenta} {#map set roomcolor <150>}
+#alias {cyan}    {#map set roomcolor <160>}
+#alias {white}   {#map set roomcolor <170>}
+
