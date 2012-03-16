@@ -1,0 +1,7 @@
+#nop Mywho reconnects/disconnects
+
+#highlight {%1 enters the game]} {b magenta}
+#highlight {%1 reconnects]} {b magenta}
+#highlight {%1 disconnects]} {b magenta}
+#highlight {%1 leaves the game]} {b magenta}
+
