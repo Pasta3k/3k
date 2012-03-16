@@ -1,0 +1,27 @@
+#nop These people are simply fools.
+#gag {Bane}
+#alias {ungagbane} {#ungag Bane}
+
+#nop Blade de la Bobbitt
+#gag {^You slice and dice the }
+#gag {^You hack away at }
+
+#nop Rod of Garnthax
+#gag {Pulsing %0 spell points.}
+#gag {Pulsing %0 hit points.}
+#gag {You're at max}
+
+#nop Rasta-dolls
+#gag {Dora says}
+#gag {Cathy says}
+
+#nop Duke Nukem Helmet
+#gag {says: Come get some.$}
+#gag {says: Damn I'm good.$}
+#gag {says: Damn those alien bastards are gonna pay for shooting up my$}
+#gag {says: It's time to kick ass and chew bubble gum...and I'm all$}
+#gag {says: Let's rock.$}
+#gag {says: Nobody steals our chicks... and lives.$}
+#gag {says: Piece of cake.$}
+#gag {says: What are you waiting for, Christmas?$}
+
