@@ -5,11 +5,12 @@
 #alias {dodag} {buy dagger;reforge dagger little edged blunt}
 #alias {ref} {d;v;withdraw 1500;q;u;smithy;#4 dodag;fsmithy}
 
-#alias {77-1-d} {reforge %1 little mind defense}
-#alias {77-2-d} {reforge %1 some mind defense}
-#alias {77-3-d} {reforge %1 lots mind defense}
+#alias {77-1-d} {reforge %0 little mind defense;drop %0}
+#alias {77-2-d} {reforge %0 some mind defense;drop %0}
+#alias {77-3-d} {reforge %0 lots mind defense;drop %0}
 
-#alias {eb} {reforge %1 lots edged blunt}
+#alias {eb} {reforge %0 lots edged blunt;drop %0}
+#alias {be} {reforge %0 lots blunt edged;drop %0}
 
 #highlight {You can currently reforge} {magenta}
 
