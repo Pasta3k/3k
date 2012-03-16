@@ -1,0 +1,16 @@
+#nop Askar's Mansion
+#alias {askar} {fp;#7 w;#3 n;#2 e;enter;s;open door;#3 s;u;#3 n}
+#alias {faskar} {#3 s;d;#3 n;open door;n;leave;#2 w;#3 s;#7 e;fanpri}
+
+#nop Temple of Kourlyn
+#alias {kourlyn} {fp;#7 w;#3 s;#2 w;s}
+#alias {fkourlyn} {n;#2 e;#3 n;#7 e;fanpri}
+
+#nop Wayhaven Library, part of the main mud.
+#nop Students are 2k.  Scholars are 8k.  Librarians are 20k.
+#alias {library} {fp;#7 w;#3 s;#2 e;s}
+#alias {flibrary} {n;#2 w;#3 n;#7 e;fanpri}
+
+#alias {dock} {fp;#7 w;#8 s;e}
+#alias {fdock} {w;#8 n;#7 e;fanpri}
+
