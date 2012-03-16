@@ -1,0 +1,129 @@
+#nop When I'm ready for next emit, auto-raise my emit.
+#nop After you reach third form, you can emit 1 higher than normal...hence +2.
+#nop And in Spirit... +3!
+#action {You have become size %1!}
+{
+	escore;
+	#math {emit} {(%1 / 10) + 3};
+	emit ${emit};
+}
+
+#nop Auto-Resolve.
+#nop #act {seems to be most susceptible to %1 attacks.} {evoke resolve as %1}
+#act {seems to be most susceptible to %1 attacks.} {evoke prismatic emission as %1}
+
+#alias {getcash} {d;v;withdraw 1000;q;u}
+
+#nop Common Elemental commands
+#alias {100}  {evoke preservation at 100 evoke rebuild}
+#alias {150}  {evoke preservation at 150 evoke rebuild}
+#alias {200}  {evoke preservation at 200 evoke rebuild}
+#alias {250}  {evoke preservation at 250 evoke rebuild}
+#alias {300}  {evoke preservation at 300 evoke rebuild}
+#alias {350}  {evoke preservation at 350 evoke rebuild}
+#alias {400}  {evoke preservation at 400 evoke rebuild}
+#alias {450}  {evoke preservation at 450 evoke rebuild}
+#alias {500}  {evoke preservation at 500 evoke rebuild}
+#alias {550}  {evoke preservation at 550 evoke rebuild}
+#alias {600}  {evoke preservation at 600 evoke rebuild}
+#alias {650}  {evoke preservation at 650 evoke rebuild}
+#alias {700}  {evoke preservation at 700 evoke rebuild}
+#alias {750}  {evoke preservation at 750 evoke rebuild}
+#alias {800}  {evoke preservation at 800 evoke rebuild}
+#alias {850}  {evoke preservation at 850 evoke rebuild}
+#alias {900}  {evoke preservation at 900 evoke rebuild}
+#alias {950}  {evoke preservation at 950 evoke rebuild}
+#alias {1000} {evoke preservation at 1000 evoke rebuild}
+#alias {1050} {evoke preservation at 1050 evoke rebuild}
+#alias {1100} {evoke preservation at 1100 evoke rebuild}
+#alias {1150} {evoke preservation at 1150 evoke rebuild}
+#alias {1200} {evoke preservation at 1200 evoke rebuild}
+#alias {1250} {evoke preservation at 1250 evoke rebuild}
+
+#alias {`} {emit 0}
+#alias {1} {emit 1}
+#alias {2} {emit 2}
+#alias {3} {emit 3}
+#alias {4} {emit 4}
+#alias {5} {emit 5}
+#alias {6} {emit 6}
+#alias {7} {emit 7}
+#alias {8} {emit 8}
+#alias {9} {emit 9}
+#alias {0} {emit 10}
+#alias {-} {emit 11}
+#nop #alias {=} {emit 12}
+#alias {=} {emit 13}
+
+#nop #alias {11} {evoke resolve as slashing}
+#nop #alias {22} {evoke resolve as crushing}
+#nop #alias {33} {evoke resolve as fire}
+#nop #alias {44} {evoke resolve as ice}
+#nop #alias {55} {evoke resolve as acid}
+#nop #alias {66} {evoke resolve as shocking}
+#nop #alias {77} {evoke resolve as mental}
+#nop #alias {88} {evoke resolve as magical}
+#nop #alias {99} {evoke resolve as toxic}
+#nop #alias {00} {evoke resolve as radiation}
+
+#alias {11} {evoke prismatic emission as slashing}
+#alias {22} {evoke prismatic emission as crushing}
+#alias {33} {evoke prismatic emission as fire}
+#alias {44} {evoke prismatic emission as ice}
+#alias {55} {evoke prismatic emission as acid}
+#alias {66} {evoke prismatic emission as shocking}
+#alias {77} {evoke prismatic emission as mental}
+#alias {88} {evoke prismatic emission as magical}
+#alias {99} {evoke prismatic emission as toxic}
+#alias {00} {evoke prismatic emission as radiation}
+
+#alias {111} {evoke self illumination as 1}
+#alias {222} {evoke self illumination as 2}
+#alias {333} {evoke self illumination as 3}
+#alias {444} {evoke self illumination as 4}
+#alias {555} {evoke self illumination as 5}
+#alias {666} {evoke self illumination as 6}
+#alias {777} {evoke self illumination as 7}
+#alias {888} {evoke self illumination as 8}
+#alias {999} {evoke self illumination as 9}
+
+#alias {eval} {evoke evaluate at %0}
+#alias {nc} {evoke natural convergence}
+#alias {gs} {escore}
+#alias {gs2} {escore2}
+#alias {gwho} {ewho}
+#alias {att} {evoke minds eye at %0}
+#alias {gav} {get all from vortex}
+#alias {va} {put all in vortex}
+#alias {vv} {put %0 in vortex}
+#alias {uvv} {get %0 from vortex}
+#alias {consult} {evoke consult at %0}
+#alias {md} {evoke mental depletion}
+#alias {ep} {evoke equipollent}
+#alias {ce} {chat el %0}
+#alias {cee} {chat emote %0}
+#alias {grasp} {evoke ethereal grasp at %0}
+
+#nop Trap the soul/gem stuff
+#alias {trap} {evoke trap the soul}
+#alias {gg} {get gem from vortex;release gem}
+#alias {comb} {#5 get gem from vortex;#4 combine gem 1 with gem 2}
+
+#highlight {You are too weak to keep up your assault.} {b red}
+
+
+#alias {blast}   {evoke create blast;despam;activate blast;give blast to %0;drop blast}
+#alias {blast2}  {evoke create blast;activate blast;give blast to %0;drop blast}
+#alias {torch}   {d;se;withdraw 150;w;w;w;s;buy torch;keep torch;e;n;e;ne;u}
+#alias {dodeposit} {d;se;deposit all;nw;u;coins}
+#nop #alias {donatei} {d;se;s;sell all;get all from vortex;sell all;get all from vortex;sell all;get all from vortex;sell all;n;nw;u}
+#alias {donatei} {d;se;s;#3 sell all;n;nw;u}
+#alias {corpses} {morgue;donate coffin;top players boot;top guilds;fmorgue}
+#alias {cs}      {corpses;donatei;dodeposit}
+
+#nop Guild age at completion of 1st form: 1 week 4 days 18 hrs 51 mins 40 secs, on 2009-Jul-22
+#nop Guild age at completion of 2nd form: 3 weeks 1 day 12 mins 16 secs, on 2009-Oct-11
+#nop Guild age at completion of 3rd form: 4 weeks 4 days 2 hrs 25 mins 32 secs, on 2010-Jan-14
+#nop Guild age at completion of 4th form: 7 weeks 5 hrs 30 mins 42 secs, on 2010-Mar-19
+#nop Guild age at completion of squest  : 7 weeks 2 days 22 hrs 10 mins 26 secs, on 2010-Mar-27
+

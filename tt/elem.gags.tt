@@ -1,0 +1,117 @@
+#nop Ignore mass triad spam, combat spam, and spam related to my guild performs.
+#gag {%iMass triad spam}
+#gag {^You're in perfect}
+#gag {^Sorry, that can be done only once while the monster}
+#gag {^That wouldn't gain you any benefit.$}
+#gag {^You reach through the vortex to your elemental plane and solidify your form}
+#gag {^as much as possible.$}
+#gag {^stores.$}
+#gag {^internal stores.$}
+#gag {^You're far too drained to accomplish anything.$}
+#gag {^That creature is not weak enough to be drained of energy.$}
+#gag {^You are now performing autonomously}
+#nop Pain sweeps through you as you pour forth more energies than
+#nop your form can withstand!
+
+#nop  Late-stage Water form gags.
+#gag {^You envelop %1 within the confines of a giant}
+#gag {^ICEBERG.$}
+
+#nop Air form gags.
+#gag {^You fling a strong gale of air at}
+#gag {^You swing an air hammer at}
+#gag {^You knock %1 off its feet with a strong wind.$}
+#gag {^You burn %1 with a gush of sharp winds.$}
+#gag {^You lift up %1 and drop %2 on %3 head.$}
+#gag {^You depurify the air in %1 lungs.$}
+#gag {^You suck the air out of %1 body.$}
+#gag {^You blast %1 with a thunderous sonic BOOM!$}
+#gag {^You summon the sheer force of a HURRICANE to assault}
+#gag {^Guard\.$}
+
+#nop  Fire form gags.
+#gag {You scorch %1 with intense heat.}
+#gag {You create a sword of fire and slash}
+#gag {screams as blisters appear from the flames you}
+#nop Not sure what I was going after here, but chances are high it's not specific enough.
+#nop #gag {summon}
+#gag {You hurl massive flaming darts at}
+#gag {You engulf %1 in a chaotic swarm of explosions.}
+#gag {You call down a column of flame to char}
+#gag {You consume %1 with solar fireblasts.}
+#gag {crackles and hisses as you boil %1 from the}
+#gag {^out.$}
+#gag {^inside out.$}
+#gag {You erupt in VOLCANIC FURY under}
+#gag {You belch forth flames from the ABYSS}
+#gag {blackened hull.$}
+#gag {^hull.$}
+#gag {^You open a GATEWAY TO HELL and roast}
+#gag {^doom.$}
+#gag {^fiery doom.$}
+
+#nop Earth form gags.
+#gag {You torment %1 in a swirling cloud of blinding}
+#gag {^debris.$}
+#gag {^You shake the earth and knock %1 to %2 knees.$}
+#gag {^You slam %1 with a castle's worth of gravel.$}
+#gag {^You rain stones the size of melons on %1 head.$}
+#gag {^You call forth a sandstorm to tear the skin off}
+#gag {^You open the earth and swallow}
+#gag {^You summon fist-sized meteorites to pelt}
+#gag {^You call forth an EARTHQUAKE to wreak havoc on}
+#gag {^Under your control an AVALANCHE of boulders crushes}
+#gag {^Observatory.$}
+#gag {^Warparty.$}
+#gag {^Wedge.$}
+#gag {You bring down the MOUNTAINS of VALHALLA on}
+#gag {bowels of the earth}
+
+#nop Spirit form gags.
+#gag {contradictions, nonplussing}
+#gag {^him.$}
+#gag {^her.$}
+#gag {You throw horrible illusions and nightmares}
+#gag {senses, causing}
+#gag {You torture %0 soul.}
+#gag {You invade %0 mind and desecrate}
+#gag {You pummel %0 with a dense packet of matter}
+#gag {^from the Spirit plane.$}
+#gag {^the Spirit plane.$}
+#gag {^Spirit plane.$}
+#gag {^plane.$}
+#gag {You attempt to exterminate %0 brain cells.}
+#gag {You call down spirits of the undead to eradicate}
+#gag {You use your mastery over the Spirit}
+#gag {^soul!$}
+#gag {^You weave magical tendrils of pure force directly into}
+#gag {^heart.$}
+#gag {'s heart.$}
+#gag {^You summon all of %0 past victims to}
+#gag {^torture %0 body and soul!$}
+#gag {^body and soul!$}
+#gag {^and soul!$}
+#gag {^soul!$}
+#gag {^You sadistically extract %0 soul!!$}
+
+#nop Corpse drain gags
+#gag {^You envelop the corpse in your elemental energies.}
+#gag {^remaining material essence of the corpse and send it through your vortex$}
+#gag {^back to the Triad.$}
+
+#nop Rebuild gags
+#gag {Grasping %1 tightly}
+#gag {use to bolster your own}
+
+#nop Prismatic emission gags
+#gag {Prismatic Emission is active with the following types:}
+#gag {^slashing.$}
+#gag {^crushing.$}
+#gag {^fire.$}
+#gag {^ice.$}
+#gag {^acid.$}
+#gag {^shocking.$}
+#gag {^mental.$}
+#gag {^magical.$}
+#gag {^toxic.$}
+#gag {^radiation.$}
