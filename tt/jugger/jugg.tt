@@ -1,0 +1,35 @@
+#class {jugg}
+
+#highlight {WARNING Stim energy levels too low} {b red}
+#act {WARNING Stim energy levels too low} {ucd}
+
+#alias {purchase energy weapons} {'Don't do that dumbass.}
+#alias {purchase projectile weapons} {'Don't do that dumbass.}
+#alias {purchase projectile ammo} {'Don't do that dumbass.}
+#alias {purchase targeting computer} {'Don't do that dumbass.}
+#alias {purchase plasma focusing} {'Don't do that dumbass.}
+
+#alias {gwho} {juggs}
+#alias {gwho2} {juggs2}
+#alias {mend} {airdrop}
+#alias {unbox} {borrow}
+#alias {box} {donate}
+#alias {att} {evoke minds eye at %0}
+#alias {gav} {get all from truck}
+#alias {va} {give all to truck}
+#alias {vv} {give %0 to truck}
+#alias {uvv} {get %0 from truck}
+#alias {ps} {creport}
+#alias {ce} {ju %0}
+#alias {cee} {eju %0}
+#alias {ucd} {unwrap corpse;deener}
+#alias {bamm} {ammo;vbuy missile 7 1 1234567;fammo}
+
+#alias {getcash} {vault;withdraw 1000;fvault}
+#alias {dodeposit} {vault;deposit all;fvault;coins}
+#alias {donatei1} {donate all;get all from truck;donate all;get all from truck;donate all;get all from truck;donate all}
+#alias {donatei2} {donate all;get all from truck;donate all;get all from truck;donate all;get all from truck;donate all}
+#alias {donatei0} {#delay 4 donatei1;#delay 4 storage;#delay 6 donatei2;#delay 6 out}
+#alias {corpses} {morgue;donate coffin;top players boot;top guilds;fmorgue}
+#alias {cs}      {bamm;corpses;dodeposit;donatei0}
+
