@@ -1,0 +1,24 @@
+#var {kstr} {human}
+#alias {kk} {kill ${kstr}}
+#alias {ee} {evoke evaluate at ${kstr}}
+#alias {ff} {follow ${kstr}}
+
+#var {kstr2} {undead}
+#alias {k2} {kill ${kstr2}}
+#alias {e2} {evoke evaluate at ${kstr2}}
+#alias {f2} {follow ${kstr2}}
+
+#nop Do I really care if I don't get hit?  I don't think so.
+#gag { struck, but did no damage to you.$}
+#gag { missed you.$}
+#gag { grazed you.$}
+#gag {^Your blow was deflected.$}
+#gag {^You bobble your swing.$}
+#gag {^You missed.$}
+#gag {^Your strike was ineffective.$}
+#gag {You nimbly dodge %1 attack!}
+#gag {Your shield blocks %1 attack!}
+#gag {The spell dissipates as it contacts your form!}
+
+#act {As the last bit of life force escapes your enemy you quickly capture its} {vv gem}
+
