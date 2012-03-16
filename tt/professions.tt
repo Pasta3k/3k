@@ -1,0 +1,25 @@
+#alias {p1} {mystic}
+#alias {p2} {reforger}
+#alias {p3} {acrobat}
+
+#alias {dodag} {buy dagger;reforge dagger little edged blunt}
+#alias {ref} {d;v;withdraw 1500;q;u;smithy;#4 dodag;fsmithy}
+
+#alias {77-1-d} {reforge %1 little mind defense}
+#alias {77-2-d} {reforge %1 some mind defense}
+#alias {77-3-d} {reforge %1 lots mind defense}
+
+#alias {eb} {reforge %1 lots edged blunt}
+
+#highlight {You can currently reforge} {magenta}
+
+#nop Gag Mystic procs.
+#gag {Your Mystic's Orb begins to glow brightly!}
+#gag {Your Mystic's Orb glows softly and hums with energy.}
+#gag {The glow from your Mystic's Orb dissipates.}
+
+#nop Gag Acrobat procs.
+#gag {You begin to dodge and weave and dance out of harm's way!}
+#gag {You dodge and weave and dodge and weave!  You're a blur!}
+#gag {You tire from the dodging and weaving and pause to catch your breath.}
+
