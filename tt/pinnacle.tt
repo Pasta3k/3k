@@ -1,0 +1,17 @@
+#alias {morgue}  {newb;w;w;s;s}
+#alias {fmorgue} {n;n;e;e;fnewb}
+
+#alias {church}  {cot;s;w;s;s;e}
+#alias {fchurch} {w;n;n;e;n;fcot}
+
+#alias {chavee} {cot;n;w;#3 n}
+#alias {fchavee} {#3 s;e;s;fcot}
+
+#alias {mines} {chavee;nw;#2 w;sw;se;#send mines}
+#alias {fmines} {exit;nw;ne;#2 e;se;fchavee}
+
+#alias {smithy} {cot;s;e;s}
+#alias {fsmithy} {n;w;n;fcot}
+
+#alias {fixeq} {getcash;smithy;fix all;fsmithy}
+
