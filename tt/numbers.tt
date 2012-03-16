@@ -1,0 +1,20 @@
+#var numTot 0;
+#var numRounds 0;
+#var avgDam 0;
+#var maxDam 0;
+
+#act {^You hit %1 for %2 damage.}
+{
+	#math numTot ${numTot} + %2;
+	#math numRounds ${numRounds} + 1;
+	#if {%2 > ${maxDam}} {
+		#var maxDam %2;
+		#format {maxMsg} {%cNew Max Hit: ${maxDam}} {b red};
+		#showme {${maxMsg}};
+	}
+	{};
+};
+
+#alias {maxdam} {#showme {Max Damage = ${maxDam}}};
+#alias {avgdam} {#math avgDam ${numTot} / ${numRounds};#showme {Average Damage = ${avgDam}};}
+
