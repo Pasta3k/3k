@@ -25,3 +25,23 @@
 #gag {says: Piece of cake.$}
 #gag {says: What are you waiting for, Christmas?$}
 
+#nop 6-fingered sword
+#gag {sa{y|ys}: You are sure no one's following us?$}
+#gag {sa{y|ys}: I am waiting for you Vizzini!$}
+#gag {sa{y|ys}: Fezzik, are there rocks ahead?$}
+#gag {sa{y|ys}: Hello! My name is Inigo Montoya. You$}
+#gag {^%skilled my father. Prepare to die!$}
+#gag {sa{y|ys}: I want my father back you son of a bitch!$}
+#gag {sa{y|ys}: Who are you? I MUST know!$}
+#gag {sa{y|ys}: Naturally you must expect me to attack with Capo Ferro!$}
+#gag {sa{y|ys}: You seem a decent fellow. I hate to kill you.$}
+#gag {sa{y|ys}: I know something you don't know. I am NOT left handed!$}
+#gag {sa{y|ys}: There will be BLOOD tonight!!$}
+#gag {sa{y|ys}: Offer me money. Power too, promise me that!$}
+#gag {sa{y|ys}: Humiliations galore!$}
+
+#nop Dog stuff
+#gag { thought he saw a squirrel, but it wasn't.$};
+#gag { sniffs at something on the ground.$};
+#gag { tears a chunk of flesh from };
+
