@@ -2,6 +2,9 @@
 #gag {Bane}
 #alias {ungagbane} {#ungag Bane}
 
+#nop Ring of Thundering
+#gag {screams as titanic bolts of lightning explode from %0 ring}
+
 #nop Blade de la Bobbitt
 #gag {^You slice and dice the }
 #gag {^You hack away at }
@@ -41,7 +44,15 @@
 #gag {sa{y|ys}: Humiliations galore!$}
 
 #nop Dog stuff
-#gag { thought he saw a squirrel, but it wasn't.$};
-#gag { sniffs at something on the ground.$};
-#gag { tears a chunk of flesh from };
+#gag { thought he saw a squirrel, but it wasn't.$}
+#gag { sniffs at something on the ground.$}
+#gag { tears a chunk of flesh from }
+#gag { bounds about the room}
+
+#nop Jedi crap
+#gag {steps aside, avoiding damage}
+#gag {takes a glancing blow}
+#gag {breathing deepens}
+#gag {appears rested}
+#gag {closes %0 eyes momentarily and appears refreshed.}
 
