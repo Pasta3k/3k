@@ -14,6 +14,11 @@
 #pathdir {z} {r} {12}
 #pathdir {r} {z} {3} 
 
+#alias {q} {nw}
+#alias {r} {ne}
+#alias {z} {sw}
+#alias {v} {se}
+
 #var {areaname} {none}
 
 #alias {loadmap} {#var areaname %0;#map read maps/%0.map;#map go 1;#delay 1 #map map}
