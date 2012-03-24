@@ -1,0 +1,2 @@
+#alias {cor} {reclaim;#if {$autobag == 1} {divvy gold;get all} {divvy gold}}
+
