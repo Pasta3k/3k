@@ -1,0 +1,6 @@
+#alias {l} {look}
+#alias {t} {tell}
+#alias {k} {kill}
+#alias {la} {look at}
+#alias {ga} {get all}
+
