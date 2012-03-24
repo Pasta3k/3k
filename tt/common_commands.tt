@@ -3,4 +3,6 @@
 #alias {k} {kill}
 #alias {la} {look at}
 #alias {ga} {get all}
+#alias {ss} {search}
+#alias {fin} {finger}
 
