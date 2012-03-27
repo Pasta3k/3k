@@ -1,16 +1,19 @@
-#alias {gwho} {fremen}
+#alias {adv} {advance}
 #alias {ce} {tp}
 #alias {cee} {tpe}
-#alias {rcost} {check cost}
-#alias {adv} {advance}
+#alias {gwho} {fremen}
 #alias {info} {fhelp}
+#alias {ps} {gs2}
+#alias {rcost} {check cost}
 
 #alias {c1} {#read fremen/corpse1.tt}
 #alias {c2} {#read fremen/corpse2.tt}
+#alias {dl} {donate literjon}
+#alias {fl} {fill literjon}
 
 #alias {sus} {suspend}
 #alias {med} {suspend}
 
-#alias {bsc} {board spacecraft}
-#alias {bo} {board ornithopter}
+#alias {bsc} {board;loadmap fremen}
+#alias {bo} {#map leave;board}
 
