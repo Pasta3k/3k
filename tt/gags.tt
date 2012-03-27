@@ -56,3 +56,7 @@
 #gag {appears rested}
 #gag {closes %0 eyes momentarily and appears refreshed.}
 
+#nop Chinchillas whining!
+#gag {The baby chinchilla whines when you hurt it.}
+#gag {The baby chinchilla frolicks in the sand.}
+
