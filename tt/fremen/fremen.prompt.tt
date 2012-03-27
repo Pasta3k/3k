@@ -1,7 +1,10 @@
+#nop confighp hp HP: $+CHP$/$MHP$ SP: $+CSP$/$MSP$ W: $+CWT$/$MWT$($SWT$) L: $+LMB$%$MPS$ P: $PSN$/$+PSR$% G: $GXP$ LIT: $+LTS$ T: $+TRG$
+
 #nop #alias {test}
 {
-    #delay 0 #showme { HP: 195/204 SP: 112/112 W: 63/68(18) L: 81% P:0/42% T: bleeding G: 9 LT: Unh   };
-    #delay 10 #showme { HP: 204/204 SP: 112/112 W: 68/68(4) L: 80% P:0/51% T: none G: 0 LT: Lum};
+#nop    #delay 0 #showme {HP: 195/204 SP: 112/112 W: 63/68(18) L: 81% P:0/42% T: bleeding G: 9 LT: Unh   };
+    #delay 0 #showme {HP: 470/470 SP: 189/189 W: 270/299(0) L: 91% P: 0/42% G: 0 LIT: Luc T: none}
+#nop    #delay 10 #showme {HP: 204/204 SP: 112/112 W: 68/68(4) L: 80% P:0/51% T: none G: 0 LT: Lum};
 }
 
 #function {colscale}
@@ -28,13 +31,14 @@
 #var hpbar_points_med <139>;
 #var hpbar_points_low <119>;
 
-#action {^HP: %1/%2 SP: %3/%4 W: %5/%6(%7) L: %8% P:%9/%10% T: %11 G: %12 LT: %13}
+#action {^HP: %1/%2 SP: %3/%4 W: %5/%6(%7) L: %8% P: %9/%10% G: %11 LIT: %12 T: %13}
 {
    #var hpcolor @colscale{%1;%2};
    #var spcolor @colscale{%3;%4};
    #var water_color @colscale{%5;%6};
    #var limber_color @colscale{%8;100};
    #var poison_color @colscale{%10;100};
+   #var enemy_color @colscale{%13;100};
 
    #var hpcur %1;
    #var hpmax %2;
@@ -51,9 +55,9 @@
    #var poison %9;
    #var poi_resis %10;
 
-   #var enemy_health %11;
-   #var gxp_last %12;
-   #var litany %13;
+   #var gxp_last %11;
+   #var litany %12;
+   #var enemy_health %13;
 
    #format {hpmsg}    {%sHP:%s%+4s%s/%s%s} {$hpbar_label} {$hpcolor} {$hpcur} {$hpbar_label} {$hpbar_points_full} {$hpmax};
    #format {spmsg}    {%sSP:%s%+3s%s/%s%s} {$hpbar_label} {$spcolor} {$spcur} {$hpbar_label} {$hpbar_points_full} {$spmax};
@@ -62,11 +66,12 @@
    #format {poimsg}   {%sP:%s%s%s/%s%s%s%s} {$hpbar_label} {$hpbar_points_full} {$poison} {$hpbar_label} {$poison_color} {$poi_resis} {$hpbar_label} {%};
    #format {gxpmsg}   {%sG:%s%s} {$hpbar_label} <139> {$gxp_last};
    #format {litmsg}   {%sLIT:%s%s} {$hpbar_label} <139> {$litany};
-   #format {enemy}    {%sEnemy:%s%s} {$hpbar_label} <139> {$enemy_health};
+   #format {enemy}    {%sEnemy:%s%s%s} {$hpbar_label} {$enemy_color} {$enemy_health} {$hpbar_label};
 
-   #format {prompt1} {%s %s %s %s %s %s %s %s} {$hpmsg} {$spmsg} {$watermsg} {$limbmsg} {$poimsg} {$gxpmsg} {$litmsg} {$enemy};
+   #format {prompt1} {%s %s %s %s %s %s %s %s %s} {$hpmsg} {$spmsg} {$watermsg} {$limbmsg} {$poimsg} {$gxpmsg} {$litmsg} {$enemy} <070>;
 }
 {2};
 
-#prompt {^HP: %1/%2 SP: %3/%4 W: %5/%6(%7) L: %8% P:%9/%10% T: %11 G: %12 LT: %13} ${prompt1}
+#nop      HP: 470/470 SP: 189/189 W: 270/299(0) L: 91% P: 0/42% G: 0 LIT: Luc T: none
+#prompt {^HP: %1/%2 SP: %3/%4 W: %5/%6(%7) L: %8% P: %9/%10% G: %11 LIT: %12 T: %13} ${prompt1}
 
