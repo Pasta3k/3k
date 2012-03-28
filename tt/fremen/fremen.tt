@@ -11,6 +11,7 @@
 #alias {dl} {donate literjon}
 #alias {fl} {fill literjon}
 
+#alias {ars} {go arsenal;donate all;balance;go exit}
 #alias {sus} {suspend}
 #alias {med} {suspend}
 
