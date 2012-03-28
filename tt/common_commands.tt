@@ -1,8 +1,12 @@
+#alias {k} {kill}
 #alias {l} {look}
 #alias {t} {tell}
-#alias {k} {kill}
-#alias {la} {look at}
+
+#alias {dd} {dispose}
 #alias {ga} {get all}
+#alias {la} {look at}
+#alias {sa} {sell all}
 #alias {ss} {search}
+
 #alias {fin} {finger}
 
