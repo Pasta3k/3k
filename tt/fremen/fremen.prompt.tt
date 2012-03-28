@@ -2,9 +2,8 @@
 
 #nop #alias {test}
 {
-#nop    #delay 0 #showme {HP: 195/204 SP: 112/112 W: 63/68(18) L: 81% P:0/42% T: bleeding G: 9 LT: Unh   };
-    #delay 0 #showme {HP: 470/470 SP: 189/189 W: 270/299(0) L: 91% P: 0/42% G: 0 LIT: Luc T: none}
-#nop    #delay 10 #showme {HP: 204/204 SP: 112/112 W: 68/68(4) L: 80% P:0/51% T: none G: 0 LT: Lum};
+    #delay 0 #showme {HP: 470/470 SP: 189/189 W: 270/299(0) L: 91% P: 0/42% G: 0 LIT: Luc T: none};
+    #delay 10 #showme {HP: 599/482 SP: 36/189 W: 205/317(88) L: 100% P: 0/72% G: 132 LIT: Lum T: 28%};
 }
 
 #function {colscale}
