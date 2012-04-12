@@ -87,6 +87,9 @@
 #alias {888} {evoke self illumination as 8}
 #alias {999} {evoke self illumination as 9}
 
+#alias {c1} {#read corpse1.tt}
+#alias {c2} {#read corpse2.tt}
+
 #alias {eval} {evoke evaluate at %0}
 #alias {nc} {evoke natural convergence}
 #alias {gs} {escore}
@@ -108,8 +111,13 @@
 #alias {trap} {evoke trap the soul}
 #alias {gg} {get gem from vortex;release gem}
 #alias {comb} {#5 get gem from vortex;#4 combine gem 1 with gem 2}
+#alias {comb2} {comb;vv gem}
+#highlight {The shimmering shield around you flashes weakly and fades.} {b red}
 
 #highlight {You are too weak to keep up your assault.} {b red}
+#highlight {laughs at your pathetic attack.} {b red}
+#highlight {You have completely missed} {b red}
+#highlight {You stumble and fall on your face} {b red}
 
 
 #alias {blast}   {evoke create blast;despam;activate blast;give blast to %0;drop blast}
@@ -120,6 +128,7 @@
 #alias {donatei} {d;se;s;#3 sell all;n;nw;u}
 #alias {corpses} {morgue;donate coffin;top players boot;top guilds;fmorgue}
 #alias {cs}      {corpses;donatei;dodeposit}
+#alias {plaw}    {ce Pasta's Law of Soul Gems: If you "trap the soul" one round too early once, the next time you wait that extra round you will kill the mob in one round, not two.}
 
 #nop Guild age at completion of 1st form: 1 week 4 days 18 hrs 51 mins 40 secs, on 2009-Jul-22
 #nop Guild age at completion of 2nd form: 3 weeks 1 day 12 mins 16 secs, on 2009-Oct-11
