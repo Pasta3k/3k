@@ -2,6 +2,11 @@
 #gag {Bane}
 #alias {ungagbane} {#ungag Bane}
 
+#nop Idiots shouting about playing cult must die.
+#gag {play cult}
+#gag {playcult}
+#gag {clay pult}
+
 #nop Ring of Thundering
 #gag {screams as titanic bolts of lightning explode from %0 ring}
 
