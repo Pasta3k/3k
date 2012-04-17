@@ -109,6 +109,7 @@
 
 #nop Trap the soul/gem stuff
 #alias {trap} {evoke trap the soul}
+#alias {trpa} {evoke trap the soul}
 #alias {gg} {get gem from vortex;release gem}
 #alias {comb} {#5 get gem from vortex;#4 combine gem 1 with gem 2}
 #alias {comb2} {comb;vv gem}
