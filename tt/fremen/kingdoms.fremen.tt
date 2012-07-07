@@ -1,0 +1,19 @@
+#nop To COT
+#alias {cot} {sp;out;#2 w;s;#2 w;n}
+#alias {fcot} {s;#2 e;n;#2 e;enter;scipri}
+
+#nop Getting to/from the 3 Kingdoms easily...
+#alias {fp} {bo;#3 w;s;#4 w;n;#3 w;portal}
+#alias {sp} {bo;w;enter}
+#alias {cp} {bo;#3 w;#3 n;#2 w;n;enter}
+
+#nop Get back to the Fremen guild hall...
+#alias {sqg} {#7 w;#3 s;#4 e;enter}
+#alias {fanpri} {portal;#3 e;s;#4 e;n;#3 e;bsc}
+#alias {scipri} {out;e;bsc}
+#alias {chapri} {vortex;s;#2 e;#3 s;#3 e;bsc}
+
+#nop Let's get to the newbie bin.
+#alias {newb}  {bo;#3 w;#4 s;#2 w;s}
+#alias {fnewb} {n;#2 e;#4 n;#3 e;bsc}
+
