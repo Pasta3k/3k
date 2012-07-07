@@ -4,13 +4,13 @@
 #action {You have become size %1!}
 {
 	escore;
-	#math {emit} {(%1 / 10) + 3};
-	emit ${emit};
+	#nop #math {emit} {(%1 / 10) + 3};
+	#nop emit ${emit};
 }
 
 #nop Auto-Resolve.
-#nop #act {seems to be most susceptible to %1 attacks.} {evoke resolve as %1}
-#act {seems to be most susceptible to %1 attacks.} {evoke prismatic emission as %1}
+#act {seems to be most susceptible to %1 attacks.} {evoke resolve as %1}
+#nop #act {seems to be most susceptible to %1 attacks.} {evoke prismatic emission as %1}
 
 #alias {getcash} {d;v;withdraw 1000;q;u}
 
@@ -55,27 +55,27 @@
 #nop #alias {=} {emit 12}
 #alias {=} {emit 13}
 
-#nop #alias {11} {evoke resolve as slashing}
-#nop #alias {22} {evoke resolve as crushing}
-#nop #alias {33} {evoke resolve as fire}
-#nop #alias {44} {evoke resolve as ice}
-#nop #alias {55} {evoke resolve as acid}
-#nop #alias {66} {evoke resolve as shocking}
-#nop #alias {77} {evoke resolve as mental}
-#nop #alias {88} {evoke resolve as magical}
-#nop #alias {99} {evoke resolve as toxic}
-#nop #alias {00} {evoke resolve as radiation}
+#alias {11} {evoke resolve as slashing}
+#alias {22} {evoke resolve as crushing}
+#alias {33} {evoke resolve as fire}
+#alias {44} {evoke resolve as ice}
+#alias {55} {evoke resolve as acid}
+#alias {66} {evoke resolve as shocking}
+#alias {77} {evoke resolve as mental}
+#alias {88} {evoke resolve as magical}
+#alias {99} {evoke resolve as toxic}
+#alias {00} {evoke resolve as radiation}
 
-#alias {11} {evoke prismatic emission as slashing}
-#alias {22} {evoke prismatic emission as crushing}
-#alias {33} {evoke prismatic emission as fire}
-#alias {44} {evoke prismatic emission as ice}
-#alias {55} {evoke prismatic emission as acid}
-#alias {66} {evoke prismatic emission as shocking}
-#alias {77} {evoke prismatic emission as mental}
-#alias {88} {evoke prismatic emission as magical}
-#alias {99} {evoke prismatic emission as toxic}
-#alias {00} {evoke prismatic emission as radiation}
+#nop #alias {11} {evoke prismatic emission as slashing}
+#nop #alias {22} {evoke prismatic emission as crushing}
+#nop #alias {33} {evoke prismatic emission as fire}
+#nop #alias {44} {evoke prismatic emission as ice}
+#nop #alias {55} {evoke prismatic emission as acid}
+#nop #alias {66} {evoke prismatic emission as shocking}
+#nop #alias {77} {evoke prismatic emission as mental}
+#nop #alias {88} {evoke prismatic emission as magical}
+#nop #alias {99} {evoke prismatic emission as toxic}
+#nop #alias {00} {evoke prismatic emission as radiation}
 
 #alias {111} {evoke self illumination as 1}
 #alias {222} {evoke self illumination as 2}
@@ -136,4 +136,5 @@
 #nop Guild age at completion of 3rd form: 4 weeks 4 days 2 hrs 25 mins 32 secs, on 2010-Jan-14
 #nop Guild age at completion of 4th form: 7 weeks 5 hrs 30 mins 42 secs, on 2010-Mar-19
 #nop Guild age at completion of squest  : 7 weeks 2 days 22 hrs 10 mins 26 secs, on 2010-Mar-27
+#nop Guild age at completion of tquest  : 19 weeks 5 days 5 hrs 29 mins 42 secs, on 2012-May-14
 
