@@ -94,6 +94,25 @@
 #gag {^soul!$}
 #gag {^You sadistically extract %0 soul!!$}
 
+#nop Time form gags.
+#gag {^You call the forces of time to ravage}
+#gag {^Guardswoman!$}
+#gag {^Lathander!$}
+#gag {^Leader!$}
+#gag {^Guard!$}
+#gag {^Beast!$}
+#gag {^Mist!$}
+#gag {^Officer!$}
+#gag {^Battle Master!$}
+#gag {^Treant!$}
+#gag {^Zombie!$}
+#gag {^Dragon!$}
+#gag {^Butterfly!$}
+#gag {^Plant Guard!$}
+#gag {^Worker!$}
+#gag {^Supervisor!$}
+#gag {^Hunter-Killer!$}
+
 #nop Corpse drain gags
 #gag {^You envelop the corpse in your elemental energies.}
 #gag {^remaining material essence of the corpse and send it through your vortex$}
@@ -103,7 +122,8 @@
 #gag {Grasping %1 tightly}
 #gag {use to bolster your own}
 
-#nop Prismatic emission gags
+#nop Resolve/Prismatic emission gags
+#gag {You focus your energies on emitting}
 #gag {Prismatic Emission is active with the following types:}
 #gag {^slashing.$}
 #gag {^crushing.$}
