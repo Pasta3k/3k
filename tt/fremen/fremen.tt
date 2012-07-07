@@ -8,12 +8,17 @@
 
 #alias {c1} {#read fremen/corpse1.tt}
 #alias {c2} {#read fremen/corpse2.tt}
+#alias {c3} {#read fremen/corpse3.tt}
 #alias {dl} {donate literjon}
 #alias {fl} {fill literjon}
 
 #alias {ars} {go shop;deposit all;go arsenal;donate all;balance;go exit;coins}
 #alias {sus} {suspend}
 #alias {med} {suspend}
+
+#alias {donatei} {ars}
+#alias {corpses} {morgue;donate coffin;top players boot;top guilds;fmorgue}
+#alias {cs}      {corpses;donatei}
 
 #alias {bsc} {board;loadmap fremen}
 #alias {bo} {#map leave;board}
