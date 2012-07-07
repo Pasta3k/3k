@@ -14,11 +14,14 @@
 #nop From home to apex
 #alias {apex} {guild;n;n;e;ne;u}
 
+#nop Unload bot stuff
+#alias {unbot} {#class pastabot kill;#class areabot kill;#read general.tt}
+
 #nop Get back to the Elemental guild hall...
 #alias {sqg} {#7 w;#3 s;#4 e;enter}
-#alias {fanpri} {portal;home;apex}
-#alias {scipri} {out;home;apex}
-#alias {chapri} {vortex;home;apex}
+#alias {fanpri} {portal;home;apex;unbot}
+#alias {scipri} {out;home;apex;unbot}
+#alias {chapri} {vortex;home;apex;unbot}
 
 #nop Let's get to the newbie bin.
 #alias {newb}  {a.p;newbie}
