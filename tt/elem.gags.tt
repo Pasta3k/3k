@@ -112,6 +112,14 @@
 #gag {^Worker!$}
 #gag {^Supervisor!$}
 #gag {^Hunter-Killer!$}
+#gag {^Cyric!$}
+#gag {^Jelly!$}
+#gag {^Gelatinous Cube!$}
+#gag {^Guardian!$}
+#gag {^Vomit-splattered Zombie!$}
+#gag {^Captain!$}
+#gag {^Hunter-killer!$}
+
 
 #nop Corpse drain gags
 #gag {^You envelop the corpse in your elemental energies.}
