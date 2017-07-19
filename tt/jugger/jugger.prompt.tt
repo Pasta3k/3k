@@ -1,0 +1,95 @@
+#class {jugger_prompt}
+
+#alias {test}
+{
+    #delay 0 #showme {Hp:[214/214] Sp:[82/82] S:[100%] H:[2%] C/M:[1/1][0/0](91%) G:31.86};
+    #delay 10 #showme {Hp:[204/204] Sp:[122/122] S:[100%] H:[11%] C/M:[1/1][0/0](82%) G:112.84 E:12%}
+}
+
+#function {colscale}
+{
+        #switch {10 * %1 / %2}
+        {
+                #case {0} {#return <119>};
+                #case {1} {#return <119>};
+                #case {2} {#return <119>};
+                #case {3} {#return <139>};
+                #case {4} {#return <139>};
+                #case {5} {#return <139>};
+                #case {6} {#return <139>};
+                #case {7} {#return <169>};
+                #case {8} {#return <169>};
+                #case {9} {#return <169>};
+                #default  {#return <129>}
+        }
+}
+
+#var hpbar_label <088>;
+#var hpbar_points_full <129>;
+#var hpbar_points_high <169>;
+#var hpbar_points_med <139>;
+#var hpbar_points_low <119>;
+
+#action {^Hp:[%1/%2] Sp:[%3/%4] S:[%5%] H:[%6%] C/M:[%7/%8][%9/%10](%11%) G:%12} 
+{
+   #var hpcolor @colscale{%1;%2};
+   #var spcolor @colscale{%3;%4};
+   #var stimcolor @colscale{%5;100};
+   #var heatcolor @colscale{%6;100};
+   #var blastcolor @colscale{%10;100};
+   #var cpcolor @colscale{%7;%8};
+   #var misscolor @colscale{%9;%10};
+   #var resetcolor @colscale{%11;100};
+
+   #var hpcur %1;
+   #var hpmax %2;
+
+   #var spcur %3;
+   #var spmax %4;
+
+   #var stimcur %5;
+   #var stimmax 100;
+
+   #var heatcur %6;
+   #var heatmax 100;
+
+   #var clanpowercur %7;
+   #var clanpowermax %8;
+
+   #var missilecur %9;
+   #var missilemax %10;
+
+   #var resetpct %11;
+   #var resetmax 100;
+
+   #var next_gxp %12;
+
+   #format {hpmsg}    {%sHP:%s%+4s%s/%s%s} {$hpbar_label} {$hpcolor} {$hpcur} {$hpbar_label} {$hpbar_points_full} {$hpmax};
+   #format {spmsg}    {%sSP:%s%+3s%s/%s%s} {$hpbar_label} {$spcolor} {$spcur} {$hpbar_label} {$hpbar_points_full} {$spmax};
+   #format {stimmsg}  {%sS:%s%+3s%s%s} {$hpbar_label} {$stimcolor} {$stimcur} {$hpbar_label} {%};
+   #format {heatmsg} {%sH:%s%s%s%s} {$hpbar_label} {$heatcolor} {$heatcur} {$hpbar_label} {%};
+   #format {cpmsg} {%sC:%s%s%s/%s%s} {$hpbar_label} {$cpcolor} {$clanpowercur} {$hpbar_label} {$hpbar_points_full} {$clanpowermax};
+   #format {missmsg} {%sM:%s%s%s/%s%s} {$hpbar_label} {$misscolor} {$missilecur} {$hpbar_label} {$hpbar_points_full} {$missilemax};
+   #format {resetmsg} {%sRST:%s%+3s%s%s} {$hpbar_label} {$resetcolor} {$resetpct} {$hpbar_label} {%};
+   #format {gxpmsg}   {%sGXP:%s%+4s%s%s} {$hpbar_label} <139> {$next_gxp} {$hpbar_label} {%};
+
+   #format {prompt1} {%s %s %s %s %s %s %s %s} {$hpmsg} {$spmsg} {$stimmsg} {$heatmsg} {$cpmsg} {$missmsg} {$resetmsg} {$gxpmsg};
+   #format {prompt2} {%s} {};
+}
+{2};
+
+#action {^Hp:[%1/%2] Sp:[%3/%4] S:[%5%] H:[%6%] C/M:[%7/%8][%9/%10](%11%) G:%12 E:%13%} 
+{
+   #showme {Hp:[%1/%2] Sp:[%3/%4] S:[%5%] H:[%6%] C/M:[%7/%8][%9/%10](%11%) G:%12};
+
+   #var mob_health_color @colscale{%13;100};
+   #var mob_health %13;
+
+   #format {enemymsg} {%sE:%s%s%s%s} {$hpbar_label} {$mob_health_color} {$mob_health} {$hpbar_label} {%};
+   
+   #format {prompt2} {%s} {$enemymsg};
+}
+{1};
+
+#prompt {^Hp:[%1/%2] Sp:[%3/%4] S:[%5%] H:[%6%] C/M:[%7/%8][%9/%10](%11%) G:%12} ${prompt1} ${prompt2} 
+

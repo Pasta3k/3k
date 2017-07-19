@@ -1,0 +1,51 @@
+#gag {%0 {un|}wields light{staff|saber}.}
+#gag {The gold beam of energy withdraws back into %0 lightsaber.}
+#gag {%0 draws %1 light{staff|saber} from a sheath on %1 belt.}
+#gag {A %0 beam of energy extends from %1 lightsaber.}
+#gag {steps aside, avoiding damage}
+#gag {takes a glancing blow}
+#gag {breathing deepens}
+#gag {appears rested}
+#gag {closes %0 eyes momentarily and appears refreshed.}
+#gag {%0 sparks fly from %1's {lightsaber|lightstaff}}
+#gag {%0 beams of energy withdraw back into %1 {lightsaber|lightstaff}.}
+#gag {%0 beams of energy extend from %1 {lightsaber|lightstaff}.}
+#gag {^fades away.}
+#gag {%0 stares into a world that only %1 can see.  %2}
+#gag {hands stretch wide and the air shimmers about %0}
+#gag {and you sense a torrent of power flowing from %0.}
+#gag {%0 sends %1 synapses firing}
+#gag {uncontrollably.  %0 writhes in tremendous pain. }
+#gag {Streaks of blue-white lightning streak from %0 hands to burn}
+#gag {Small Gelatinous Cube.}
+#gag {%0 writhes in tremendous pain.}
+#gag {%0 spreads his hands apart and %1 howls in mortal}
+#gag {agony!                                                                  $}
+#gag {%0 reaches towards %1 and jerks his hand, sending}
+#gag { into spasms of agony.}
+#gag {%0 clutches its chest as %1 clenches his}
+#gag {^fist.                                                                   $}
+#gag {%0 closes %1 eyes and concentrates upon %2.}
+#gag {Before your eyes %0 appears to be rejuvenated.}
+#gag {%0 constructs a funeral pyre and sets it ablaze.}
+#gag {The funeral pyre burns out.}
+#gag {%0 eyes roll back into %1 head and %2}
+#gag {slumps to the ground, unbreathing.}
+#gag {%0 gets a far away look in %1 eyes.}
+#gag {%0 suddenly stirs and rises from %1 near death state.}
+#gag {Your failing consciousness is bolstered by the soothing energy.}
+#gag {The healing power of the Force clears your mind.}
+#gag {The Force pours through your mind, strengthening it.}
+#gag {The Force flows through you, buttressing your thoughts.}
+#gag {Your thoughts gain strength as the healing energy flows through you.}
+#gag {The power of the Force refreshes your mind.}
+#gag {%0 closes %1 eyes and sends %2 reeling.}
+#gag {%0 spins out of the way of a deadly attack.}
+#gag {%0 leaps aside, avoiding damage.}
+#gag {%0 is struck a minor blow as %1 tumbles aside.}
+#gag {%0 dives to the ground and rolls to safety.}
+#gag {%0 leaps a second too late and is sent sprawling in the dust.}
+#gag {%0 spins aside and manages to avoid most of the attack.}
+#gag {%0 relaxes and appears to gain some relief.}
+#gag {%0 closes %1 eyes and a peaceful look overcomes %2.}
+

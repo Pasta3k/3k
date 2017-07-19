@@ -1,0 +1,129 @@
+#nop Chaos macros
+
+#nop The Land by Tiro
+#nop Shepherd/Artisan = 2k, Lena = 6k, Triock = 7k, Atiaran = 7k, 
+#alias {land} {cp;#3 e;#2 s;#2 e;#4 n;break arch;say land;#var kstr human;loadmap land}
+#alias {fland} {#map destroy;portal;#4 s;#2 w;#2 n;#3 w;chapri}
+
+#nop The Land #2 , also by Tiro.  More BS than Land.
+#alias {land2} {cp;#3 e;#2 s;#2 e;#4 n;break arch;say land2;#var kstr human;loadmap land}
+#alias {fland2} {#map destroy;portal;#4 s;#2 w;#2 n;#3 w;chapri}
+
+#nop Translucent Armour stuff, in The Land.
+#alias {translucent} {land;w;nw;nw;n;n;n;e;nw;w;s;s;s;s;s;s;w;w;n;w;enter stairwell}
+#alias {translucent2} {land2;w;nw;nw;n;n;n;e;nw;w;s;s;s;s;s;s;w;w;n;w;enter stairwell}
+#alias {transhome} {u;e;s;e;e;n;n;n;n;n;n;e;se;w;s;s;s;se;se;e;fland}
+
+#nop Tencho by Nanook.  Mobs between 1k and 8k.
+#alias {tencho} {#var {kstr} {human};alias ff follow human;cp;#2 w;#4 n;gate}
+#alias {ftencho} {gate;#4 s;#2 e;chapri}
+
+#nop Chinchilla Farm by Flaxen.
+#nop Baby = 4-5k, Young = 10k, Mature = 17k, Old = 12k
+#nop Manager is 22k.  Happy Ed (search drawer, press button in Manager's office) is 31k.
+#alias {chin} {#var {kstr} {chinchilla};cp;#3 e;#2 s;#2 e;n;#3 e;s;#2 w;s;gate;loadmap chin}
+#alias {fchin} {#map destroy;gate;n;#2 e;n;#3 w;s;#2 w;#2 n;#3 w;chapri}
+
+#nop Leprechaun Village by Druss.  All mobs under 1k.
+#alias {lep} {#var {kstr} {leprechaun};cp;s;e;n;ne;sleep}
+#alias {flep} {wish home;sw;s;w;n;chapri}
+
+#nop Hyperfunkzone by Artex.  Mobs are 2k-8k.
+#nop Tangerine Marble.
+#alias {funk} {#var {kstr} {funk};cp;n;enter fog;loadmap funk}
+#alias {ffunk} {#map destroy;defunkt;n;w;s;#2 w;n;e;n;#2 w;#3 e;chapri}
+
+#nop Chinese Checkers by Safeire.  Red = 600, Green = 3k, Blue = 7k.
+#alias {checker} {#var {kstr} {checker};cp;w;ladder;loadmap checker}
+#alias {fchecker} {#map destroy;ladder;e;chapri}
+
+#nop Chess Board by Tiro.  All mobs <1k.
+#alias {chess} {cp;e;climb pipe;#var kstr human;loadmap chess}
+#alias {fchess} {#map destroy;slide pipe;w;chapri}
+
+#nop Archon by Aneki. All mobs <1k to 3.5k.  You will get a never-ending poison in this area.  Priests cure.
+#alias {chess2} {chess;u}
+#alias {fchess2} {d;fchess}
+
+#nop Ladder by Frizzle.
+#nop First rung mobs between 100-4k(?)
+#nop #alias {ladder} {cp;#4 w;eat mushroom}
+#nop #alias {fladder} {clap hands;chapri}
+
+#nop Sesame Street by Xiola.
+#alias {sesame} {cp;#2 w;s;count 123}
+#alias {fsesame} {exit;n;#2 e;chapri}
+
+#nop Candy Store by Druss.  Mobs between 1.5k and 17k.
+#alias {candy} {cp;#4 w;e;s;enter store}
+#alias {fcandy} {out;n;#2 w;#3 e;chapri}
+
+#nop Smurfs by Zoom.  Smurfs are 5-10k, Smurf-Eater is 10k, Gargamel is 21k.
+#alias {smurf} {#var {kstr} {smurf};cp;e;s;loadmap smurf}
+#alias {fsmurf} {#map leave;n;w;chapri}
+
+#nop Aquarium by Blizzard.  Mobs are 6k-9k.  Great White is 20k.
+#alias {aqua} {#var {kstr} {fish};cp;#3 e;#2 s;#2 e;n;#3 e;n;#2 w;#3 n;e}
+#alias {faqua} {out;#3 s;#2 e;s;#3 w;s;#2 w;#2 n;#3 w;chapri}
+
+#nop Game show area by Kohl.  Gameshow quest.
+#alias {gameshow} {cp;#2 n;#2 e;n}
+#alias {fgameshow} {s;#2 w;#2 s;chapri}
+
+#nop Lostar's Bedroom by Lostar.
+#alias {bedroom} {cp;#2 e;n;doorway}
+#alias {fbedroom} {doorway;s;#2 w;chapri}
+
+#nop Alphabet Land by Rastafan.  Alphabet quest.
+#nop Mobs between 2.5k...15k
+#alias {alp} {#var {kstr} {letter};cp;#2 e;d;s}
+#alias {falp} {n;u;#2 w;chapri}
+
+#nop Crydee
+#alias {crydee} {cp;#4 w;e;s;w;s;#2 e;u;#2 n;#2 d;enter;loadmap crydee}
+#alias {fcrydee} {#map destroy;portal;#2 u;#2 s;u;#2 w;n;e;n;#2 w;#3 e;chapri}
+
+#nop Smileyland by Joker.  Mobs are 1k-8k.  Beware the Undead Smiley.
+#alias {smiley} {#var {kstr} {smiley};cp;w;s;smile}
+#alias {fsmiley} {frown;n;e;chapri}
+
+#nop Area unknown...directions incorrect.
+#nop #alias {wu} {cp;#3 w;#8 s;w}
+#nop #alias {fwu} {e;#8 n;#3 e;chapri}
+
+#nop Mahjongg by Rumor.
+#nop Monster class range since inception: 26,055 to 43,110
+#alias {mahj} {cp;#2 w;#2 s;draw tile;n;portal;loadmap mahj}
+#alias {fmahj} {#map destroy;mahjoff;mahjkill;portal;s;exit;#2 n;#2 e;chapri}
+
+#nop Carina's Observatory by Talismon
+#alias {carina} {cp;#2 s;#2 w;enter}
+#alias {fcarina} {leave;#2 e;#2 n;chapri}
+
+#nop Larissa's Thingy area by Mischief
+#alias {larissa} {cp;#2 e;s;e;n}
+#alias {flarissa} {s;w;n;#2 w;chapri}
+
+#nop Mouse Trails by 
+#alias {mousetrails} {cp;#2 e;s;#2 e;look at hole;loadmap mousetrails}
+#alias {fmousetrails} {#map run exit;drink violet flask;#map destroy;#2 w;n;#2 w;chapri}
+
+#nop Chaos Sewers by
+#alias {csewers} {mousetrails;#2 n;#4 e;#3 n;#map destroy;enter;loadmap csewers}
+#alias {fcsewers} {...}
+
+#nop Death Tacos by Lime
+#act {gets KNOCKED out of the room!} {west}
+#nop #act {gets KNOCKED out of the room!} {east}
+
+#nop Pulp Fiction
+#nop QUEST: Dogs and Diamonds
+#nop NOTE: Bring extra light
+#nop Monster class range since inception: 27,410 to 87,415
+#alias {pulpfic} {getcash 20000;cp;#3 e;#2 s;#2 e;s;#2 w;buy 3;theatre;n;sit on couch}
+
+#nop The Chronicles of Thomas Covenant [Tiro]
+#nop QUEST: Covenant
+#nop Monster class range since inception: 75 to 76,725
+#act {covenant} {cp;#4 w;e;s;w;s;read book;loadmap covenant}
+

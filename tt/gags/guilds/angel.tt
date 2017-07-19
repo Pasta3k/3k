@@ -1,0 +1,41 @@
+#var {angel_adjectives} {|deftly|daringly|effortlessly|assuredly|subtly|solidly|viciously|valiantly|fluidly|quickly|cleanly|zealously|roughly|gracefully|courageously|accurately|confidently|swiftly|mightily|boldly|brutally|justly|wickedly|strongly}
+
+#gag {^%0 {${angel_adjectives}} presage{s|} {high|low} and {in|out}side at}
+#gag {^%0 {${angel_adjectives}} opens with a {high|low} and {in|out}side presage at}
+#gag {^%0 {${angel_adjectives}} opens with a {high|low} and {in|out}side divine strike at}
+
+#gag {Following %0 presage, %1 providence {${angel_adjectives}} {high|low} and {in|out}side at}
+#gag {Following %0 presage, %1 providence {${angel_adjectives}} {high|low} and {in|out}side}
+#gag {%0 eyes sparkle and %1 looks invigorated.}
+#gag {%0, but misses the mark{.|!}}
+#gag {%0, but %1 presage goes wide{.|!}}
+#gag {With %0 still reeling from %1 presage,}
+#gag {%0 {${angel_adjectives}} performs a {high|low} and {in|out}side providence.}
+#gag {%0 {${angel_adjectives}} divine strikes {high|low} and {in|out}side at}
+#gag {providence {high|low} and {in|out}side at %0!}
+#gag {%0 armor glows with a malevolent aura!}
+#gag {^{his|her} blow!$}
+#gag {%0 malevolent wings suddenly vanish.}
+#gag {%0 spins with the momentum of %1 presage and {${angel_adjectives}}}
+#gag {%0 steps into %1 presage and {${angel_adjectives}} providence {high|low} and {in|out}side}
+#gag {%0 flows from %1 presage into a {${angel_adjectives}} {high|low} and {in|out}side {providence|presage}}
+#gag {^at %0!$}
+#gag {but %0 easily avoids his blow!}
+#gag {%0 continues the momentum from %1 presage and tries to }
+#gag {providence %0, but %0 easily}
+#gag {^avoids his blow.$}
+#gag {^providence {at|} %0!$}
+#gag {^but misses!$}
+#gag {A malevolent halo forms around %0.}
+#gag {Your senses go haywire as time literally melts around you.}
+#gag {^%0, but misses{.|!}$}
+#gag {performs a {high|low} and {in|out}side providence{.|!}}
+#gag {%0 continues the momentum from %1 misses and tries to gracefully}
+#gag {Blindingly white energy pours from %0 back, forming an enormous}
+#gag {pair of glowing wings!}
+#gag {{high|low} and {in|out}side at %0{.|!}}
+#gag {^providence %0{.|!}$}
+#gag {%0, but %1 easily avoids his blow{.|!}}
+
+
+

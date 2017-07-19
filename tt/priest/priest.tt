@@ -1,0 +1,128 @@
+#var guildName priest
+
+#var priestIdleTimeout 600;
+#event {RECEIVED INPUT} {
+	#class {priestbot} {read} {priest/priestbot.tt}
+	#undelay {priestDeadmanSwitch};
+	#delay {priestDeadmanSwitch} {.priestStop} {$priestIdleTimeout};
+};
+
+#alias {.priestPause} {#class {priestbot} {kill}};
+#alias {.priestStop} {#var halt 1;.priestPause};
+
+#alias {.cbot} {
+	lf;
+	med;
+	#act {It is too dark.} {glight on;glance};
+	#act {You finish your meditation and stand up.} {.bot};
+	#act {You do not need to meditate.} {.bot};
+}
+
+#act {The spell casting disrupts your meditation, and the spell fails!} {#delay 2 med}
+
+#nop Common Priest commands
+#alias {reag} {buy 999 acorn;buy 999 bark;buy 999 berry;buy 999 chalk;buy 999 clay;buy 999 crushed gems;buy 999 dirt;buy 999 dung;buy 999 feather;buy 999 flint;buy 999 foxfire;buy 999 incense;buy 999 iron rod;buy 999 lead;buy 999 lodestone;buy 999 mercury;buy 999 oil;buy 999 pebble;buy 999 phosphorous;buy 999 pine sap;buy 999 shamrock;buy 999 silver;buy 999 silver mirror;buy 999 snake scale;buy 999 sulphur;buy 999 sumac leaf;buy 999 thistledown;buy 999 tiny hammer;buy 999 twig;buy 999 vellum;buy 999 vine;buy 999 white cloth}
+#alias {feather} {d;#2 n;w;buy 999 feather;e;n;e;deposit all;w;#3 s;u;coins}
+
+#alias {seta} {hplan acidspray;hplan on;hplan combat;contingency soulforce at 99 sp}
+#alias {setc} {hplan chilltouch;hplan on;hplan combat;contingency soulforce at 79 sp}
+#alias {sete} {hplan earthquake;hplan on;hplan combat;contingency soulforce at 49 sp}
+#alias {setf} {hplan firestorm;hplan on;hplan combat;contingency soulforce at 99 sp}
+#alias {setg} {hplan armageddon;hplan on;hplan combat;contingency soulforce at 149 sp}
+#alias {seth} {hplan hammer;hplan on;hplan combat;contingency soulforce at 39 sp}
+#alias {setk} {hplan flamestrike;hplan on;hplan combat;contingency soulforce at 79 sp}
+#alias {setl} {hplan lstrike;hplan on;hplan combat;contingency soulforce at 59 sp}
+#alias {setm} {hplan mstone;hplan on;hplan combat;contingency soulforce at 19 sp}
+#alias {setn} {hplan off;hplan word;hplan combat;contingency soulforce at 50 sp}
+#alias {seto} {hplan souls;hplan on;hplan combat;contingency soulforce at 99 sp}
+#alias {setp} {hplan peace;hplan on}
+#alias {setr} {hplan sunray;hplan on;hplan combat;contingency soulforce at 79 sp}
+#alias {sets} {hplan smite;hplan on;wield relic;hplan combat;contingency soulforce at 69 sp}
+#alias {sett} {hplan twister;hplan on;hplan combat;contingency soulforce at 79 sp}
+#alias {setw} {hplan word;hplan on;hplan combat;contingency soulforce at 49 sp}
+
+#alias {100 } {paction lifeforce at 100}
+#alias {150 } {paction lifeforce at 150}
+#alias {200 } {paction lifeforce at 200}
+#alias {250 } {paction lifeforce at 250}
+#alias {300 } {paction lifeforce at 300}
+#alias {350 } {paction lifeforce at 350}
+#alias {400 } {paction lifeforce at 400}
+#alias {450 } {paction lifeforce at 450}
+#alias {500 } {paction lifeforce at 500}
+#alias {550 } {paction lifeforce at 550}
+#alias {600 } {paction lifeforce at 600}
+#alias {650 } {paction lifeforce at 650}
+#alias {700 } {paction lifeforce at 700}
+#alias {750 } {paction lifeforce at 750}
+#alias {800 } {paction lifeforce at 800}
+#alias {850 } {paction lifeforce at 850}
+#alias {900 } {paction lifeforce at 900}
+#alias {950 } {paction lifeforce at 950}
+#alias {1000} {paction lifeforce at 1000}
+#alias {1050} {paction lifeforce at 1050}
+#alias {1100} {paction lifeforce at 1100}
+#alias {1150} {paction lifeforce at 1150}
+#alias {1200} {paction lifeforce at 1200}
+#alias {1250} {paction lifeforce at 1250}
+#alias {1300} {paction lifeforce at 1300}
+#alias {1350} {paction lifeforce at 1350}
+#alias {1400} {paction lifeforce at 1400}
+#alias {1450} {paction lifeforce at 1450}
+#alias {1500} {paction lifeforce at 1500}
+
+#alias {cor} {offer corpse;get coins}
+#alias {ucd} {unwrap corpse;offer corpse}
+#alias {praise} {d;#3 n;e;withdraw 5000;w;#3 s;#2 u;god;w;#send praise;e;portal;d}
+
+#alias {gi} {servant;get all from box;give all to servant;get all from box}
+#alias {di} {servant;put all in box;=give all;put all in box}
+#alias {si} {servant;sell all;dispose all;=give all;sell all;dispose all}
+
+#nop Rainbow Mends!  Whee!
+#alias {rmend} {gansi set mend hi_red;mend %1}
+#alias {gmend} {gansi set mend hi_green;mend %1}
+#alias {bmend} {gansi set mend hi_blue;mend %1}
+#alias {ymend} {gansi set mend hi_yellow;mend %1}
+#alias {cmend} {gansi set mend hi_cyan;mend %1}
+#alias {mmend} {gansi set mend hi_magenta;mend %1}
+#alias {wmend} {gansi set mend hi_white;mend %1}
+#alias {umend} {gansi set mend underline;mend %1}
+#alias {blmend} {gansi set mend blink;mend %1}
+#alias {mb} {rmend %1;ymend %1;gmend %1;cmend %1;bmend %1;mmend %1;wmend %1;umend %1;blmend %1;gansi set mend magenta}
+
+#class {priestbot} {read} {priest/priestbot.tt}
+
+#nop #act {CL: [*9[5-9]%]} {beseech}
+#act {HPLAN II: phold} {hplan on}
+#act {HPLAN II: psummon} {hplan on;growth phoenix}
+
+#nop #act {PTY: ([1-6][0-9]%)} {/redecho Meditate!}
+#highlight {Your mends will reset soon.} {b red}
+#highlight {You are out of the necessary reagents!} {b red}
+#highlight {You do not have enough mana to cast this spell.} {b red}
+
+#nop Party healing?
+#act {%1 tugs on your sleeve persistently.} {#format {assistee} {%l} {%1};passist ${assistee}}
+#act {[{PARTY|PLINK}] %1: hp} {#format {healee} {%l} {%1};restore ${healee}}
+#act {[{PARTY|PLINK}] %1: sp} {#format {healee} {%l} {%1};radiance ${healee}}
+#act {%1 pokes you in the ribs.} {#format {healee} {%l} {%1};radiance ${healee}}
+#act {Status of %0: } {#format {healee} {%l} {%0};radiance ${healee}}
+
+#nop Guardian autoheals.
+#act {%1's health status: HP: [%2/%3] SP: [%4/%5]} {#format {healee} {%l} {%1};#math {hp100} {%2 * 100};#math {hpercentage} {$hp100/%3};#if {$hpercentage < 75} {invigorate $healee;} {};#math {sp100} {%4 * 100};#math {spercentage} {$sp100/%5};#if {$spercentage < 75} {radiance $healee;} {}};
+#act {The guardian spell cast on %1 has worn off!} {#format {guardee} {%l} {%1};guardian ${guardee}}
+
+#nop Automends
+#act {%1 quacks at you.} {#format {healee} {%l} {%1};mend $healee;}
+#act {From afar, %1 quacks at you.} {#format {healee} {%l} {%1};mend $healee;}
+
+#alias {dodeposit} {d;#3 n;e;deposit all;w;#3 s;u;coins}
+
+#alias {gap} {= give all to pastafarian}
+#alias {donatei} {put all in box;gap}
+#alias {donate2} {cot;e;sell all;#delay 4 gap;#delay 5 sell all;#delay 5 gap;#delay 5 sell all;#delay 5 gap;#delay 5 sell all;#delay 5 w;#delay 5 fcot}
+#alias {corpses} {morgue;donate coffin;top players boot;top guilds;fmorgue}
+#alias {cs} {corpses;#4 donatei;dodeposit}
+#alias {cs2} {corpses;donate2;#delay 6 dodeposit}
+

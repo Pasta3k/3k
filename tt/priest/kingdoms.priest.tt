@@ -1,0 +1,18 @@
+#nop Getting to/from the 3 Kingdoms easily...
+#alias {fp} {exit;#4 w;#3 n;#7 e}
+#alias {sp} {fp;portal;#3 e;s;#4 e;n;#2 e;enter}
+#alias {cp} {fp;portal;#3 e;n;e;#2 n;e;n;enter}
+
+#nop They moved the Priest guild hall.
+#alias {sqg} {#7 w;#3 s;#4 e;enter}
+#alias {fanpri} {portal;portal;sqg}
+#alias {scipri} {out;#2 w;s;#4 w;n;#3 w;portal;sqg}
+#alias {chapri} {vortex;s;w;#2 s;w;s;#3 w;portal;sqg}
+
+#alias {cot} {fp;portal;#3 e;n;#2 e;s}
+#alias {fcot} {s;#2 w;n;#3 w;portal;sqg}
+
+#nop Let's get to Newbieland
+#alias {newb} {cot;s;w;#3 s;e;s}
+#alias {fnewb} {n;w;#3 n;e;n;fcot}
+

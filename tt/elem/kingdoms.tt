@@ -1,0 +1,29 @@
+#nop Between Apex room and guild portal room...
+#alias {a.p} {d;sw;w;n}
+#alias {p.a} {s;e;ne;u}
+
+#nop To COT
+#alias {cot} {a.p;shop;w}
+#alias {fcot} {s;w;#2 s;w;portal;#7 n;p.a}
+
+#nop Getting to/from the 3 Kingdoms easily...
+#alias {fp} {a.p;fantasy;portal}
+#alias {sp} {a.p;sci;enter}
+#alias {cp} {a.p;chaos;enter}
+
+#nop From home to apex
+#alias {apex} {guild;n;n;e;ne;u}
+
+#nop Unload bot stuff
+#alias {unbot} {#class pastabot kill;#class areabot kill;#read general.tt}
+
+#nop Get back to the Elemental guild hall...
+#alias {sqg} {#7 w;#3 s;#4 e;enter}
+#alias {fanpri} {portal;home;apex;unbot}
+#alias {scipri} {out;home;apex;unbot}
+#alias {chapri} {vortex;home;apex;unbot}
+
+#nop Let's get to the newbie bin.
+#alias {newb}  {a.p;newbie}
+#alias {fnewb} {n;w;n;w;portal;#6 n;e;ne;u}
+

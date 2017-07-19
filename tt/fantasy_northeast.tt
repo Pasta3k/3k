@@ -1,0 +1,83 @@
+#nop Fantasy Northeast area macros.
+
+#nop 56 = Tor by Bran.
+#nop Monster class range since inception: 35,055 to 38,81b
+#alias {tor} {fp;#12 n;leave;#2 n;#2 e;path}
+#alias {ftor} {path;#2 w;#2 s;enter;#12 s;fanpri}
+
+#nop 57 = Marble Castle by Peeron.
+#alias {marb} {fw;#16 e;#5 s;enter;n;say yes;return marble;s;exit;#5 n;#16 w;fanpri}
+
+#nop 58 = Phantom Ship by Xiola.
+#alias {pship} {fw;#18 e;#3 s;shore;n;#2 ne}
+#alias {fpship} {#2 sw;s;plains;#3 n;#18 w;fanpri}
+
+#nop 59 = Amethyst Tower by Peeron.
+#nop MARBLE: Amethyst.
+#alias {amethyst} {fw;#15 e;#3 s;enter}
+#alias {famethyst} {leave;#3 n;#15 w;fanpri}
+
+#nop 60 = Garrison by Vlad.
+#nop Monster class range since inception: 60 to 7,670
+#alias {garrison} {fw;#13 e;#3 s;enter}
+#alias {fgarrison} {leave;#3 n;#13 w;fanpri}
+
+#nop 61 = Missionary Camp by Takamori.
+#nop Monster class range since inception: 130 to 2,820
+#alias {missionary} {fw;#11 e;#3 s;path}
+#alias {fmissionary} {path;#3 n;#11 w;fanpri}
+
+#nop 62 = Pedestal.
+#alias {pedestal} {fw;#18 e;#2 s}
+#alias {fpedestal} {#2 n;#18 w;fanpri}
+
+#nop 63 = Hell by Tensor.
+#alias {hell} {fw;#19 e;enter}
+#alias {fhell} {leave;#19 w;fanpri}
+
+#nop 64 = Fire Giant Lair by Shadow.
+#nop Monster class range since inception: 3,805 to 126,000
+#alias {fireg} {fr;#14 e;#2 s;enter;loadmap fireg}
+#alias {ffireg} {#map destroy;leave;#2 n;#14 w;fanpri}
+
+#nop ...
+
+#nop 74 = Stone Monoliths.
+#alias {stonem} {fw;#15 e;#2 n}
+#alias {fstonem} {#2 s;#15 w;fanpri}
+
+#nop 75 = Momentory Keep by Peeron.
+#alias {moment} {fw;#17 e;enter}
+#alias {fmoment} {leave;#17 w;fanpri}
+
+#nop 76 = Troll Hunter's Cabin by Aztec.
+#nop Monster class range since inception: 13,295 to 23,860
+#alias {trollhunter} {fw;#15 e;s;enter}
+#alias {ftrollhunter} {leave;n;#15 w;fanpri}
+
+#nop ...
+
+#nop 79 = Hobgoblinzes Lair by
+#alias {hobgoblin} {fw;#10 e;n;path;#3 nw}
+#alias {fhobgoblin} {#3 se;path;s;#10 w;fanpri}
+
+#nop 80 = Gnoll Outpost by Eek.
+#nop Monster class range since inception: 335 to 44,560
+#alias {gnoll} {fw;#11 e;n;path}
+#alias {fgnoll} {path;s;#11 w;fanpri}
+
+#nop 81 = Hut by Kintax.
+#alias {hut} {fw;#12 e;n;enter}
+#alias {fhut} {leave;s;#12 w;fanpri}
+
+#nop 83 = Valley by Zimpor.
+#alias {valley} {fw;#13 e;#3 n;path}
+#alias {fvalley} {path;#3 s;#13 w;fanpri}
+
+#nop ...
+
+#nop 150 = Island by Aravan.
+#nop Monster class range since inception: 2,300 to 15,750
+#alias {island} {fw;#18 e;#3 s;shore;n;row boat}
+#alias {fisland} {s;plains;#3 n;#18 w;fanpri}
+

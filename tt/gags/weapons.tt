@@ -1,0 +1,249 @@
+#nop Sword of Light
+#gag { thrust{|s} the sword like {wildfire|lightning|holyfire} into the }
+#gag {slices viciously into the }
+#gag {With a flash of {wildfire|lightning|holyfire}, %0 slices into the }
+#gag {Slicing viciously, you cut like {wildfire|lightning|holyfire} into the }
+#gag {With a flash of {wildfire|lightning|holyfire}, you slice into the }
+
+#nop Shortsword of Quickness
+#gag {The sword bites like {wildfire|lightning|hellfury} into the %0!!}
+#gag {You swing the shortsword like {wildfire|lightning|hellfury} at the %0!!}
+
+
+#nop Shadow Staff
+#gag {A spurting fountain of blood shoots forth from the staff!!}
+#gag {A raging torrent of power surges through the staff!!!}
+
+#nop Silver Slicer
+#gag {Your Silver Slicer slices %0}
+
+#nop Idiots shouting about playing cult must die.
+#gag {play cult}
+#gag {playcult}
+#gag {clay pult}
+#gag {CULT}
+
+#nop Whips and Chains
+#gag {You flog, humiliate and DOMINATE %1!}
+#gag {You say: Your face, your ass, what's the difference.}
+#gag {You say: Who's your Daddy?}
+
+#nop Warlore Sword
+#gag {You call upon the power of the land and smite the enemy.}
+
+#nop Blade of Ghoti
+#gag { blade surges forward and hammers %0!}
+#gag { blade surges forward and pounds %0 into unconciousness!}
+#gag {The blade surges forward, POUNDING your foe into unconsciousness!}
+#gag {The blade heals you!}
+
+
+#nop Hoelerin Sword
+#gag {The Hoelerin sword strikes with an unholy power!}
+#gag {The Sword strikes with an unholy power!}
+
+#nop Icebrand
+#gag {You slice and dice %0 into iceshards!}
+#gag {You smash %0 into icecubes!}
+#gag {The Icebrand blasts %0 with a cone of cold!}
+#gag {The Icebrand turns %0 blood to ice!}
+#gag {The Icebrand gives %0 a case of extreme frostbite!}
+
+#nop Oathmaker
+#gag {With righteous fury oathmaker slices into %0.}
+
+#nop Blade de la Bobbitt
+#gag {^You slice and dice the }
+#gag {^You hack away at }
+
+#nop Blade of Destruction
+#gag {^The Blade of Destruction THUNDERS into %0}
+
+#nop Runesword
+#gag {%0 runesword blasts %1 opponent with magic.}
+#gag {%0 runesword devastates %1 opponent with a powerful Psionic mind blast!}
+
+#nop SSQ
+#gag {%0 shortsword bites like hellfury into the %1!}
+#gag {%0 swings the shortsword like wildfire at the %1!}
+#gag {%0 shortsword bites like lightning into the %1!}
+#gag {%0 shortsword bites like wildfire into the %1!}
+#gag {%0 shortsword like lightning at the %1!}
+#gag {%0 swings the shortsword like hellfury at the %1!}
+
+#nop Rod of Garnthax
+#gag {Pulsing %0 spell points.}
+#gag {Pulsing %0 hit points.}
+#gag {You're at max}
+
+#nop Bitch Blade
+#gag {You stab at %0 like a super nasty bitch!}
+
+#nop 6-fingered sword
+#gag {sa{y|ys}: You are sure no one's following us?$}
+#gag {sa{y|ys}: I am waiting for you Vizzini!$}
+#gag {sa{y|ys}: Fezzik, are there rocks ahead?$}
+#gag {sa{y|ys}: Hello! My name is Inigo Montoya. You$}
+#gag {^%skilled my father. Prepare to die!$}
+#gag {sa{y|ys}: I want my father back you son of a bitch!$}
+#gag {sa{y|ys}: Who are you? I MUST know!$}
+#gag {sa{y|ys}: Naturally you must expect me to attack with Capo Ferro!$}
+#gag {sa{y|ys}: You seem a decent fellow. I hate to kill you.$}
+#gag {sa{y|ys}: I know something you don't know. I am NOT left handed!$}
+#gag {sa{y|ys}: There will be BLOOD tonight!!$}
+#gag {sa{y|ys}: Offer me money. Power too, promise me that!$}
+#gag {sa{y|ys}: Humiliations galore!$}
+
+#nop PsiMain Gauche
+#gag {%0's PsiMain Gauche sparks brightly as it passes through}
+#gag {%0's PsiMain Gauche flares brightly with bright energy.}
+#gag {%0's PsiMain Gauche sizzles as %1 strikes %2.}
+#gag {^of the Mist.$}
+#gag {%0's PsiMain Gauche passes through %1 in a flash of}
+#gag {^bright light.$}
+
+#nop Double Attacker Blade
+#gag {%0 hacks furiously at %1.}
+#gag {%0 cowers under %1 frenzied assault.}
+#gag {%0 sword hammers %1.}
+#gag {%0 blade pummels %1 foe!}
+#gag {%0 becomes a blur and dices %1!}
+
+#nop Sword of Insults
+#gag {The Sword Screams at you:}
+#gag {Leave...JUST LEAVE!!  WE HATE YOU!!!!  GO AWAY!!!}
+#gag {\^^^^^   ^^^^^^^^^^    ^^^^^^^^^^^      ^^^^^^^}
+#gag {When I go to your house, I am gonna slap your momma in the face!}
+#gag {Your momma is like 7-11, open 24 hours a day!}
+#gag {Would you please shut the !@#$ up!?!?!?!?}
+#gag {Is that your breath, or did someone put a skunk in your face?}
+#gag {You are so ugly, your momma had to tie a bone around your neck}
+#gag {to get the dog to play with you!!}
+#gag {Do you comb your hair with buttered toast?}
+#gag {You think you are hot sh!t on a silver platter...}
+#gag {You are really cold diarrhea on a paper plate!!}
+#gag {Did someone die?  Oh, you farted?}
+#gag {Your momma is like a light switch, a 2 year old can turn her on.}
+#gag {If I want anymore lip from you I'll get it off my zipper!}
+#gag {I have some quest info for you....QUIT!!}
+#gag {You are about as sharp as a sack of wet mice!}
+#gag {You look like Waldo from the 'Hot for Teacher' video!}
+#gag {Were your parents cousins??!?!?!?}
+#gag {I don't mean to be rude, but you SUCK!!!}
+#gag {You reek with the odor of wet dead dog fur!}
+#gag {You aren't even worth the effort...}
+#gag {Is that braille on your face?}
+#gag {You are so ugly...your momma fed you with a slingshot!}
+
+#nop Sword of Tho-Razin
+#gag {The sword hums in your hand as you slash through your foe.}
+#gag {The sword is a quicksilver blur in your hands!}
+#gag {You belch rays of light at your opponent!}
+
+#nop Sword of War
+#gag {The Sword of War screams loudly as it sinks into %0}
+
+#nop Fangsword
+#gag {The sword bites deep into your enemy, blood sprays everywhere!}
+
+#nop Frostblade
+#gag {You smash %0 into ice shards.}
+
+#nop Superior 2-handed phasemetal sword
+#gag {%0 brings the 2-handed phasemetal sword viciously down upon %1!}
+
+#nop Obsidian Rapier
+#gag {A brilliant yellow spark bridges the small gap between your}
+#gag {rapier and %0 burning %1 beyond all recognition.}
+#gag {Black lightning dances along your rapier as you slice right through}
+#gag {%0.  The shards of electricity crawl across %1 skin}
+#gag {burning through %0 soul.                                               }
+#gag {With a long horizontal stroke your rapier bites deeply into %0}
+#gag {chest. Blood soaks %0 clothes.                                 }
+#gag {Striking swiftly and carefully, you punch %0 with the sturdy}
+#gag {basketed hilt shattering %0 jaw in a spray of teeth and saliva.}
+#gag {A faint image rises from the stunned form of %0 as %1 {soul|}}
+#gag {{soul|} is pulled from %0 helpless body.                                      }
+#gag {You duck under %0 clumsy blow and jab your rapier}
+#gag {effortlessly through %0 midsection causing %0 to vomit blood! }
+#gag {With a skillful parry you see an opening in %0 defenses and}
+#gag {slice into %0 shoulder nearly severing %0 arm.                  }
+#gag {An unholy flame spirals outward from the rapier, engulfing %0}
+#gag {{%0|} in a blaze of undying pain.  %1 cry of agony rasps from singed}
+#gag {lungs.                                                                  }
+#gag {A brilliant flash extends from your obsidian rapier, blasting}
+#gag {through %0 chest.  The chilling cold blisters %1 pale skin}
+#gag {and freezes the blood in %0 veins.                                     }
+#gag {A faint image rises from the stunned form of %0 as %1}
+#gag {soul is pulled from %0 helpless body.                                 }
+#gag {%0 chest. Blood soaks %1 clothes.                        }
+#gag {pulled from %0 helpless body.                                         }
+#gag {is pulled from %0 helpless body.                                      }
+#gag {through %0 soul.                                                       }
+#gag {through %0 midsection causing %0 to vomit blood!              }
+#gag {%0 chest. Blood soaks %1 clothes.                       }
+#gag {With a skillful parry you see an opening in %0 defenses}
+#gag {and slice into %0 shoulder nearly severing %0 arm.              }
+#gag {An unholy flame spirals outward from the rapier, engulfing}
+#gag {%0 in a blaze of undying pain.  %1 cry of agony rasps from}
+#gag {singed lungs.                                                           }
+#gag {Striking swiftly and carefully, you punch %0 with the}
+#gag {sturdy basketed hilt shattering %0 jaw in a spray of teeth and}
+#gag {saliva.                                                                }
+#gag {With a skillful parry you see an opening in %0}
+#gag {defenses and slice into %0 shoulder nearly severing %0 arm.     }
+#gag {%0.  The shards of electricity crawl across %1}
+#gag {skin burning through %0 soul.                                          }
+#gag {through %0 chest.  The chilling cold blisters %1 pale}
+#gag {skin and freezes the blood in %0 veins.                                }
+#gag {A faint image rises from the stunned form of %0 as}
+#gag {%0 soul is pulled from %0 helpless body.                       }
+#gag {%0 chest. Blood soaks %1 clothes.                     }
+#gag {through %0 chest.  The chilling cold blisters %1}
+#gag {pale skin and freezes the blood in %0 veins.                           }
+#gag {You duck under %0 clumsy blow and jab your}
+#gag {rapier effortlessly through %0 midsection causing %0 to vomit}
+#gag {blood!                                                                 }
+#gag {A faint image rises from the stunned form of %0}
+#gag {as %0 soul is pulled from %0 helpless body.                    }
+#gag {%0 in a blaze of undying pain.  %1 cry of agony rasps}
+#gag {from singed lungs.                                                      }
+#gag {Striking swiftly and carefully, you punch %0 with}
+#gag {the sturdy basketed hilt shattering %0 jaw in a spray of teeth}
+#gag {and saliva.                                                            }
+#gag {%0.  The shards of electricity crawl across}
+#gag {%0 skin burning through %0 soul.                                      }
+#gag {%0 chest. Blood soaks %1 clothes.             }
+#gag {in a blaze of undying pain.  %0 cry of agony rasps from singed lungs.  }
+#gag {freezes the blood in %0 veins.                                         }
+#gag {hilt shattering %0 jaw in a spray of teeth and saliva.         }
+#gag {%0.  The shards of electricity crawl}
+#gag {across %0 skin burning through %0 soul.                               }
+#gag {through %0's chest.  The chilling cold blisters}
+#gag {her pale skin and freezes the blood in %0 veins.                       }
+#gag {rapier and %0 burning her beyond all}
+#gag {recognition.}
+
+#nop Spork Lance
+#gag {The Spork Lance SLICES into %0!}
+#gag {The spork tine falls out of %0.}
+
+#nop Vorpal Blade
+#gag {%0 swings with ultimate might at the %0!  The Vorpal}
+#gag {Blade wells with unbelievable power as it swings itself toward the head of}
+#gag {the %0.  The %0 screams as %1}
+#gag {decapitates it!!}
+
+#nop Shieldbreaker
+#gag {Shieldbreaker smashes against %0, leaving %1 less protected than before.}
+
+#nop Sword of the Orc Chief
+#gag {Your sword hums with power as you cut into your foe!}
+#gag {You swing your sword in a wide arc, maiming your foe!}
+#gag {Your sword lunges into your foe of its own accord, causing massive damage!}
+#gag {Your sword gleams with power as you drive it into your foe's chest!}
+#gag {Your sword flashes in the light as you cut deeply into your foe!}
+#gag {You swing your sword with precision and power, nearly severing body parts!}
+#gag {You swing your sword in a wide arc, DEVASTATING your foe!}
+
+

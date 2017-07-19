@@ -1,0 +1,47 @@
+#gag {The {Red|White} Charioteer rolls his chariot over %0, slicing deeply!}
+#gag {The {Red|White} Counsellor whips out a brightly glowing book and somehow}
+#gag {blasts %0 with pure energy!}
+#gag {The {Red|White} King holds up his sceptre and it begins to glow}
+#gag {eerily. you looks faint.}
+#gag {%0 looks ill.$}
+#gag {The White Foot Soldier opens his palm and a ray of frost erupts}
+#gag {from it at you!}
+#gag {The White Horseman's sword bursts into flame as he viciously}
+#gag {slices into you!}
+#gag {As the lordly knight falls to his death, his warhorse, trained to}
+#gag {fight on, turns upon you with an angry snort.}
+#gag {The Angry Horse rears up and slashes you with his sharpened}
+#gag {horseshoes!}
+#gag {The Red Cross Medic throws a vial of burning acid at you!}
+#gag {The A War Correspondent nearly blinds %0 with a powerful flash}
+#gag {from his camera!}
+#gag {The Red Foot Soldier opens his palm and a ray of frost erupts}
+#gag {The {Red|White} Priest preaches at %0. Blood gushes from %1 ears!}
+#gag {The Angry War Elephant crushes %0 with a mighty swipe of his}
+#gag {^trunk!$}
+#gag {The A Refugee smacks you with a befouled rag!}
+#gag {The Red Horseman's sword bursts into flame as he viciously slices}
+#gag {quickly dodges your assault!}
+#gag {The Angry Horse rears up and slashes %0 with his sharpened}
+#gag {^Horseman.$}
+#gag {^Soldier.$}
+#gag {^Foot Soldier.$}
+#gag {^White Foot Soldier.$}
+#gag {^Red Foot Soldier.$}
+#gag {^Medic.$}
+#gag {^Cross Medic.$}
+#gag {^Charioteer.$}
+#gag {^Counsellor.$}
+#gag {^Correspondent.$}
+#gag {^Refugee.$}
+#gag {^{Red|White} King.$}
+#gag {^Priest.$}
+#gag {^Horse.$}
+#gag {^War Elephant.$}
+#gag {^Elephant.$}
+#gag {^from it!$}
+#gag {^slices into his!$}
+#gag {The Red Cross Medic throws a vial of burning acid from his medkit}
+#gag {The A Refugee smacks Zanadu with a befouled rag!}
+#gag {eerily. %0 looks ill.}
+

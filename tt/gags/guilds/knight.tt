@@ -1,0 +1,10 @@
+#gag {%0 {yells|bellows|screams}:}
+#gag {    Strength and Honor!}
+#gag {The battle-cry echoes through the room, leaving %0}
+#gag {frozen in terror.}
+#gag {^terror.$}
+#gag {     %0 briefly closes %1 eyes in the midst of}
+#gag {     battle.  When %0 opens them again, an aura of}
+#gag {     peace and determination surrounds %0.}
+
+

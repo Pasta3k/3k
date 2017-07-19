@@ -1,0 +1,123 @@
+#nop Default hpbar:
+#nop genset hpbar HP:$hp$ SP:$sp$ PU:$pu$ CPC:$cpc$ [G2N:$g2n-pct$%][$reset-pct$%] E:$enemy$
+
+#nop Caesar's hpbar:
+#nop genset hpbar HP:$hp$ SP:$sp$ PU:$pu$ CPC:$cpc-now$ E:$enemy$ $ksenemy$nl$GXP:$gexp$($g2n-pct$) RC:$rc$ $bias$ [G$gen-eff$|T$tech-eff$] $tslide$($reset-pct$-$e-tslide$)$nl$Ef:$efield$ Edna:$edna$ T:$tactical$ S:$stabilize$ H:$hypergen$($hypergent$) $illum$ E:$ename$
+
+#nop My new hpbar:
+genset hpbar $hp$ $sp$ $pu$ $cpc-now$ $ename$:$enemy$ $nl$$g2n$ $rc$ $bias$ $synthorg$ $gen-eff$ $tech-eff$ $tslide$($reset-pct$-$e-tslide$)$nl$T:$tactical$ S:$stabilize$ H:$hypergen$($hypergent$) $illum$
+
+#var hpbar_label <fff>;
+#var hpbar_points_full <afa>;
+#var hpbar_points_high <aff>;
+#var hpbar_points_med <ffa>;
+#var hpbar_points_low <faa>;
+#var last_gxp {};
+#var last_rc {};
+#var total_gxp {};
+
+#action {^%1/%2 %3/%4 %5/%6(%7) %8 %9:%10}
+{
+	#var hpcolor @colscale{%1;%2};
+	#var spcolor @colscale{%3;%4};
+	#var power_color @colscale{%5;%6};
+	#var spu_color @colscale{%7;(%6/2)};
+	#var cpc_color @colscale{%8;10000};
+	#var enemy_health_color @colscale{%10;100};
+
+	#var hpcur %1;
+	#var hpmax %2;
+
+	#var spcur %3;
+	#var spmax %4;
+
+	#var powercur %5;
+	#var powermax %6;
+	#var powerstored %7;
+
+	#var cpccur %8;
+
+	#var new_enemy_name %9;
+	#var enemy_name {};
+	#var enemy_health %10;
+
+	#if {"${new_enemy_name}" == ""} {#var {enemy_name} {E}} {#var {enemy_name} ${new_enemy_name}};
+	#if {$powercur < 1000} {recharge;unwrap;reclaim} {};
+
+	#unvar {new_enemy_name};
+
+	#format {hpmsg}    {%sHP:%s%+4s%s/%s%s} {$hpbar_label} {$hpcolor} {$hpcur} {$hpbar_label} {$hpbar_points_full} {$hpmax};
+	#format {spmsg}    {%sSP:%s%+3s%s/%s%s} {$hpbar_label} {$spcolor} {$spcur} {$hpbar_label} {$hpbar_points_full} {$spmax};
+	#format {powermsg} {%sPU:%s%+3s%s/%s%+3s%s(%s%+2s%s)} {$hpbar_label} {$power_color} {$powercur} {$hpbar_label} {$hpbar_points_full} {$powermax} {$hpbar_label} {$spu_color} {$powerstored} {$hpbar_label};
+	#format {cpcmsg}   {%sCPC:%s%s%s} {$hpbar_label} {$cpc_color} {$cpccur} {$hpbar_label};
+	#format {enemymsg} {%s%s:%s%s%s} {$hpbar_label} {$enemy_name} {$enemy_health_color} {$enemy_health} {$hpbar_label};
+
+	#format {prompt1} {%s %s %s %s %s} {$hpmsg} {$spmsg} {$powermsg} {$cpcmsg} {$enemymsg};
+}
+{1};
+
+#action {^%12 %13 [ %14% | %15% ] %16 %17 %18 %19/%20(%21-%22)}
+{
+	#var gxp_remain %12;
+	#var rc_cur %13;
+
+	#math {diff_gxp} ${last_gxp} - ${gxp_remain};
+	#math {diff_rc} ${rc_cur} - ${last_rc};
+
+	#var last_gxp ${gxp_remain};
+	#var last_rc ${rc_cur};
+
+	#math {total_gxp} ${diff_gxp} + ${diff_rc};
+
+	#var bias_off %14;
+	#var bias_def %15;
+	#var syn_type %16;
+	#var gen_eff %17;
+	#var tech_eff %18;
+	#var tslide_cur_color @colscale{%19;%20};
+	#var tslide_cur %19;
+	#var tslide_max %20;
+	#var tslide_reset_pct_color @colscale{%21;100};
+	#var tslide_reset_pct %21;
+	#var tslide_emerg_color @colscale{%22;1};
+	#var tslide_emerg %22;
+
+	#format {gxp_rc_msg} {%s(%s%s%s|%s%s%s)} {$hpbar_label} {$hpbar_points_full} {$gxp_remain} {$hpbar_label} {$hpbar_points_full} {$rc_cur} {$hpbar_label};
+	#format {bias_msg} {%sB:[%s%s%s|%s%s%s]} {$hpbar_label} {$hpbar_points_full} {$bias_off} {$hpbar_label} {<faa>} {$bias_def} {$hpbar_label};
+	#format {syn_msg} {%sSYN:%s} {$hpbar_label} {$syn_type};
+	#format {eff_msg} {%s[G:%s%s%s|T:%s%s%s]} {$hpbar_label} {<aff>} {$gen_eff} {$hpbar_label} {<aff>} {$tech_eff} {$hpbar_label};
+	#format {tslide_msg} {TS:[%s%s%s/%s%s %s(%s%s%s-%s%s%s)]} {$tslide_cur_color} {$tslide_cur} {$hpbar_label} {$hpbar_points_full} {$tslide_max} {$hpbar_label} {$tslide_reset_pct_color} {$tslide_reset_pct} {$hpbar_label} {$tslide_emerg_color} {$tslide_emerg} {$hpbar_label};
+
+	#format {prompt2} {%s %s %s %s %s %s} {$gxp_rc_msg} {$bias_msg} {$syn_msg} {$eff_msg} {$tslide_msg} <070>;
+}
+{2};
+
+#action {^T:%23 S:%24 H:%25(%26) %27}
+{
+	#var tace %23;
+	#var stab %24;
+	#var hypergen_level_color @colscale{%25;5};
+	#var hypergen_level %25;
+	#var hypergen_time %26;
+	#var illum %27;
+
+	#if {"${illum}"=="ON"} {#var {illum_color} {<afa>}} {#var {illum_color} {<faa>}};
+
+	#format {tace_msg} {%sTACE:%s%s} {$hpbar_label} {$hpbar_points_high} {$tace};
+	#format {stab_msg} {%sSTAB:%s%s} {$hpbar_label} {$hpbar_points_high} {$stab};
+	#format {hypergen_msg} {%sH:%s%s%s(%s%s%s)} {$hpbar_label} {$hypergen_level_color} {$hypergen_level} {$hpbar_label} {$hpbar_points_high} {$hypergen_time} {$hpbar_label};
+	#format {illum_msg} {%sI:%s%s} {$hpbar_label} {$illum_color} {$illum};
+	#format {total_gxp_msg} {%sGXP:%s%s%s} {$hpbar_label} {$hpbar_points_high} {$total_gxp} {$hpbar_label};
+
+	#format {prompt3} {%s %s %s %s %s} {$stab_msg} {$tace_msg} {$hypergen_msg} {$illum_msg} {$total_gxp_msg} <070>;
+}
+{3};
+
+
+#prompt {^%1/%2 %3/%4 %5/%6(%7) %8 %9:%10} ${prompt1};
+#prompt {^> %1/%2 %3/%4 %5/%6(%7) %8 %9:%10} ${prompt1};
+
+#prompt {^%12 %13 [ %14% | %15% ] %16 %17 %18 %19/%20(%21-%22)} {$prompt2} {2};
+
+#prompt {^T:%23 S:%24 H:%25(%26) %27} {$prompt3} {3};
+

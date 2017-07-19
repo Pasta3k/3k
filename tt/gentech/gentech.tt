@@ -1,0 +1,55 @@
+#var guildName gentech
+
+#alias {ce} {comm}
+#alias {cee} {ecomm}
+#alias {info} {genhelp}
+
+#alias {.cbot} {.bot}
+
+#alias {med} {e;u;u;n;n;e;admit myself}
+#alias {fmed} {w;s;s;d;d;w}
+
+#alias {dodeposit} {e;u;w;deposit all;e;d;w;coins}
+#alias {donatei} {e;u;w;n;donate all;trash all;s;e;d;w}
+#alias {corpses} {morgue;donate coffin;top players;fmorgue}
+#alias {cs}      {corpses;donatei;dodeposit}
+#alias {cs2}      {donatei;dodeposit}
+#alias {getcash} {
+	#var {amt} {""};
+	#var {amt} {%0};
+	#if {"${amt}" == ""} {#var {amt} {1000}} {};
+
+	e;u;w;withdraw ${amt};e;d;w
+}
+
+#alias {unbox} {borrow}
+#alias {box} {donate}
+
+#alias {agall} {autoguild edna;autoguild meditate;autoguild ddb;autoguild efield;autoguild ionbeam;autoguild lsupp;autoguild rush}
+
+#highlight {WARNING ::} {b red}
+#highlight {WARNING:} {b red}
+#highlight {[> Attacks <] [--------] [--------] [--------] [--------]} {b red}
+#highlight {Energy Levels Critical} {b red}
+#highlight {Notification: You have advanced} {b magenta}
+
+#alias {efinger} {gfinger}
+
+#alias {atk} {biaslock;conform attack bias %0}
+#alias {def} {biaslock;conform defense bias %0}
+#alias {nc} {recharge}
+#alias {ucd} {unwrap;reclaim}
+#alias {tra} {transfer all;nc;ucd;i}
+#alias {tace} {tactical}
+#alias {rst} {recharge;unwrap;reclaim;repair;stabilize;recharge;unwrap;reclaim;tactical}
+#alias {gt} {gentimer on %0}
+
+#alias {gxp} {gsplit 0}
+#alias {rc} {gsplit 100}
+
+#act {[[ Bias Conformation Toggled Off ]]} {biaslock}
+#act {[[ Tactical Enhancement Termination in %0 mins %1 ]]} {gentimer on %0}
+#act {[[ Insufficient Power Reserves to activate Tactical Enhancment ]]} {nc;ucd;i;tace}
+#act {[[ Insufficient Power Reserves to activate Stabilization ]]} {nc;ucd;i;stabilize}
+#act {[[ Power Not Sufficient For Field Activation. ]]} {nc;ucd;i}
+

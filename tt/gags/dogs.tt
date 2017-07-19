@@ -1,0 +1,21 @@
+#nop Dog stuff
+#gag { thought he saw a squirrel, but it wasn't.$}
+#gag { sniffs at something on the ground.$}
+#gag { tears a chunk of flesh from }
+#gag { rips into %0 ferociously!$}
+#gag { bounds {about|around} the room}
+#gag { savagely tears into %0 with their teeth!$}
+#gag {%0, %1 %2 viciously tears into %3}
+#gag {%0 tears into the %1, devouring any edible parts.}
+#gag {%0, %1's %2 viciously tears into}
+#gag {%0, %1's %2 bounds into the room.}
+#gag {%0, %1's %2 looks around for something to eat but finds nothing.}
+#gag {%0 tears into the corpse of %1, devouring any}
+#gag {^edible parts.$}
+#gag {^parts.$}
+#gag {%0, %1's %2 Dog barks loudly!}
+#gag {%0 tears into the corpse of %1,}
+#gag {devouring any edible parts.}
+#gag {The Catbot says:}
+#gag {Maxx, Zanadu's Havanese barks loudly!}
+

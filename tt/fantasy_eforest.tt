@@ -1,0 +1,181 @@
+#nop Fantasy East Forest area macros.
+
+#nop 5 = Ravenloft by Tensor.
+#nop Monster class range since inception: 35 to 5,266,535
+#alias {rloft} {fe;#2 s;sw;w;nw;enter mist;loadmap rloft}
+#alias {frloft} {#map destroy;enter mist;e;n;fanpri}
+
+#nop 6 = Beach by Tiro.
+#nop Monster class range since inception: 3,765 to 4,320
+#alias {beach} {fe;e;s;#7 e}
+#alias {fbeach} {#7 w;n;w;fanpri}
+
+#nop 7 = Kelon by Olethros.
+#nop Monster class range since inception: 280 to 880
+#alias {kelon} {fe;#7 e;#4 s}
+#alias {fkelon} {#4 n;#7 w;fanpri}
+
+#nop 8 = Rampart by Tensor.
+#nop NEED LIGHT.
+#alias {rampart} {fe;#6 e;#7 s;#send sinkhole}
+#alias {frampart} {leave;#7 n;#6 w;fanpri}
+
+#nop 9 = Great Lighthouse by Ryft.
+#alias {lighthouse} {fe;#2 e;#12 s;enter}
+#alias {flighthouse} {out;#12 n;#2 w;fanpri}
+
+#nop 10 = Rabbit Fields by Rastafan.
+#alias {rabbit} {fe;e;#8 s;w;loadmap rabbit}
+#alias {frabbit} {#map destroy;e;#8 n;w;fanpri}
+
+#nop 11 = Menhirs by Bran.
+#nop Monster class range since inception: 30 to 75,700
+#alias {menhirs} {fe;e;#6 s;#2 w;s}
+#alias {fmenhirs} {n;#2 e;#6 n;w;fanpri}
+
+#nop 12 = Temple of Alythra by Riekl.
+#nop Cultists between 15-32k.
+#alias {alythra} {fe;#5 w;#5 s;path}
+#alias {falythra} {path;#5 n;#5 e;fanpri}
+
+#nop 13 = Uslopta's Tower by Vryce.
+#alias {uslopta} {fe;#5 w;sw;#5 s;enter}
+#alias {fuslopta} {leave;#5 n;ne;#5 e;fanpri}
+
+#nop 14 = Ancient Dolmen by Solo.
+#alias {dolmen} {fe;#5 w;#6 s;#3 w;trail}
+#alias {fdolmen} {trail;#3 e;#6 n;#5 e;fanpri}
+
+#nop 15 = Kellen Mausoleum by Argoth.
+#alias {kellen} {fe;#3 w;#4 sw;#2 w;enter}
+#alias {fkellen} {leave;#2 e;#4 ne;#3 e;fanpri}
+
+#nop ...
+
+#nop 42 = Druid Copse by Syd.
+#alias {copse} {fe;#5 w;#5 s;w;trail}
+#alias {fcopse} {trail;e;#5 n;#5 e;fanpri}
+
+#nop 43 = Blingdenwood Village by Calaran.
+#alias {blingden} {fe;#2 e;#7 s;enter}
+#alias {fblingden} {leave;#7 n;#2 w;fanpri}
+
+#nop 44 = Halo of Truth by Tensor.
+#alias {halo} {fe;#3 e;#9 s;path}
+#alias {fhalo} {path;#9 n;#3 w;fanpri}
+
+#nop 45 = Dryad Tree by Mosiah.
+#alias {dryad} {fe;#5 e;#6 s;clearing}
+#alias {fdryad} {leave;#6 n;#5 w;fanpri}
+
+#nop 46 = Kingdom of Zanros by Rajah.
+#alias {zanros} {fe;#4 e;#5 s;enter}
+#alias {fzanros} {leave;#5 n;#4 w;fanpri}
+
+#nop 47 = Portal of Life by Keeble.
+#alias {gotopol} {fe;e;#4 s;#4 w;#var kstr human}
+#alias {pol} {gotopol;portal;loadmap pol}
+#alias {pol2} {gotopol;climb left tree;loadmap pol}
+#alias {pol3} {gotopol;climb right tree;loadmap pol}
+#alias {fpol} {#map destroy;portal;#4 e;#4 n;w;fanpri}
+
+#nop 48 = Bukken Tunnels by Machina.
+#nop NEED LIGHT.
+#alias {bukken} {fe;e;#2 s;#2 sw;hole}
+#alias {fbukken} {out;#2 ne;#2 n;w;fanpri}
+
+#nop 49 = Elven Woods by Kohl.
+#alias {ewoods} {fe;e;#4 s;w;path;loadmap ewoods}
+#alias {fewoods} {#map destroy;path;e;#4 n;w;fanpri}
+
+#nop 50 = Karak's Hut by Jux.
+#nop NEED LIGHT.
+#alias {karak} {fe;#3 e;#3 s;enter}
+#alias {fkarak} {leave;#3 n;#3 w;fanpri}
+
+#nop 51 = Lost Woods by Slister.
+#nop NEED LIGHT.
+#alias {lwoods} {fe;#2 e;#2 s;grove}
+#alias {flwoods} {s;#2 n;#2 w;fanpri}
+
+#nop 52 = Shadow Tree by Bake.
+#alias {stree} {fe;#5 e;#2 s;enter shadow}
+#alias {fstree} {#3 n;#5 w;fanpri}
+
+#nop 53 = Owlbears by Trandamere.
+#nop NEED LIGHT.
+#alias {owl} {fe;#3 w;#2 sw;s;e;path;n;enter cave;n;nw;ne;s}
+#alias {fowl} {path;w;n;#2 ne;#3 e;fanpri}
+
+#nop 54 = Cottage by Polanna.
+#alias {polcottage} {fe;#5 w;enter}
+#alias {fpolcottage} {leave;#5 e;fanpri}
+
+#nop 55 = New Arovian Graveyard by Druss.
+#alias {arovian} {fe;#5 w;#2 s;#2 w;path}
+#alias {farovian} {path;#2 e;#2 n;#5 e;fanpri}
+
+#nop ...
+
+#nop 104 = Garou Cave by Miyurachi.
+#alias {garou} {fe;#2 n;#3 w;enter}
+#alias {fgarou} {leave;#3 e;#2 s;fanpri}
+
+#nop 105 = Shaolin Temple by Zhaoyun.
+#alias {shaolin} {fe;#2 n;#2 w;n}
+#alias {fshaolin} {s;#2 e;#2 s;fanpri}
+
+#nop 106 = Overlands by Distortion.
+#alias {overlands} {fe;#3 n;portal;loadmap overlands}
+#alias {foverlands} {#map destroy;portal;#delay 4 #3 s;#delay 5 fanpri}
+
+#nop 107 = Enchanted Spring by Tramane.
+#alias {espring} {#var {kstr} {elf};fe;e;#3 n;loadmap espring}
+#alias {fespring} {#map destroy;#3 s;w;fanpri}
+#alias {ross} {espring;n;#2 ne;#2 n;e;climb groove}
+#alias {fross} {d;w;#2 s;#2 sw;s;fespring}
+#alias {davos} {espring;n;#2 ne;#2 n;#2 e;n;search bushes;nw;n}
+#alias {fdavos} {s;se;s;#2 w;#2 s;#2 sw;s;fespring}
+#act {Rex and Ayla step in front of you.} {#map undo}
+#nop #alias {aegis} {espring;n;#2 ne;s;#3e;n;#3 e;n;nw;nw;#2 w;search bushes;nw;n}
+#nop #alias {faegis} {se;s;#3 w;s;#3 w;n;#2 sw;s;fespring}
+
+#nop 108 = Katin by Tensor.
+#alias {katin} {fe;#3 e;#3 n}
+#alias {fkatin} {#3 s;#3 w;fanpri}
+
+#nop 109 = Harpy Forest by Manson.
+#alias {hfor} {fe;#4 e;#2 n;ne}
+#alias {fhfor} {sw;#2 s;#4 w;fanpri}
+
+#nop 110 = Hacketoff's Bridge by Stelari.
+#alias {hacket} {fe;#5 e;n;path}
+#alias {fhacket} {path;s;#5 w;fanpri}
+
+#nop 111 = Abandoned Garden by Salrylia.
+#alias {garden} {fe;#6 e;n}
+#alias {fgarden} {s;#6 w;fanpri}
+
+#nop 112 = Forest Cottage by Pistil.
+#alias {cottage} {fe;#4 e;n;enter}
+#alias {fcottage} {leave;s;#4 w;fanpri}
+
+#nop 113 = Lleera's Tree by Calvin.
+#alias {lleera} {fe;w;n;climb tree}
+#alias {flleera} {d;s;e;fanpri}
+
+#nop ...
+
+#nop 141 = Shadow Dragon Lair by Shadow.
+#alias {sdragon} {fe;#6 e;#4 s;enter cave}
+#alias {fsdragon} {leave;#4 n;#6 w;fanpri}
+
+#nop 142 = Isle of Kimlark by Tiro.
+#alias {kimlark} {fe;e;s;#7 e;n;embark}
+#alias {fkimlark} {disembark;s;#7 w;n;w;fanpri}
+
+#nop 155 = Demon Summoners by Mors.
+#alias {demonsum2} {fe;w;sw;se;enter cave}
+#alias {fdemonsum2} {leave;nw;ne;e;fanpri}
+
+

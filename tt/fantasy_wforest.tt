@@ -1,0 +1,249 @@
+#nop Fantasy West Forest area macros.
+
+#nop 2 = Worm's Talon Airship Docks by Darrkin.
+#nop No mobs
+#alias {wormtalon} {fp;#12 w;leave;#3 w;#5 s;#send dock}
+#alias {fwormtalon} {leave;#5 n;#3 e;enter;#12 e;fanpri}
+
+#nop 3 = Seacave by Cirrus.
+#nop Monster class range since inception: 8,000 to 66,035
+#alias {seacave} {fp;#12 w;leave;#2 w;#6 s;e;#2 se}
+#alias {fseacave} {#2 nw;w;#6 n;#2 e;enter;#12 e;fanpri}
+
+#nop 4 = Boggart Vale by Sorva.
+#nop Monster class range since inception: 80 to 9,555
+#alias {boggart} {fp;#12 w;leave;sw;trail}
+#alias {fboggart} {trail;ne;enter;#12 e;fanpri}
+
+#nop 25 = Carnelian's Lair by Ryft.
+#nop Monster class range since inception: 33,910 to 39,255
+#alias {carnelian} {fw;#2 e;#7 s;enter}
+#alias {fcarnelian} {leave;#7 n;#2 w;fanpri}
+
+#nop 26 = Library of Elandra by Fubger.
+#nop Monster class range since inception: 6,035 to 7,280
+#alias {elandra} {fw;e;#6 s;sw}
+#alias {felandra} {ne;#6 n;w;fanpri}
+
+#nop 27 = Tower by Eek.
+#nop Monster class range since inception: 7,340 to 76,435
+#alias {eektower} {fw;e;#5 s;w;enter}
+#alias {feektower} {leave;e;#5 n;w;fanpri}
+
+#nop 28 = Stormrock Castle : Dark Forest by Toasty.
+#nop Monster class range since inception: 8,030 to 67,095
+#alias {stormrock} {fw;e;#5 s;#3 w;#2 s;loadmap stormrock}
+#alias {fstormrock} {#map destroy;#2 n;#3 e;#5 n;w;fanpri}
+
+#nop 29 = The Barbarian Plains by Razorx.
+#nop Monster class range since inception: 75 to 40,125
+#alias {bplains} {fw;e;#5 s;#4 w;s;w;loadmap bplains}
+#alias {fbplains} {#map destroy;e;n;#4 e;#5 n;w;fanpri}
+
+#nop 30 = Angelo by Mischief.
+#alias {angelo} {fw;e;#5 s;#5 w;loadmap angelo}
+#alias {fangelo} {#map destroy;#5 e;#5 n;w;fanpri}
+
+#alias {wsea} {angelo;w;q;w;q;w;z;s;clear log;q;n;q;clear path;#2 w;z;#2 w;z;#9 w;in;loadmap wsea}
+#alias {fwsea} {#map leave;out;#9 e;r;#2 e;r;#2 e;v;s;v;n;r;e;v;e;v;e;fangelo}
+
+#alias {bern} {wsea;#2 w;#4 n;e;in}
+#alias {fbern} {out;w;#4 s;#2 e;fwsea}
+
+#alias {cubes} {wsea;#map leave;out;d;w;w;w;w;w;w;nw;w;nw;n;e;nw;ne;w;w;w;w;w;sw;sw;e;e;se;e;d;d}
+#alias {fcubes} {u;u;w;nw;w;w;ne;ne;e;e;e;e;e;sw;se;w;s;se;e;se;e;e;e;e;e;e;u;in;fwsea}
+
+#read areas/cubes.tt
+
+
+#nop 31 = Azral's Tower by Kohl.
+#nop Monster class range since inception: 28,380 to 31,150
+#alias {azral} {fw;#3 e;#5 s;enter}
+#alias {fazral} {leave;#5 n;#3 w;fanpri}
+
+#nop 32 = Kalaena's Fountain by Hobbes.
+#nop Monster class range since inception: 193,055 to 226,480
+#alias {kalaena} {fw;#3 e;#8 s;enter}
+#alias {fkalaena} {leave;#8 n;#3 w;fanpri}
+
+#nop 33 = Witch Coven by Kiro.
+#nop Monster class range since inception: 51,585 to 54,840
+#alias {witch} {fw;#3 e;#6 s;path}
+#alias {fwitch} {path;#6 n;#3 w;fanpri}
+
+#nop 34 = Holy Shrine of Tarmatin by Tarin.
+#nop Monster class range since inception: 36,145 to 41,350
+#alias {tarmatin} {fw;#8 e;#6 s;enter}
+#alias {ftarmatin} {leave;#6 n;#8 w;fanpri}
+
+#nop 35 = Zelligar's Castle by Pfunk.
+#nop Monster class range since inception: 9,230 to 73,850
+#alias {zell} {fw;#6 e;#7 s;enter}
+#alias {fzell} {leave;#7 n;#6 w;fanpri}
+
+#nop 36 = Bandit Hut by Shadowlotus.
+#nop Monster class range since inception: 230 to 23,570
+#alias {bhut} {fw;#7 e;#8 s;enter}
+#alias {fbhut} {leave;#8 n;#7 w;fanpri}
+
+#nop 37 = Alagon's Hill by Devesine.
+#nop Monster class range since inception: 915 to 17,890
+#alias {alagon} {fw;#7 e;#4 s;enter}
+#alias {falagon} {leave;#4 n;#7 w;fanpri}
+
+#nop 38 = Larem Cemetery by Halcyon.
+#nop Monster class range since inception: 169,995 to 483,465
+#alias {larem} {fw;#6 e;#3 s;path}
+#alias {flarem} {path;#3 n;#6 w;fanpri}
+
+#nop 40 = Balooga Falls, South by Mos.
+#alias {baloogas} {fw;nw;ne;e;n;d}
+#alias {fbaloogas} {u;s;w;sw;se;fanpri}
+
+
+#nop ........
+
+
+#nop 77 = Sarkath Khan by Johnny.
+#nop Monster class range since inception: 30 to 8,900
+#alias {sarkath} {fw;#5 e;path}
+#alias {fsarkath} {path;#5 w;fanpri}
+
+#nop 78 = Harfain by Vermillion.
+#read Monster class range since inception: 30 to 75,460
+#alias {harfain} {fw;#7 e;nw;ne;u;cave;trace symbol;u;out;e;n;d;#4 e}
+#alias {fharfain} {#4 w;u;s;w;cave;d;push wall;out;d;sw;se;#7 w;fanpri}
+
+#nop 82 = Alchemist's House by Solo.
+#nop Monster class range since inception: 13,095 to 186,210
+#alias {alchemist} {fw;#7 e;s;enter}
+#alias {falchemist} {leave;n;#7 w;fanpri}
+
+#nop 89 = Cave by Damo.
+#nop Monster class range since inception: 33,365 to 35,290
+#alias {damocave} {fw;#3 e;#2 n;search;crack}
+#alias {fdamocave} {#3 s;#3 w;fanpri}
+
+#nop 90 = Tookwich by Rumor.
+#nop Monster class range since inception: 6,385 to 46,645
+#alias {tookwich} {fw;#3 e;n;path}
+#alias {ftookwich} {path;s;#3 w;fanpri}
+
+#nop 91 = Devourer Cave by Heath.
+#nop Monster class range since inception: 11,940 to 68,435
+#alias {devourer} {fw;#2 e;d}
+#alias {fdevourer} {u;#2 w;fanpri}
+
+#nop 92 = Murus Faralain by Bran.
+#nop Monster class range since inception: 65 to 64,465
+#alias {murus} {fw;e;s;w;loadmap murus}
+#alias {fmurus} {#map destroy;e;n;w;fanpri}
+
+#nop 93 = Accipiter by Pfunk.
+#alias {accipiter} {fw;e;#2 s}
+#alias {faccipiter} {#2 n;w;fanpri}
+
+#nop 94 = Haunted Manor by Tarin.
+#nop Monster class range since inception: 5,650 to 67,430
+#nop QUEST: Haunted Manor
+#alias {hmanor} {fw;e;#2 s;#2 w}
+#alias {fhmanor} {#2 e;#2 n;w;fanpri}
+
+#nop 95 = Clear Falls Valley by Ganzie.
+#nop Monster class range since inception: 1,050 to 6,235
+#alias {clearval} {fw;e;#3 s;w;nw}
+#alias {fclearval} {se;e;#3 n;w;fanpri}
+
+#nop 96 = Forest Trail by Lostar.
+#nop Monster class range since inception: 19,565 to 39,365
+#alias {fortrail} {fw;e;#3 s;#3 w}
+#alias {ffortrail} {#3 e;#3 n;w;fanpri}
+
+#nop 97 = Old Hermit by Talimar.
+#alias {hermit} {fw;e;#4 s;#3 w;n}
+#alias {fhermit} {s;#3 e;#4 n;w;fanpri}
+
+#nop 98 = Cavemaw by Wain.
+#alias {cavemaw} {fw;e;#4 s;#4 w;cave}
+#alias {fcavemaw} {out;#4 e;#4 n;w;fanpri}
+
+#nop 99 = Norgrith Manor by Pfunk.
+#nop Monster class range since inception: 2,335 to 51,785
+#alias {norgrith} {fw;#2 e;#4 s;enter}
+#alias {fnorgrith} {leave;#4 n;#2 w;fanpri}
+
+#nop 100 = Hidden Crevice by Kelson.
+#nop Monster class range since inception: 255 to 16,520
+#alias {hcrevice} {fw;#3 e;#4 s;enter}
+#alias {fhcrevice} {leave;#4 n;#3 w;fanpri}
+
+#nop 101 = Necromancer's Lair by Lostar.
+#nop Monster class range since inception: 8,930 to 19,545
+#alias {nlair} {fw;#3 e;#2 s;enter}
+#alias {fnlair} {leave;#2 n;#3 w;fanpri}
+
+#nop 102 = Gnome House by Skeet.
+#nop Monster class range since inception: 9,820 to 24,055
+#alias {gnomehouse} {fw;#4 e;s;path}
+#alias {fgnomehouse} {path;n;#4 w;fanpri}
+
+#nop 103 = Aunt May's Cottage by Casso.
+#nop Monster class range since inception: 335 to 7,240
+#alias {auntmay} {fw;#4 e;#3 s;enter}
+#alias {fauntmay} {leave;#3 n;#4 w;fanpri}
+
+#nop ...
+
+#nop 114 = Alizarian Tower by Darrkin.
+#nop Monster class range since inception: 14,700 to 98,825
+#alias {alizarian} {fw;nw;sw;se;sw}
+#alias {falizarian} {ne;nw;ne;se;fanpri}
+
+#nop 115 = Explorer's Tomb by Amish.
+#nop Monster class range since inception: 155 to 1,370
+#alias {exptomb} {fw;nw;ne;e;nw}
+#alias {fexptomb} {se;w;sw;se;fanpri}
+
+#nop 116 = Chapel by Crossbone.
+#nop Monster class range since inception: 66,345 to 1,269,000
+#alias {fwchapel} {fw;nw;ne;w}
+#alias {ffwchapel} {e;sw;se;fanpri}
+
+#nop 117 = Durhal's Ant Caves by Orthas.
+#nop Monster class range since inception: 13,525 to 22,710
+#alias {dant} {fw;#2 nw;enter}
+#alias {fdant} {leave;#2 se;fanpri}
+
+#nop ...
+
+#nop 143 = Isle of Vilanthia by Lostar.
+#nop Monster class range since inception: 75 to 42,245
+#alias {vilanthia} {fp;#12 w;leave;sw;w;#5 s;#2 e;swim}
+#alias {fvilanthia} {#2 w;#5 n;e;ne;enter;#12 e;fanpri}
+
+#nop 144 = Tower of Fire by Nanook.
+#nop Monster class range since inception: 2,610 to 65,780
+#alias {firetower} {fp;#12 w;leave;sw;w;#5 s;e;se;#4 e;ne;enter}
+#alias {ffiretower} {leave;sw;#4 w;nw;w;#5 n;e;ne;enter;#12 e;fanpri}
+
+#nop 153 = A Dark Cavern by To.
+#nop Monster class range since inception: 11,420 to 81,885
+#alias {darkcave} {fw;#9 e;search leaves}
+#alias {fdarkcave} {u;#9 w;fanpri}
+
+#nop 154 = Maze by Ulme.
+#nop Monster class range since inception: 4,620 to 71,385
+#alias {maze} {fp;#12 w;leave;#2 w;n;clear rubble;d}
+#alias {fmaze} {u;s;#2 e;enter;#12 e;fanpri}
+
+#nop 156 = The Lost Village of Willothorn by Muzicchik.
+#nop Monster class range since inception: 2,300 to 65,785
+#alias {willothorn} {fd;#2 n;#5 e;#4 s;#3 e;dive}
+#alias {fwillothorn} {surface;#3 w;#4 n;#5 w;#2 s;fanpri}
+
+
+
+#alias {isleth} {fw;sw;nw;w;nw;w;w;w;w;sw;nw;nw;n;n;n;nw;#13 w;sw;s;w;w;n;enter;d;search debris}
+#alias {isleth2} {e;toss rock;get rock;e;jump across;hide;toss rock;e;d;e;search basin;get dagger;cut hand;enter;e}
+#alias {fisleth} {w;out;w;u;w;w;w;w;u;out;s;e;e;n;ne;e;e;e;e;e;e;e;e;e;e;e;e;e;se;s;s;s;se;se;ne;e;e;e;e;se;e;se;ne;fanpri}
+

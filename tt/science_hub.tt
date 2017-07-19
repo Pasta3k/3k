@@ -1,0 +1,112 @@
+#nop Hub of Science.
+
+#nop Video game machines
+#alias {vgames} {sp;u;#3 n;w}
+#alias {fvgames} {e;#3 s;d;scipri}
+
+#alias {dukenukem} {vgames;place adapter on head}
+#alias {fdukenukem} {wimp;fvgames}
+#alias {used} {dukenukem;kick fan;fan;w;n;w;s;w;s;sw;se;u;kill bigpig}
+#alias {fused} {d;nw;ne;n;e;n;e;s;e;fdukenukem}
+
+#gag {^There is no reason to 'board' here.$}
+
+#var {toMidway} {0}
+#alias {shuttle} {#var {toMidway} {1};sp;#2 u}
+#alias {fshuttle} {#2 d;scipri}
+#act {The shuttle drops into the landing area with a loud boom!} {#if {$toMidway == 1} {board shuttle} {}}
+#act {Houston - Midway Shuttlecraft.} {#if {$toMidway == 1 || $toMidway == -1} {board shuttle} {}}
+#act {The captain announces: Welcome to Midway Space Station.} {
+	exit;
+	#var {toMidway} {0};
+	#if {"$midwayPlace" == "solar"} {gosolar};
+	#if {"$midwayPlace" == "galactica"} {gogalactica};
+	#if {"$midwayPlace" == "kodiak"} {gokodiak};
+	#if {"$midwayPlace" == "sttng"} {gosttng};
+	#if {"$midwayPlace" == "fuzzyaliens"} {gofuzzyaliens};
+	#if {"$midwayPlace" == "broodwar"} {gobroodwar};
+	#if {"$midwayPlace" == "moseisley"} {gomoseisley};
+	#if {"$midwayPlace" == "dune"} {godune};
+	#if {"$midwayPlace" == "borgcubes"} {borgcubes};
+}
+
+#alias {localarcade} {#4 w;#2 d}
+#alias {flocalarcade} {#2 u;#4 e}
+
+#alias {vrarcade} {shuttle;#var {toMidway} {1}}
+#alias {fvrarcade} {#var {toMidway} {-1};flocalarcade}
+
+#nop Solar System by Thumpson
+#nop Monster class range since inception: 130 to 85,670
+#alias {solar} {vrarcade;#var {midwayPlace} {solar}}
+#alias {gosolar} {localarcade;w;s;enter pod}
+#alias {fsolar} {#var {toMidway} {-1};#4 d;e;n;fvrarcade}
+#act {The captain announces: Welcome to Houston Transport Center.} {#if {$toMidway == -1} {exit;fshuttle} {}}
+
+#nop Battlestar Galactica by Green
+#nop Monster class range since inception: 44,155 to 130,040
+#alias {galactica} {vrarcade;#var {midwayPlace} {galactica}}
+#alias {gogalactica} {localarcade;w;#2 s;enter pod}
+#alias {fgalactica} {exit;#2 n;e;fvrarcade}
+
+#nop Codename: Kodiak by Dynon
+#nop Monster class range since inception: 60 to 162,630
+#alias {kodiak} {vrarcade;#var {midwayPlace} {kodiak}}
+#alias {gokodiak} {localarcade;s;enter pod}
+#alias {fkodiak} {leave;n;fvrarcade}
+
+#nop ST:TNG by Tensor
+#nop Monster class range since inception: 30 to 6,450
+#alias {sttng} {vrarcade;#var {midwayPlace} {sttng}}
+#alias {gosttng} {localarcade;s;e;enter pod;#delay 10 beam}
+#alias {fsttng} {beam;door;w;n;fvrarcade}
+
+#nop Fuzzy Aliens of Mars by Ryft
+#nop Monster class range since inception: 345 to 32,710
+#alias {fuzzyaliens} {vrarcade;#var {midwayPlace} {fuzzyaliens}}
+#alias {gofuzzyaliens} {localarcade;e;enter pod}
+#alias {ffuzzyaliens} {door;w;fvrarcade}
+
+#nop Starcraft : Broodwar by Arrion
+#nop Monster class range since inception: 1,075 to 36,735
+#alias {broodwar} {vrarcade;#var {midwayPlace} {broodwar}}
+#alias {gobroodwar} {localarcade;w;enter pod}
+#alias {fbroodwar} {enter shuttle;e;fvrarcade}
+
+#nop Mos Eisley Cantina by Gerin
+#nop Monster class range since inception: 60 to 3,465
+#alias {moseisley} {vrarcade;#var {midwayPlace} {moseisley}}
+#alias {gomoseisley} {localarcade;n;w;enter pod;#delay 10 n}
+#alias {fmoseisley} {s;#delay 10 door;e;s;fvrarcade}
+
+#nop Dune by Leto
+#nop Monster class range since inception: 75 to 75
+#alias {dune} {vrarcade;#var {midwayPlace} {dune}}
+#alias {godune} {localarcade;n;enter pod}
+#alias {fdune} {exit;s;fvrarcade}
+
+#nop Borg Cubes by Cirrus
+#nop Monster class range since inception: 8,040 to 9,235
+#alias {borgcubes} {vrarcade;#var {midwayPlace} {borgcubes}}
+#alias {goborgcubes} {localarcade;n;e;enter pod}
+#alias {fborgcubes} {portal;w;s;fvrarcade}
+
+
+#nop MegaTokyo
+#var {toMegaTokyo} {0}
+#alias {megatokyo} {#var {toMegaTokyo} {1};getcash 10000;sp;u;#2 w}
+#act {A speeding bullet train pulls into the station.} {#if {$toMegaTokyo == 1} {enter train} {#if {$toMegaTokyo == -1} {enter train;#map leave} {}}}
+#alias {fmegatokyo} {#var {toMegaTokyo} {-1};go exit}
+#alias {fmegatokyolocal} {#2 e;d;scipri}
+#act {The train comes to a halt at the Mega-Tokyo station.  The train doors open.} {
+	leave;
+	#var {toMegaTokyo} {0};
+	loadmap megatokyo;
+}
+#act {The train comes to a halt at the Houston station.  The train doors open.} {
+	leave;
+	#var {toMegaTokyo} {0};
+	fmegatokyolocal;
+}
+#alias {dogoro} {go goro;give all to goro;go upto2;push button;i}
+

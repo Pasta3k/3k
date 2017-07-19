@@ -1,79 +1,64 @@
-#nop These people are simply fools.
-#gag {Bane}
-#alias {ungagbane} {#ungag Bane}
+#read gags/general.tt
+#read gags/armours.tt
+#read gags/weapons.tt
+#read gags/dogs.tt
+#read gags/people.tt
+#read gags/random.tt
 
-#nop Idiots shouting about playing cult must die.
-#gag {play cult}
-#gag {playcult}
-#gag {clay pult}
-#gag {CULT}
+#read gags/areas/abbey.tt
+#read gags/areas/aegis.tt
+#read gags/areas/alaren.tt
+#read gags/areas/anchorman.tt
+#read gags/areas/ant_hole.tt
+#read gags/areas/antitech.tt
+#read gags/areas/avault.tt
+#read gags/areas/boomers.tt
+#read gags/areas/bshroud.tt
+#read gags/areas/dukenukem.tt
+#read gags/areas/carnegie_hall.tt
+#read gags/areas/chaos_sewers.tt
+#read gags/areas/chess.tt
+#read gags/areas/chicken_plant.tt
+#read gags/areas/chinchillas.tt
+#read gags/areas/chinese_checkers.tt
+#read gags/areas/cowville.tt
+#read gags/areas/cubes.tt
+#read gags/areas/derthalas.tt
+#read gags/areas/dragon_realms.tt
+#read gags/areas/enchanted_spring.tt
+#read gags/areas/funk.tt
+#read gags/areas/gencorp.tt
+#read gags/areas/hamplant.tt
+#read gags/areas/lonely_keep.tt
+#read gags/areas/longshadow.tt
+#read gags/areas/mahjongg.tt
+#read gags/areas/mantis_swamp.tt
+#read gags/areas/portal_of_life.tt
+#read gags/areas/rimalkin_cave.tt
+#read gags/areas/scorp.tt
+#read gags/areas/serinth.tt
+#read gags/areas/sewer.tt
+#read gags/areas/smurfs.tt
+#read gags/areas/starcraft.tt
+#read gags/areas/tacos.tt
+#read gags/areas/the_land.tt
+#read gags/areas/tower.tt
+#read gags/areas/westersea.tt
+#read gags/areas/whorehouse.tt
+#read gags/areas/xaxis.tt
 
-#nop Ring of Thundering
-#gag {screams as titanic bolts of lightning explode from %0 ring}
+#read gags/guilds/angel.tt
+#read gags/guilds/breed.tt
+#read gags/guilds/changelings.tt
+#read gags/guilds/elemental.tt
+#read gags/guilds/fremen.tt
+#read gags/guilds/gentech.tt
+#read gags/guilds/jedi.tt
+#read gags/guilds/juggernaut.tt
+#read gags/guilds/knight.tt
+#read gags/guilds/monk.tt
+#read gags/guilds/necro.tt
+#read gags/guilds/priest.tt
+#read gags/guilds/psicorp.tt
+#read gags/guilds/sii.tt
 
-#nop Blade de la Bobbitt
-#gag {^You slice and dice the }
-#gag {^You hack away at }
-
-#nop Rod of Garnthax
-#gag {Pulsing %0 spell points.}
-#gag {Pulsing %0 hit points.}
-#gag {You're at max}
-
-#nop Rasta-dolls
-#gag {Dora says}
-#gag {Cathy says}
-
-#nop Duke Nukem Helmet
-#gag {says: Come get some.$}
-#gag {says: Damn I'm good.$}
-#gag {says: Damn those alien bastards are gonna pay for shooting up my$}
-#gag {says: It's time to kick ass and chew bubble gum...and I'm all$}
-#gag {says: Let's rock.$}
-#gag {says: Nobody steals our chicks... and lives.$}
-#gag {says: Piece of cake.$}
-#gag {says: What are you waiting for, Christmas?$}
-
-#nop 6-fingered sword
-#gag {sa{y|ys}: You are sure no one's following us?$}
-#gag {sa{y|ys}: I am waiting for you Vizzini!$}
-#gag {sa{y|ys}: Fezzik, are there rocks ahead?$}
-#gag {sa{y|ys}: Hello! My name is Inigo Montoya. You$}
-#gag {^%skilled my father. Prepare to die!$}
-#gag {sa{y|ys}: I want my father back you son of a bitch!$}
-#gag {sa{y|ys}: Who are you? I MUST know!$}
-#gag {sa{y|ys}: Naturally you must expect me to attack with Capo Ferro!$}
-#gag {sa{y|ys}: You seem a decent fellow. I hate to kill you.$}
-#gag {sa{y|ys}: I know something you don't know. I am NOT left handed!$}
-#gag {sa{y|ys}: There will be BLOOD tonight!!$}
-#gag {sa{y|ys}: Offer me money. Power too, promise me that!$}
-#gag {sa{y|ys}: Humiliations galore!$}
-
-#nop Dog stuff
-#gag { thought he saw a squirrel, but it wasn't.$}
-#gag { sniffs at something on the ground.$}
-#gag { tears a chunk of flesh from }
-#gag { bounds about the room}
-
-#nop Jedi crap
-#gag {steps aside, avoiding damage}
-#gag {takes a glancing blow}
-#gag {breathing deepens}
-#gag {appears rested}
-#gag {closes %0 eyes momentarily and appears refreshed.}
-
-#nop Chinchillas whining!
-#gag {The baby chinchilla whines when you hurt it.}
-#gag {The baby chinchilla frolicks in the sand.}
-
-#nop Random melee crap must die.
-#gag {^hide}
-#gag {Freezing shards of ice lance from}
-#gag {enemy is overwhelmed with fear as the darkness smothers them}
-#gag {The {gleaming|radiant} sickle}
-#gag {^Avatar of Elentil}
-#gag {leaps into the air and comes crashing down on}
-#gag {grants a blessing of the spirit to}
-#gag {hurls a magical stone}
-#gag {^Serenity descends over the area as}
-#gag {stim vats activate}

@@ -1,0 +1,4 @@
+#nop #alias {cor} {evoke corpse drain;#nop #if {autobag == 0} {get coins} {}}
+
+#alias {cor} {offer corpse;divvy gold}
+

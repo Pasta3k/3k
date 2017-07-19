@@ -1,0 +1,22 @@
+#gag {Private screams: I'm invincible!}
+#gag {Private screams: Help!}
+#gag {Private screams: You just wait till Sarge gets here!}
+#gag {Marine screams: Now you've done it! Now we're all gonna die!}
+#gag {Scv shocks you with its Fusion Cutters.  }
+#gag {Firebat screams: I'm gonna turn you into a crispy critter! }
+#gag {Firebat screams: Your momma won't be able to identify your fried corpse! }
+#gag {Corporal screams: I order you to stop! }
+#gag {Corporal screams: Get outta my face, before I kill you! }
+#gag {Corporal screams: Where are those stinkin privates? }
+#gag {^Firebat.$}
+#gag {^Marine.$}
+#gag {^Scv.$}
+#gag {Marine screams: Kill the traitor! }
+#gag {The Zergling unleashes a primal scream as it tears through flesh!}
+#gag {Zergling cuts through bone with its razor-like claws.}
+#gag {Blood spews as the Zergling takes another bite of flesh.}
+#gag {You scream in pain as the SCV cuts through your armour! }
+#gag {The spirit points an ethereal finger at %0, intoning in a low voice.}
+#gag {The spirit emits an unearthly roar in the direction of %0.}
+#gag {The spirit rasps: I will destroy you, %0.}
+

@@ -1,0 +1,26 @@
+#class {kingdoms_jugger}
+
+#nop Jugger guild depot to science entry...
+#alias {js} {u;#4 n;d;#25 n;#13 w;nw;#3 n}
+#alias {fjs} {#3 s;se;#13 e;#25 s;u;#4 s;d}
+
+#nop To COT
+#alias {cot} {fjs;out;#2 w;s;#2 w;n}
+#alias {fcot} {s;#2 e;n;#2 e;enter;js}
+
+#nop Getting to/from the 3 Kingdoms easily...
+#alias {gofant} {fjs;out;#2 w;s;#4 w;n;#3 w}
+#alias {fp} {gofant;portal}
+#alias {sp} {fjs}
+#alias {cp} {fjs;out;#2 w;#3 n;#2 w;n;enter}
+
+#nop Get back to the Elemental guild hall...
+#alias {sqg} {#7 w;#3 s;#4 e;enter}
+#alias {fanpri} {portal;#3 e;s;#4 e;n;#2 e;enter;js}
+#alias {scipri} {js}
+#alias {chapri} {vortex;s;#2 e;#3 s;#2 e;enter;js}
+
+#nop Let's get to the newbie bin.
+#alias {newb}  {sp;out;#2 w;#4 s;#2 w;s}
+#alias {fnewb} {n;#2 e;#4 n;#2 e;enter;scipri}
+

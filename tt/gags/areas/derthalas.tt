@@ -1,0 +1,90 @@
+#gag {The zombie opens her mouth to grin at you, hunger in her eyes!}
+#gag {Strange shadows can be seen moving amongst the trees.}
+#gag {The mighty creature impales you on its horns!}
+#gag {Far above you, in the night sky, an echoing screeching can be heard.}
+#gag {You hear a painful, unholy screeching coming from the %0 sky.}
+#gag {The dry caw of a raven is heard drifting on the crisp, night wind.}
+#gag {A strange clicking can be heard somewhere nearby.}
+#gag {The undead elf rakes you with its vile, filth-ridden hands!}
+#gag {The elven creature creaks violently as its bones splinter apart.}
+#gag {The elven skeleton strikes into you mercilessly!}
+#gag {The vile animal lets loose a horrifying howl!}
+#gag {The dark creature rears back, preparing to charge.}
+#gag {The blasphemous beast jumps upon you, knocking you to the ground!}
+#gag {The wolf sinks its yellow teeth into your flesh!}
+#gag {The undead elf moans horribly.}
+#gag {The elf's bones click horribly.}
+#gag {The vile elf slits your throat.  Blood sprays everywhere!}
+#gag {The evil skeletal elf stalks you mercilessly.}
+#gag {The elven zombie crushes you in a deathly grasp!}
+#gag {The elven creature bites into your flesh!}
+#gag {The skeleton beats you with its bony fists!}
+#gag {A low moaning comes from the deathly creature.}
+#gag {The zombie smashes you with its meaty fists!}
+#gag {The rotting buck crushes your chest with its powerful hooves!}
+#gag {Strange shapes scurry under your footfalls.}
+#gag {The elven creature is not shaken by your attacks!}
+#gag {The horrid canine rams into you, pummeling your chest!}
+#gag {The vile canine lets loose a horrifying howl!}
+#gag {The elf bubbles bile and blood within its horrid mouth.}
+#gag {A slight wind blows through the dark forest.}
+#gag {The elven hunter carves into you with its chipped blade!}
+#gag {A rotted slab of flesh slips from the unliving elven carcass.}
+#gag {Dark, mournful wailing can be heard from the far}
+#gag {The stag tosses its head back and lets out a challenging call.}
+#gag {The stag pummels %0 with its hooves!}
+#gag {The stag charges %0 and butts %1 in the chest!}
+#gag {Poisonous resin from the elf's leaf blade weakens %0!}
+#gag {A decaying, rotted leaf falls from a tree nearby.}
+#gag {Raking along the hallowed dirt, the adult treant gains power.}
+#gag {You hear a faint chanting.  The adult treant gains in strength.}
+#gag {The adult treant grasps into the misty air and soothes its wounds.}
+#gag {The adult treant crushes your head in its gaping maw!}
+#gag {In its death throes, the adult treant rapidly attacks with its branches!}
+#gag {The adult treant attacks with tenacity as its protective bark is weakened further.}
+#gag {The adult treant falters from numerous wounds.}
+#gag {Branches broken and creaking, the adult treant fights on!}
+#gag {A bright red bolt of lightning energizes the adult treant}
+#gag {The dead husks of leaves crunch beneath your feet.}
+#gag {The moonlight flickers all around you as the branches block the light.}
+#gag {A little mole scurries across the garden.}
+#gag {The zombie tilts %0 head to one side, trying to get a good look at you!}
+#gag {The cold moonlight trickles at your feet.}
+#gag {The trees of the dark forest seem to rustle a bit more contentedly.}
+#gag {You hear a distant moaning, coming from all around you.}
+#gag {Some great, dark shape flies just overhead.  As the unholy creature}
+#gag {passes, it lets loose a bloodcurdling screech.  The hideous noise}
+#gag {tendrils pain into your mind, like no other sound ever has before!}
+#gag {Southwest of here, you can hear a dark cry like some twisted bird of prey.}
+#gag {Behind you there is a muffled scream - you turn and find nothing.}
+#gag {Black shadows flutter just out of range of your sight.}
+#gag {A low, unearthly moaning rides the night air.}
+#gag {Sorrowful moans of agony can be heard northwest.}
+#gag {The young treant grasps into the misty air and soothes its wounds.}
+#gag {The %0 treant begins to attack more ferociously as its protective bark is}
+#gag {^whittled away.$}
+#gag {The young treant attacks with tenacity as its protective bark is weakened further.}
+#gag {Raking along the hallowed dirt, the young treant gains power.}
+#gag {You hear a faint chanting.  The young treant gains in strength.}
+#gag {In its death throes, the young treant rapidly attacks with its branches!}
+#gag {The %0 treant advances menacingly toward you.}
+#gag {The elven guard freezes you with a slice of its spirit blade!}
+#gag {The ghost grasps you in an icy embrace!}
+#gag {The elven guard screams as it attacks you!}
+#gag {The spirit screams in holy peace as it dissipates into oblivion!}
+#gag {The skeleton looks at you in a moment of peace, then crumples to the ground.}
+#gag {The eyes roll back into the skull of the creature as it slumps to the ground.}
+#gag {The fallen corpse of the proud creature lets loose a final, faint sigh.}
+#gag {Blowing freely, the chilling wind grips your skin in an icy embrace.}
+#gag {^Elven Vampire.$}
+#gag {^Vampire.$}
+#gag {^Elven Vampiress.$}
+#gag {^Vampiress.$}
+#gag {The dark creature moves with a speed you have never seen before.           }
+#gag {The elven vampiress bites %0 neck and feeds on the lifeblood!}
+#gag {The elven vampiress' eyes rage with the fires of hell.                     }
+#gag {The ghastly beast rakes into %0 face with a hellfire rage!}
+#gag {The greenish-blue sphere of light quickly fades away to nothing.}
+#gag {The elven vampire's eyes rage with the fires of hell.                      }
+#gag {The elven vampire bites %0 neck and feeds on the lifeblood!}
+

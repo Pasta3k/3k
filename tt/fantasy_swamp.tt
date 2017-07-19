@@ -1,0 +1,27 @@
+#nop Fantasy Swamp area macros.
+
+#nop 136 = Troll Alliance by Requiem.
+#nop Monster class range since inception: 14,355 to 73,440
+#alias {trollall} {swamp;#3 w;in}
+#alias {ftrollall} {out;#3 e;fswamp}
+
+#nop 137 = Fachan by Trandamere.
+#nop Monster class range since inception: 5,190 to 39,735
+#alias {fachan} {swamp;#2 w;#3 s}
+#alias {ffachan} {#3 n;#2 e;fswamp}
+
+#nop 138 = Lair of the Matriarch by Requiem.
+#nop Monster class range since inception: 50 to 922,460
+#alias {matriarch} {swamp;#4 s;#2 enter}
+#alias {fmatriarch} {#2 leave;#4 n;fswamp}
+
+#nop 139 = Dreamville by Crowley.
+#nop Monster class range since inception: 60 to 368,215
+#alias {dreamville} {swamp;#4 s;se;#3 e;loadmap dreamville}
+#alias {fdreamville} {#map destroy;#3 w;nw;#4 n;fswamp}
+
+#nop 140 = Marsh Goblins by Skinless.
+#nop Monster class range since inception: 10,875 to 13,910
+#alias {marsh} {swamp;#4 e}
+#alias {fmarsh} {#4 w;fswamp}
+

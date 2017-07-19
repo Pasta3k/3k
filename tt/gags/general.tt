@@ -1,0 +1,16 @@
+#gag {^Autosave.$}
+#gag {Saving guild & player status.}
+
+#nop Rasta-dolls
+#gag {Dora says}
+#gag {Cathy says}
+
+#gag {^CAPSLOCK}
+
+#nop Thorsday crap
+#gag {It's THORSDAY!  Time to grab a tankard o' ale and get ta killin'}
+
+#gag {Gart shouts: I want everyone to know that %0 is a big dumb meany.}
+
+#gag {Your reputation with %0 has {in|de}creased slightly.}
+

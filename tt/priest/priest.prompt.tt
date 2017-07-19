@@ -1,0 +1,100 @@
+#alias {test}
+{
+    #delay 0 #showme { HP:420/1140 C:94%  NRG:411/491(10)  SP:0/216  B:2(28%) G2N:19k   };
+    #delay 10 #showme { HP:1101/1140 C:100%  NRG:479/491(10)  SP:3/216  B:2(15%) G2N:20k   T:Amur :87%};
+    #delay 20 #showme { HP:1144/1144 C:100%  NRG:492/500(11)  SP:216/216  B:2(50%) G2N:116k  };
+    #delay 30 #showme { HP:1144/1144 C:100%  NRG:492/500(11)  SP:216/216  B:2(50%) G2N:116k   T:Amur :87%};
+    #delay 40 #showme { HP:318/1144 C:100%  NRG:504/506(11)  SP:0/216  B:2(18%) G2N:221k  };
+    #delay 50 #showme { HP:318/1144 C:100%  NRG:504/506(11)  SP:0/216  B:2(18%) G2N:221k   T:Amur :87%};
+}
+
+#function {colscale}
+{
+        #switch {10 * %1 / %2}
+        {
+                #case {0} {#return <119>};
+                #case {1} {#return <119>};
+                #case {2} {#return <119>};
+                #case {3} {#return <139>};
+                #case {4} {#return <139>};
+                #case {5} {#return <139>};
+                #case {6} {#return <139>};
+                #case {7} {#return <169>};
+                #case {8} {#return <169>};
+                #case {9} {#return <169>};
+                #default  {#return <129>}
+        }
+}
+
+#var hpbar_label <088>;
+#var hpbar_points_full <129>;
+#var hpbar_points_high <169>;
+#var hpbar_points_med <139>;
+#var hpbar_points_low <119>;
+
+#action {^HP: %1/%2 SP: %3/%4 MANA: %5/%6 PTY: (%7%) CL: [%8%] MND: %9/%10 [%11%] GXP%: [%12%]}
+{
+   #var hpcolor @colscale{%1;%2};
+   #var spcolor @colscale{%3;%4};
+   #var manacolor @colscale{%5;%6};
+   #var ptycolor @colscale{%7;100};
+   #var cleansingcolor @colscale{%8;100};
+   #var mendcolor1 @colscale{%9;%10};
+   #var mendcolor2 @colscale{%11;100};
+
+   #var hpcur %1;
+   #var hpmax %2;
+
+   #var spcur %3;
+   #var spmax %4;
+
+   #var manacur %5;
+   #var manamax %6;
+
+   #var ptycur %7;
+   #var ptymax 100;
+
+   #var cleansingcur %8;
+   #var cleansingmax 100;
+
+   #var mendscur %9;
+   #var mendsmax %10;
+   #var mendspct %11;
+
+   #var gxp %12;
+
+   #format {hpmsg}    {%sHP:%s%+4s%s/%s%s} {$hpbar_label} {$hpcolor} {$hpcur} {$hpbar_label} {$hpbar_points_full} {$hpmax};
+   #format {spmsg}    {%sSP:%s%+3s%s/%s%s} {$hpbar_label} {$spcolor} {$spcur} {$hpbar_label} {$hpbar_points_full} {$spmax};
+   #format {manamsg}   {%sM:%s%+3s%s/%s%s%s} {$hpbar_label} {$manacolor} {$manacur} {$hpbar_label} {$hpbar_points_full} {$manamax} {$hpbar_label};
+   #format {ptymsg}  {%sPTY:%s%+3s%s%s} {$hpbar_label} {$ptycolor} {$ptycur} {$hpbar_label} {%};
+   #format {cleansingmsg}  {%sCL:%s%+3s%s%s} {$hpbar_label} {$cleansingcolor} {$cleansingcur} {$hpbar_label} {%};
+   #format {mendmsg} {%sMND:%s%+2s%s/%s%+2s%s (%s%s%s%s)} {$hpbar_label} {$mendcolor1} {$mendscur} {$hpbar_label} {$mendcolor1} {$mendsmax} {$hpbar_label} {$mendcolor2} {$mendspct} {$hpbar_label} {%};
+   #format {gxpmsg}   {%sGXP:%s%+6s%s} {$hpbar_label} <139> {$gxp} {%};
+
+   #format {prompt1} {%s %s %s %s %s %s %s} {$hpmsg} {$spmsg} {$manamsg} {$ptymsg} {$cleansingmsg} {$mendmsg} {$gxpmsg};
+   #format {prompt2} {%s} {};
+}
+{2};
+
+#action {^HP: %1/%2 SP: %3/%4 MANA: %5/%6 PTY: (%7%) CL: [%8%] MND: %9/%10 [%11%] GXP%: [%12%] E: [none]}
+{
+   #showme {HP: %1/%2 SP: %3/%4 MANA: %5/%6 PTY: (%7%) CL: [%8%] MND: %9/%10 [%11%] GXP%: [%12%]};
+} {1};
+
+#action {^HP: %1/%2 SP: %3/%4 MANA: %5/%6 PTY: (%7%) CL: [%8%] MND: %9/%10 [%11%] GXP%: [%12%] E: [%13 : %14%]}
+{
+   #showme {HP: %1/%2 SP: %3/%4 MANA: %5/%6 PTY: (%7%) CL: [%8%] MND: %9/%10 [%11%] GXP%: [%12%]};
+
+   #var mob_health_color @colscale{%14;100};
+   #var mob %13;
+   #var mob_health %14;
+
+   #format {enemymsg1} {%sEnemy:%s%s:} {$hpbar_label} <119> {$mob};
+   #format {enemymsg2} {%s%s%s%s} {$mob_health_color} {$mob_health} {$hpbar_label} {%};
+   
+   #format {prompt2} {%s %s} {$enemymsg1} {$enemymsg2};
+}
+{1};
+
+#prompt {^HP: %1/%2 SP: %3/%4 MANA: %5/%6 PTY: (%7%) CL: [%8%] MND: %9/%10 [%11%] GXP%: [%12%]} ${prompt1} ${prompt2} 
+

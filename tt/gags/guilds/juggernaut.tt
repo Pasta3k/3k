@@ -1,0 +1,43 @@
+#gag {The flames distracting %0 have worn off.}
+#gag {%0 punches %1.$}
+#gag {%0 kicks %1.$}
+#gag {sucks the nutrients out of the corpse.}
+#gag {^20(%0).                                                                    $}
+#gag {^Lrm 20(%0).                                                                $}
+#gag {With {an|a} {deftly|insanely|dexterously|expertly|horribly|agilely|bloodily|sickeningly|frightfully|handily|amazingly|nimbly} vicious strike, %0 crushes the %1!}
+#gag {%0 {deftly|insanely|dexterously|expertly|horribly|agilely|bloodily|sickeningly|frightfully|handily|amazingly|nimbly} smashes the lifeblood from the %1!}
+#gag {%0 catches on fire due to %1's fierce attacks.}
+#gag {%0's attacks fuel the fire on the cube!}
+
+#gag {Nicholas Kerensky proclaims}
+
+#gag {The computer chirps 'Saving guild status.'}
+#gag {GEE, what are we fighting then?}
+#gag {Pirate rumbles in.}
+#gag {^You kick}
+#gag {^You try to kick}
+#gag {^You try to jump on}
+#gag {^You jump attack}
+#gag {^You punch}
+#gag {^You try to punch}
+#gag {^Your jumpjets ignite and}
+#gag {^The flames distracting}
+#gag {^The box doesn't want that... If you feel otherwise, ask a$}
+#gag {^Sakhan. This should probably be donated to the crap box.$}
+#gag {^Your guild prevents you from doing that.$}
+#gag {^You are credited %0/%0 coins.$}
+#gag {^You can't drop your party banner.$}
+#gag {stim vats activate}
+#gag {^{with | }his tank.$}
+#gag {A flash of light from the CMC-660 fills everyone in your party with invigorating warmth!}
+
+#gag {%0 systems hum quietly as they evaluate %1.}
+
+#gag {Berserker rage takes over, and %0 slashes at his target}
+#gag {^wildly!$}
+
+#gag {The battle droid fires lasers into %0!}
+#gag {The droid launches a shoulder mounted rocket into %0!}
+#gag {A medical drone flies into the room and transfers something to}
+#gag {%0 through a hose.}
+

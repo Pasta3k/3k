@@ -1,0 +1,426 @@
+#nop I have a map of Science, too.  Let's macro all those areas.
+
+#alias {scid} {sp;u;#4 n;d}
+#alias {usci} {u;#4 s;d;scipri}
+
+#nop 1  = Juggernaut Guild (NW)
+#alias {jugg} {scid;#25 n;#13 w;nw}
+#alias {fjugg} {se;#13 e;#25 s;usci}
+
+#nop 2  = Rocky Mountainside by Polsy.
+#nop Frantically-digging cyber, 20k
+#alias {rocky} {scid;#23 n;#13 w;trail;loadmap rocky}
+#alias {frocky} {#map destroy;trail;#13 e;#23 s;usci}
+
+#nop 3  = Genlab by Tarin.
+#nop Monster class range since inception: 255 to 56,805
+#alias {genlab} {scid;#15 n;#13 w;se}
+#alias {fgenlab} {nw;#13 e;#15 s;usci}
+
+#nop 4  = Contention Training Grounds by Hobbes.
+#nop Monster class range since inception: 13,095 to 23,630
+#alias {contention} {scid;#12 n;#13 w;se}
+#alias {fcontention} {nw;#13 e;#12 s;usci}
+
+#nop 5  = Aurora Missile Base by Skeet.
+#nop Monster class range since inception: 305 to 13,490
+#alias {aurora} {scid;#10 n;#13 w;clear rubble;nw}
+#alias {faurora} {se;#13 e;#10 s;usci}
+
+#nop 6  = Valley of the Tribes by Kwuteg.
+#nop Monster class range since inception: 22,375 to 52,575
+#alias {tribes} {#var {kstr} {human};scid;#28 n;#12 w;nw;loadmap tribes}
+#alias {ftribes} {#map destroy;se;#12 e;#28 s;usci}
+
+#nop 7  = Mercenary Tent by Mithrandir.
+#nop Monster class range since inception: 2,300 to 3,315
+#alias {merctent} {scid;#18 n;#12 w;enter}
+#alias {fmerctent} {leave;#12 e;#18 s;usci}
+
+#nop 8  = Whirring Terminal (Touch and start here upon login.)
+#alias {whirrt1} {scid;#15 n;#12 w}
+#alias {fwhirrt1} {#12 e;#15 s;usci}
+#alias {whirrt2} {scid;n;#10 w;#2 n}
+#alias {fwhirrt2} {#2 s;#10 e;s;usci}
+#alias {whirrt3} {scid;#20 n;#13 e;n}
+#alias {fwhirrt3} {s;#13 w;#20 s;usci}
+#alias {whirrt4} {scid;#18 n;#20 e}
+#alias {fwhirrt4} {#20 w;#18 s;usci}
+#alias {whirrt5} {scid;#7 n;#20 e}
+#alias {fwhirrt5} {#20 w;#7 s;usci}
+
+#nop 9  = Luddite Commune by Telcontar.
+#nop Mobs vary between 20 and 30k.
+#alias {luddite} {scid;#11 n;#12 w;path;loadmap luddite}
+#alias {fluddite} {#map destroy;path;#12 e;#11 s;usci}
+
+#nop 10 = Alien Ship by Distortion.
+#nop Sectoid/Muton Man/Floater = 20k.  Sectoid Leader = 27k.  Despian = 55k.  Michael/Varant Aspian = 63k.
+#alias {alienship} {scid;#21 n;#11 w;enter}
+#alias {falienship} {leave;#11 e;#21 s;usci}
+
+#nop 11 = Mars by Nanook.
+#nop Miners = 13k.  Bots = 30k.
+#alias {mars} {scid;#2 n;#11 w;nw;loadmap mars}
+#alias {fmars} {#map destroy;se;#11 e;#2 s;usci}
+#act {A landing pad in the Cytel compound (s)} {loadmap mars;#map go landing_pad}
+#act {A docking bay in the Martian space port (sw)} {loadmap mars2}
+
+#nop 12 = Lost City by Aserena.
+#nop Monster class range since inception: 6,505 to 159,110
+#nop 6 rooms total so far, need a key...?
+#alias {lostcity} {scid;#17 n;#9 w;ne}
+#alias {flostcity} {sw;#9 e;#17 s;usci}
+
+#nop 13 = Crashed Satellite by Mithrandir.
+#alias {csat} {scid;#13 n;#9 w;trail}
+#alias {fcsat} {trail;#9 e;#13 s;usci}
+
+#nop 14 = Ruined Bunker by Druss.
+#nop Monster class range since inception: 2,455 to 66,755
+#nop 3 rooms so far, need to figure out how to get down the elevator shaft
+#alias {rbunk} {scid;#2 n;#9 w;ne}
+#alias {frbunk} {sw;#9 e;#2 s;usci}
+
+#nop 15 = Redneck Trailer by Lorderon.
+#nop MARBLE: Tobacco
+#alias {redneck} {scid;#7 n;#8 w;enter}
+#alias {fredneck} {leave;#8 e;#7 s;usci}
+
+#nop 16 = Desert Path by Polsy.
+#nop Monster class range since inception: 12,640 to 14,165
+#nop 3 rooms so far.
+#alias {despath} {scid;n;#8 w;s;path}
+#alias {fdespath} {path;n;#8 e;s;usci}
+
+#nop 17 = Ruined Barn by Vivianne.
+#nop Monster class range since inception: 6,335 to 7,645
+#alias {rbarn} {scid;#21 n;#7 w;enter}
+#alias {frbarn} {leave;#7 e;#21 s;usci}
+
+#nop 18 = Last Chance Truck Stop by Jeffo.
+#nop Monster class range since inception: 13,095 to 56,915
+#nop 5 rooms total.
+#alias {truckstop} {scid;#5 n;#7 w;road}
+#alias {ftruckstop} {road;#7 e;#5 s;usci}
+
+#nop 19 = Water Tower by Xiola.
+#nop MARBLE: Iron
+#alias {watertower} {scid;n;#7 w;enter}
+#alias {fwatertower} {leave;#7 e;s;usci}
+
+#nop 20 = MicroTech by Vaix.
+#nop MARBLE: Lead
+#nop Guards are 20k.  Employees are 7-12k.  Dock Workers are 14k.  Bill Gates is 36k.
+#alias {microtech} {#var {kstr} {human};scid;#26 n;#6 w;path;#4 e;push button}
+#alias {fmicrotech} {#5 w;path;#6 e;#26 s;usci}
+
+#nop 21 = Weatherstation by Shadowlotus.
+#nop MARBLE: Titanium
+#alias {weatherstation} {scid;#8 n;#5 w;enter}
+#alias {fweatherstation} {leave;#5 e;#8 s;usci}
+
+#nop 22 = Gas Station by Angio.
+#alias {gasstation} {scid;#4 n;#5 w;se}
+#alias {fgasstation} {nw;#5 e;#4 s;usci}
+
+#nop 23 = Sandman's Oasis by Mithrandir.
+#alias {sandman} {scid;n;#4 w;#3 s;se}
+#alias {fsandman} {nw;#3 n;#4 e;s;usci}
+
+#nop 24 = Impact Crater by Saragon.
+#nop MARBLE: Chondrite
+#alias {crater} {scid;n;#3 w;#4 s;nw}
+#alias {fcrater} {se;#4 n;#3 e;s;usci}
+
+#nop 25 = SolChem by Chrome.
+#nop MARBLE: Electrum
+#nop Gang members range between 15-37k.
+#alias {solchem} {#var {kstr} {human};scid;#27 n;#2 w;enter;loadmap solchem}
+#alias {fsolchem} {#map destroy;leave;#2 e;#27 s;usci}
+
+#nop 26 = Bomb Shelter by Flaxen.
+#nop NEED LIGHT!
+#alias {bombshelter} {scid;#12 n;#2 w;open door;enter}
+#alias {fbombshelter} {exit;#2 e;#12 s;usci}
+
+#nop 27 = Dan's Garage by Garet.
+#alias {dansgarage} {scid;n;#2 w;ne}
+#alias {fdansgarage} {sw;#2 e;s;usci}
+
+#nop 28 = UED Installation by Heath.
+#nop Largest mobs are around class 1500.
+#alias {ued} {scid;#6 n;w;enter}
+#alias {fued} {leave;e;#6 s;usci}
+
+#nop 29 = Incinerator by Tuesdai.
+#alias {incin} {scid;#4 n;w;ne}
+#alias {fincin} {sw;e;#4 s;usci}
+
+#nop 30 = Schroedinger's Lab by Glorfindel.
+#nop QUEST: Schroedinger's Lab.
+#alias {schroed} {scid;#2 n;w;enter}
+#alias {fschroed} {leave;e;#2 s;usci}
+
+#nop 31 = Hidden Bunkers by Thyros.
+#alias {hbunk1} {scid;#20 n;d}
+#alias {fhbunk1} {u;#20 s;usci}
+#alias {hbunk2} {scid;n;#2 e;d}
+#alias {fhbunk2} {u;#2 w;s;usci}
+#alias {hbunk3} {scid;#18 n;#25 e;#5 n;d}
+#alias {fhbunk3} {u;#5 s;#25 w;#18 s;usci}
+
+#nop 32 = ICARE by Polsy.
+#nop Patient is 2300, Surgeon is 6800.
+#alias {icare} {scid;#15 n;d}
+#alias {ficare} {u;#15 s;usci}
+
+#nop 33 = Antimammonist Vault by Solo.
+#nop Guards are between 54k and 72k.  Tough.  Security Droid Unit is 287k.
+#alias {avault} {scid;#6 n;path}
+#alias {favault} {path;#6 s;usci}
+
+#nop 34 = Moby.
+#alias {moby} {scid;#3 n;e}
+#alias {fmoby} {w;#3 s;usci}
+
+#nop 35 = Camazots by Mischief.
+#nop Demon Guards are a very hard 40k.
+#alias {camazots} {scid;#11 n;#2 e;enter}
+#alias {fcamazots} {leave;#2 w;#11 s;usci}
+
+#nop 36 = Bombfreak's Abbey by Syd.
+#nop MARBLE: Uranium
+#nop Worshippers are 6k.  Guards are 15k.  Father is 15k.  Mother is 12k.  Child is 5k.
+#nop Elite Guards are 23k.  Police Chief is 33k.
+#alias {antitech} {#var {kstr} {human};scid;#8 n;#2 e;path;loadmap antitech}
+#alias {fantitech} {#map destroy;path;#2 w;#8 s;usci}
+
+#nop 37 = HTC Northern Expansion by Pistil.
+#alias {htcn} {scid;#19 n;#3 e;u}
+#alias {fhtcn} {d;#3 w;#19 s;usci}
+
+#nop 38 = Old Guard Tower by Ulme.
+#alias {oldguard} {scid;#3 n;#3 e;tower}
+#alias {foldguard} {leave;#3 w;#3 s;usci}
+
+#nop 39 = Desert Mine by Vivianne.
+#nop LIGHT NEEDED!
+#alias {desmine} {scid;#2 n;#3 e;d}
+#alias {fdesmine} {u;#3 w;#2 s;usci}
+
+#nop 40 = Fallout Shelter by Pistil.
+#nop MARBLE: Ochre
+#nop Refugees are 5k-14k.  Rats are 4k.  Military Guards are 18-20k.  Cockroaches are unkillable.
+#alias {fallout} {scid;#24 n;#4 e;#2 d;loadmap fallout}
+#alias {ffallout} {#map leave;#map destroy;#2 u;#4 w;#24 s;usci}
+
+#nop 41 = Toxic Waste Dump by Mithrandir.
+#alias {twaste} {scid;#5 n;#4 e;path}
+#alias {ftwaste} {path;#4 w;#5 s;usci}
+
+#nop 42 = Hamilton Plant by Tuesdai.
+#nop Drivers are 2k, Workers are 6k, Guards are 16k. Martin O'Dell is 35k, Jeffrey Hamilton is 60k.
+#alias {hamplant} {#var {kstr} {human};scid;#26 n;#5 e;d;loadmap hamplant}
+#alias {fhamplant} {#map destroy;u;#5 w;#26 s;usci}
+#act {This guard isn't going to let you go that way!} {#map undo}
+
+#nop 43 = GenCorps by Pistil.
+#nop Guards are 15-20k.  Patrollers are 22k.  Officers are 20-25k.  Sergeant is 33k.
+#nop Strike Guard is 23k.  Battle Master is 150k.
+#alias {gencorp} {#var {kstr} {human};#var {kstr2} {patroller};sp;enter;u;#3 e;d;e;path;#12 n;road;loadmap gencorp}
+#alias {fgencorp} {#map leave;road;#12 s;path;w;u;#3 w;d;scipri}
+#act {The Officer knocks you back with the butt of his weapon!} {#map undo}
+#act {The guard knocks you back with the butt of his weapon!} {#map undo}
+
+#nop 44 = Eastern Hub US Exit.
+#alias {ehub} {scid;#4 n;#6 e}
+#alias {fehub} {#6 w;#4 s;usci}
+
+#nop 45 = Old Sewers by Ariakus.
+#nop MARBLE: Lime
+#alias {oldsewers} {scid;#23 n;#7 e;d}
+#alias {foldsewers} {climb ladder;#7 w;#23 s;usci}
+
+#nop 46 = Jeremy's Swamp by Vivianne.
+#alias {jswamp} {scid;#3 n;#7 e;ne}
+#alias {fjswamp} {sw;#7 w;#3 s;usci}
+
+#nop 47 = Oasis in the Badlands by Lipscom.
+#alias {oasis} {scid;#9 n;#8 e;se}
+#alias {foasis} {nw;#8 w;#9 s;usci}
+
+#nop 48 = Amazon Research Center by Samiel.
+#nop Monkeys are an easy 65k.  Humans are around 40k.  Ancient monkey is 90k.
+#alias {amazon} {scid;#5 n;#9 e;clearing}
+#alias {famazon} {leave;#9 w;#5 s;usci}
+
+#nop 49 = O'Hare International Airport by Alerik.
+#alias {ohare} {scid;#20 n;#10 e;enter}
+#alias {fohare} {leave;#10 w;#20 s;usci}
+
+#nop 50 = Mortimer's Church by Assassin.
+#alias {mortimer} {scid;#13 n;#11 e;se}
+#alias {fmortimer} {nw;#11 w;#13 s;usci}
+
+#nop 51 = Outlaw's Train by Talismon.
+#alias {otrain} {scid;#5 n;#11 e;d}
+#alias {fotrain} {u;#11 w;#5 s;usci}
+
+#nop 52 = Swamp Lake by Mithrandir.
+#alias {swamplake} {scid;#4 n;#11 e;se}
+#alias {fswamplake} {nw;#11 w;#4 s;usci}
+
+#nop 53 = Bandit Camp by Gogmagog.
+#alias {bancamp} {scid;#6 n;#13 e;trail}
+#alias {fbancamp} {trail;#13 w;#6 s;usci}
+
+#nop 54 = Quiet Swamp by Polsy.
+#alias {qswamp} {scid;#4 n;#13 e;path}
+#alias {fqswamp} {path;#13 w;#4 s;usci}
+
+#nop 55 = Detroit by Pistil.
+#alias {detroit} {scid;#20 n;#14 e;n;e;enter;loadmap detroit}
+#alias {fdetroit} {#map destroy;s;w;s;#14 w;#20 s;usci}
+
+#nop 56 = Collapsed Subway by Ulme.
+#alias {collapsed} {scid;#16 n;#15 e;ladder}
+#alias {fcollapsed} {leave;#15 w;#16 s;usci}
+
+#nop 57 = Fern Man by Vivianne.
+#nop NEED LIGHT
+#alias {fern} {scid;#18 n;#16 e;#2 n}
+#alias {ffern} {#2 s;#16 w;#18 s;usci}
+
+#nop 58 = Voodoo Scavengers by Requiem, 20 rooms.
+#alias {voodoos} {#set {kstr} {human};scid;#3 n;#16 e;s;d;loadmap voodoos}
+#alias {fvoodoos} {#map destroy;u;n;#16 w;#3 s;usci}
+
+#nop 59 = Atlanta by Cletus.
+#nop MARBLE: Tin (EMA Complex)
+#nop MARBLE: Brown (Church)
+#alias {atl} {scid;#7 n;#18 e;road}
+#alias {fatl} {n;#18 w;#7 s;usci}
+
+#nop 60 = Swamp Tunnel by Ulme.
+#nop LIGHT NEEDED
+#alias {swampt} {scid;#3 n;#18 e;d}
+#alias {fswampt} {u;#18 w;#3 s;usci}
+#alias {swampt2} {scid;#3 n;#20 e;#2 s;d}
+#alias {fswampt2} {u;#2 n;#20 w;#3 s;usci}
+
+#nop 61 = Kilton Research, Inc by Takamori, 61 rooms so far.
+#alias {kilton} {scid;#18 n;#19 e;n;enter;loadmap kilton}
+#alias {fkilton} {#map destroy;leave;s;#19 w;#18 s;usci}
+
+#nop 62 = Pittsburgh by Cletus, 33 rooms.
+#alias {pit} {scid;#18 n;#19 e;enter;loadmap pit}
+#alias {fpit} {#map destroy;w;#19 w;#18 s;usci}
+
+#nop 63 = Oil Storage Cave by Ulme.
+#nop LIGHT NEEDED
+#alias {oilcave} {scid;#15 n;#19 e;enter}
+#alias {foilcave} {leave;#19 w;#15 s;usci}
+
+#nop 64 = Mantis Swamp by Rumor.
+#alias {mantis} {scid;#3 n;#19 e;enter}
+#alias {fmantis} {leave;#19 w;#3 s;usci}
+
+#nop 65 = Swede Research Center by Mithrandir.
+#alias {swede} {scid;#3 n;#19 e;s;ne}
+#alias {fswede} {sw;n;#19 w;#3 s;usci}
+
+#nop 66 = Murdock Chicken Plant by Mischief.
+#nop Nothing above 40k.
+#alias {chicken} {#var {kstr} {human};#var {kstr2} {chicken};scid;#2 n;#3 e;n;e;n;#2 e;#2 n;#5 e;n;e;n;#8 e;n;enter;#4 s;#2 w;fill out application;door;give application to richard;n;#4 w;loadmap chicken;#map go start}
+#alias {fchicken} {#map leave;leave;s;#8 w;s;w;s;#5 w;#2 s;#2 w;s;w;s;#3 w;#2 s;usci}
+
+#nop 67 = Military Bunker by Chrome.
+#nop MARBLE: Chrome
+#alias {milbunk} {scid;#5 n;#20 e;bunker}
+#alias {fmilbunk} {leave;#20 w;#5 s;usci}
+
+#nop 68 = Florida Sinkhole by Delenn.
+#nop MARBLE: Ecru
+#alias {sinkhole} {scid;#3 n;#20 e;#3 s;d}
+#alias {fsinkhole} {u;#3 n;#20 w;#3 s;usci}
+
+#nop 69 = I misnumbered.  Oops.
+#nop 70 = DC Megatech by Cletus.
+#alias {dcm} {scid;#17 n;#21 e;enter}
+#alias {fdcm} {leave;#21 w;#17 s;usci}
+
+#nop 71 = Toxic Dump by Vivianne.
+#alias {tdump} {scid;#11 n;#21 e;d}
+#alias {ftdump} {u;#21 w;#11 s;usci}
+
+#nop 72 = Buried Trailer by Vermillion.
+#alias {btrailer} {scid;#8 n;#21 e;#2 search ground}
+#alias {fbtrailer} {climb mound;#21 w;#8 s;usci}
+
+#nop 73 = Ruined Reactor by Scrubby.
+#alias {reactor} {scid;#3 n;#21 e;ruins}
+#alias {freactor} {leave;#21 w;#3 s;usci}
+
+#nop 74 = Underwood Disease Testing Center by Tuesdai.
+#alias {underwood} {scid;#3 n;#21 e;#4 s;sw}
+#alias {funderwood} {ne;#4 n;#21 w;#3 s;usci}
+
+#nop 75 = Global Merc Training Theatre by Dayln.
+#alias {gmerc} {scid;#18 n;#23 e;#7 n;enter}
+#alias {fgmerc} {leave;#7 s;#23 w;#18 s;usci}
+
+#nop 76 = Environmentalist Camp by Nanook.
+#alias {envcamp} {scid;#18 n;#23 e;#3 n;nw}
+#alias {fenvcamp} {se;#3 s;#23 w;#18 s;usci}
+
+#nop 77 = X1S17 Stealth Tank by Crolack.
+#alias {tank} {scid;#18 n;#23 e;punch steps;climb tank;turn wheel;hatch}
+#alias {Stank1} {turn handle;enter A B F 1 5 T X;flip prechamber 1;flip prechamber 2;flip prechamber 3;flip open muzzle}
+#alias {Stank2} {open unload door;remove casing;press clear chamber;load shell;close chamber;press chamber lock;press LLT %1;fire}
+#alias {ftank} {u;d;#23 w;#18 s;usci}
+
+#nop 78 = CybDom, Inc by Polsy.
+#alias {cybdom} {scid;#12 n;#23 e;enter}
+#alias {fcybdom} {out;#23 w;#12 s;usci}
+
+#nop 79 = Military Camp by Ariakus.
+#alias {milcamp} {scid;#18 n;#24 e;n;camp}
+#alias {fmilcamp} {leave;s;#24 w;#18 s;usci}
+
+#nop 80 = Air Force Base by Nanook.
+#alias {afbase} {scid;#15 n;#24 e;road}
+#alias {fafbase} {road;#24 w;#15 s;usci}
+
+#nop 81 = Refugee House by Infiniti.
+#alias {refugee} {scid;#9 n;#24 e;enter}
+#alias {frefugee} {leave;#24 w;#9 s;usci}
+
+#nop 82 = Temple of Syrinx by Igor.
+#alias {syrinx} {scid;#18 n;#25 e;#6 n;path}
+#alias {fsyrinx} {path;#6 s;#25 w;#18 s;usci}
+
+#nop 83 = NYC.
+#nop MARBLE: Grease (NYPD)
+#nop NEED LIGHT
+#alias {nyc} {scid;#18 n;#25 e;#4 n;e;bridge}
+#alias {fnyc} {w;w;#4 s;#25 w;#18 s;usci}
+#alias {aegis} {#var {kstr} {zombie};#var {kstr2} {sentry};nyc;e;#2 se;#2 e;enter;loadmap aegis}
+#alias {faegis} {#map leave;exit;#2 w;#2 nw;bridge;fnyc}
+
+#alias {carnegie} {#var {kstr} {human};nyc;e;#2 n;e;s;enter;loadmap carnegie}
+#alias {carnegie2} {#var {kstr} {human};getcash 5000;nyc;e;#2 n;e;s;buy ticket;enter;loadmap carnegie}
+#alias {fcarnegie} {#map leave;out;n;w;#2 s;bridge;fnyc}
+
+#nop 84 = Exobiology Lab by Ulme.
+#alias {exo} {scid;#18 n;#25 e;#7 n;#3 e;#3 n;door}
+#alias {fexo} {leave;#3 s;#3 w;#7 s;#25 w;#18 s;usci}
+
+
+#nop -------------------------------
+#nop Now let's load sub-area macros.
+#read bshroud.tt
+#read areas/bshroud.tt
+#read science_hub.tt
+#read areas/lonely_keep.tt
+

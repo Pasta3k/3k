@@ -1,0 +1,89 @@
+#nop #alias {test}
+{
+    #delay 0 #showme {*&HP: 477/477 PP: 371/371 Chi: 227/227 G2:1348168 Mind: 94 AE:2/86% CF:N}
+    #delay 5 #showme {*&HP: 477/477 PP: 371/371 Chi: 156/227 G2:1343168 Mind: 205 AE:5/70% CF:N T: eme}
+}
+
+#function {colscale}
+{
+        #switch {10 * %1 / %2}
+        {
+                #case {0} {#return <119>};
+                #case {1} {#return <119>};
+                #case {2} {#return <119>};
+                #case {3} {#return <139>};
+                #case {4} {#return <139>};
+                #case {5} {#return <139>};
+                #case {6} {#return <139>};
+                #case {7} {#return <169>};
+                #case {8} {#return <169>};
+                #case {9} {#return <169>};
+                #default  {#return <129>}
+        }
+}
+
+#var hpbar_label <088>;
+#var hpbar_points_full <129>;
+#var hpbar_points_high <169>;
+#var hpbar_points_med <139>;
+#var hpbar_points_low <119>;
+
+#action {%1HP: %2/%3 PP: %4/%5 Chi: %6/%7 G2:%8 Mind: %9 AE:%10/%11% CF:%12}
+{
+   #var hpcolor @colscale{%2 %3};
+   #var spcolor @colscale{%4 %5};
+   #var chicolor @colscale{%6 %7};
+   #var mindcolor @colscale{%9 100};
+   #var aecolor @colscale{%11 100};
+
+   #var hpcur %2;
+   #var hpmax %3;
+
+   #var spcur %4;
+   #var spmax %5;
+
+   #var chicur %6;
+   #var chimax %7;
+
+   #var next_gxp %8;
+
+   #var mindcur %9;
+   #var mindmax 100;
+
+   #var numae %10;
+   #var aepct %11;
+   #var aemax 100;
+
+   #var cf %12;
+
+   #format {firstmsg} {%s%s} {$hpbar_label} {%1};
+   #format {hpmsg}    {%sHP:%s%+4s%s/%s%s} {$hpbar_label} {$hpcolor} {$hpcur} {$hpbar_label} {$hpbar_points_full} {$hpmax};
+   #format {spmsg}    {%sPP:%s%+3s%s/%s%s} {$hpbar_label} {$spcolor} {$spcur} {$hpbar_label} {$hpbar_points_full} {$spmax};
+   #format {chimsg}   {%sCHI:%s%+3s%s/%s%s%s} {$hpbar_label} {$chicolor} {$chicur} {$hpbar_label} {$hpbar_points_full} {$chimax} {$hpbar_label};
+   #format {gxpmsg}   {%sG2:%s%+8s} {$hpbar_label} <139> {$next_gxp};
+   #format {mindmsg}  {%sMind:%s%+3s} {$hpbar_label} {$mindcolor} {$mindcur};
+   #format {aemsg}    {%sAE:%s%s%s/%s%+2s%s%s} {$hpbar_label} <139> {$numae} {$hpbar_label} {$aecolor} {$aepct} {$hpbar_label} {%};
+   #format {cfmsg}    {%sCF:%s%s} {$hpbar_label} <139> {$cf};
+
+   #format {prompt1} {%s %s %s %s %s %s %s %s} {$firstmsg} {$hpmsg} {$spmsg} {$chimsg} {$gxpmsg} {$mindmsg} {$aemsg} {$cfmsg};
+   #format {prompt2} {%s} {};
+}
+{2};
+
+#action {%1HP: %2/%3 PP: %4/%5 Chi: %6/%7 G2:%8 Mind: %9 AE:%10/%11% CF:%12%sT: %13}
+{
+   #showme {%1HP: %2/%3 PP: %4/%5 Chi: %6/%7 G2:%8 Mind: %9 AE:%10/%11% CF:%12}
+
+   #nop un-nop the line below when you've advanced your evaluation mskill.
+   #nop #var mob_health_color @colscale{%13 100};
+   #var mob_health_color <129>;
+   #var mob_health %13;
+
+   #format {enemymsg} {%sT:%s%s} {$hpbar_label} {$mob_health_color} {$mob_health};
+   
+   #format {prompt2} {%s} {$enemymsg};
+}
+{1};
+
+#prompt {%1HP: %2/%3 PP: %4/%5 Chi: %6/%7 G2:%8 Mind: %9 AE:%10/%11% CF:%12} ${prompt1} ${prompt2} 
+

@@ -1,3 +1,7 @@
+#var guildName elemental
+
+#alias {.cbot} {.bot}
+
 #nop When I'm ready for next emit, auto-raise my emit.
 #nop After you reach third form, you can emit 1 higher than normal...hence +2.
 #nop And in Spirit... +3!
@@ -10,7 +14,7 @@
 
 #nop Auto-Resolve.
 #nop #act {seems to be most susceptible to %1 attacks.} {evoke resolve as %1}
-#act {seems to be most susceptible to %1 attacks.} {evoke prismatic emission as %1}
+#act {seems to be most susceptible to %1 attacks.} {evoke resolve as %1;evoke prismatic emission as %1}
 
 #alias {getcash} {d;v;withdraw 1000;q;u}
 
@@ -39,6 +43,12 @@
 #alias {1150} {evoke preservation at 1150 evoke rebuild}
 #alias {1200} {evoke preservation at 1200 evoke rebuild}
 #alias {1250} {evoke preservation at 1250 evoke rebuild}
+#alias {1300} {evoke preservation at 1300 evoke rebuild}
+#alias {1350} {evoke preservation at 1350 evoke rebuild}
+#alias {1400} {evoke preservation at 1400 evoke rebuild}
+#alias {1450} {evoke preservation at 1450 evoke rebuild}
+#alias {1500} {evoke preservation at 1500 evoke rebuild}
+
 
 #alias {`} {emit 0}
 #alias {1} {emit 1}
@@ -53,7 +63,8 @@
 #alias {0} {emit 10}
 #alias {-} {emit 11}
 #nop #alias {=} {emit 12}
-#alias {=} {emit 13}
+#nop #alias {=} {emit 13}
+#alias {=} {emit 14}
 
 #nop #alias {11} {evoke resolve as slashing}
 #nop #alias {22} {evoke resolve as crushing}
@@ -66,16 +77,16 @@
 #nop #alias {99} {evoke resolve as toxic}
 #nop #alias {00} {evoke resolve as radiation}
 
-#alias {11} {evoke prismatic emission as slashing}
-#alias {22} {evoke prismatic emission as crushing}
-#alias {33} {evoke prismatic emission as fire}
-#alias {44} {evoke prismatic emission as ice}
-#alias {55} {evoke prismatic emission as acid}
-#alias {66} {evoke prismatic emission as shocking}
-#alias {77} {evoke prismatic emission as mental}
-#alias {88} {evoke prismatic emission as magical}
-#alias {99} {evoke prismatic emission as toxic}
-#alias {00} {evoke prismatic emission as radiation}
+#alias {11} {evoke resolve as slashing;evoke prismatic emission as slashing}
+#alias {22} {evoke resolve as crushing;evoke prismatic emission as crushing}
+#alias {33} {evoke resolve as fire;evoke prismatic emission as fire}
+#alias {44} {evoke resolve as ice;evoke prismatic emission as ice}
+#alias {55} {evoke resolve as acid;evoke prismatic emission as acid}
+#alias {66} {evoke resolve as shocking;evoke prismatic emission as shocking}
+#alias {77} {evoke resolve as mental;evoke prismatic emission as mental}
+#alias {88} {evoke resolve as magical;evoke prismatic emission as magical}
+#alias {99} {evoke resolve as toxic;evoke prismatic emission as toxic}
+#alias {00} {evoke resolve as radiation;evoke prismatic emission as radiation}
 
 #alias {111} {evoke self illumination as 1}
 #alias {222} {evoke self illumination as 2}
@@ -89,6 +100,7 @@
 
 #alias {c1} {#read corpse1.tt}
 #alias {c2} {#read corpse2.tt}
+#alias {c3} {#read corpse3.tt}
 
 #alias {eval} {evoke evaluate at %0}
 #alias {nc} {evoke natural convergence}
@@ -106,6 +118,10 @@
 #alias {ce} {chat el %0}
 #alias {cee} {chat emote %0}
 #alias {grasp} {evoke ethereal grasp at %0}
+#alias {ef} {evoke fly}
+#alias {fly} {evoke fly}
+#alias {trapoff} {#var {trap_on} {0}}
+#alias {trapon} {#var {trap_on} {1}}
 
 #nop Trap the soul/gem stuff
 #alias {trap} {evoke trap the soul}
@@ -126,9 +142,10 @@
 #alias {torch}   {d;se;withdraw 150;w;w;w;s;buy torch;keep torch;e;n;e;ne;u}
 #alias {dodeposit} {d;se;deposit all;nw;u;coins}
 #nop #alias {donatei} {d;se;s;sell all;get all from vortex;sell all;get all from vortex;sell all;get all from vortex;sell all;n;nw;u}
-#alias {donatei} {d;se;s;#3 sell all;n;nw;u}
-#alias {corpses} {morgue;donate coffin;top players boot;top guilds;fmorgue}
+#alias {donatei} {stash all;d;se;s;#3 sell all;n;nw;u}
+#alias {corpses} {morgue;donate coffin;top players;fmorgue}
 #alias {cs}      {corpses;donatei;dodeposit}
+#alias {ucd}     {unwrap corpse;evoke corpse drain}
 #alias {plaw}    {ce Pasta's Law of Soul Gems: If you "trap the soul" one round too early once, the next time you wait that extra round you will kill the mob in one round, not two.}
 
 #nop Guild age at completion of 1st form: 1 week 4 days 18 hrs 51 mins 40 secs, on 2009-Jul-22

@@ -1,0 +1,128 @@
+#nop Fantasy Tundra area macros.
+
+#nop 39 = Giant Camp by Zix.
+#nop Monster class range since inception: 2,300 to 44,640
+#alias {gcamp} {fr;#3 w;enter;#var kstr giant}
+#alias {fgcamp} {leave;#3 e;fanpri}
+
+#nop 40 = Balooga Falls, North by Mos.
+#nop Monster class range since inception: 35 to 172,685
+#alias {baloogan} {fr;#4 w;enter town;loadmap balooga}
+#alias {fbaloogan} {#map destroy;leave;#4 e;fanpri}
+
+#nop 41 = Knivur by Talismon.
+#nop Monster class range since inception: 335 to 68,195
+#alias {knivur} {fr;#4 w;#2 n;path;enter;#var kstr dwarf;loadmap knivur}
+#alias {fknivur} {#map leave;s;path;#2 s;#4 e;fanpri}
+
+#nop 65 = Grue Cave by Syd.
+#nop Monster class range since inception: 4,585 to 16,580
+#alias {grue} {fr;#16 e;d}
+#alias {fgrue} {u;#16 w;fanpri}
+
+#nop 66 = Kazhir's Hut by Tinder.
+#alias {kazhir} {fr;n;#17 e;enter}
+#alias {fkazhir} {leave;#17 w;s;fanpri}
+
+#nop 67 = Cavern by Tranzic.
+#nop Monster class range since inception: 5,300 to 28,995
+#alias {cavern} {fr;#2 n;#18 e;cave}
+#alias {fcavern} {out;#18 w;#2 s;fanpri}
+#alias {roh} {cavern;n;e}
+#alias {froh} {w;s;fcavern}
+
+#nop 68 = Ant Hole by Tensor.
+#alias {ant} {fi;#6 s;#11 e;#2 n;e;d;in;loadmap ant}
+#alias {fant} {#map destroy;s;u;w;#2 s;#11 w;#6 n;fanpri}
+
+#nop 69 = Dragon by Slister.
+#nop Monster class range since inception: 50,195 to 101,990
+#alias {dragon} {fi;#6 s;#10 e;n;path}
+#alias {fdragon} {path;s;#10 w;#6 n;fanpri}
+
+#nop 70 = Tower of Pak-Tor by Flaxen.
+#nop Monster class range since inception: 2,495 to 37,740
+#alias {paktor} {fi;#6 s;#8 e;#2 n}
+#alias {fpaktor} {#2 s;#8 w;#6 n;fanpri}
+
+#nop 71 = Catapult by Peeron.
+#nop Monster class range since inception: 55 to 55
+#alias {catapult} {fi;#6 s;#6 e;n}
+#alias {fcatapult} {s;#6 w;#6 n;fanpri}
+
+#nop 84 = Arcanarton by Cletus.
+#nop Undead are 5-12k.  Priests and Bishop are under 4k.  Imp is 9k.  Arc is 32k.
+#alias {arc1} {fr;#2 w;s;sw;trail;enter}
+#alias {farc1} {s;trail;ne;n;#2 e;fanpri}
+#alias {arc} {arc1;e;n;d;ss writing;u;s;w;#2 n;#10 u;e;u;#2 s;#3 u}
+#alias {farc} {#3 d;#2 n;d;w;d;s;out;farc1}
+
+#nop 85 = Dragon Lair by Vermillion.
+#nop No mobs.
+#nop MARBLE: Vermillion marble.
+#alias {dlair} {fr;#2 s;enter}
+#alias {fdlair} {leave;#2 n;fanpri}
+
+#nop 86 = Rimalkin Cave by Tharog.
+#nop Small = 1500, Large = 3k, 
+#alias {rimalkin} {#alias {kstr} {rimalkin};fr;s;#2 e;enter;#var kstr rimalkin;loadmap rimalkin}
+#alias {frimalkin} {#map destroy;leave;#2 w;n;fanpri}
+
+#nop 87 = Grindur by Olfin.
+#alias {grindur} {fr;n;#2 w;enter}
+#alias {fgrindur} {leave;#2 e;s;fanpri}
+
+#nop 88 = Guiles Forest by Aztec.
+#alias {gforest} {fr;#2 n;w;nw}
+#alias {fgforest} {se;e;#2 s;fanpri}
+
+#nop 118 = Pegasus Port by Lagman.
+#alias {pegasus} {fr;e;#2 n;path}
+#alias {fpegasus} {path;#2 s;w;fanpri}
+
+#nop 119 = Ruined Dovaron School of Dark Magic by Lorderon.
+#alias {rschool} {fr;#2 e;#3 n;enter}
+#alias {frschool} {leave;#3 s;#2 w;fanpri}
+
+#nop 120 = Medlar Castle by Pistil.
+#alias {medlar} {fr;#3 e;#4 n;path}
+#alias {fmedlar} {path;#4 s;#3 w;fanpri}
+
+#nop 125 = Hovel by Skinless.
+#alias {hovel} {fi;#6 s;e;enter}
+#alias {fhovel} {leave;w;#6 n;fanpri}
+
+#nop 126 = Epic by Tensor.
+#alias {epic} {fi;#7 s;#3 w;enter}
+#alias {fepic} {leave;#3 e;#7 n;fanpri}
+
+#nop 127 = Hut by Joker.
+#alias {phut} {fi;#7 s;#2 e;enter}
+#alias {fphut} {leave;#2 w;#7 n;fanpri}
+
+#nop 128 = Spire by Pfunk.
+#alias {spire} {fi;#6 s;#5 e;la shadow;enter spire}
+#alias {fspire} {out;#5 w;#6 n;fanpri}
+
+#nop 129 = Lonely Keep by Tensor.
+#alias {tkeep} {fr;#5 e;n;enter;wimpydir east}
+#alias {ftkeep} {leave;s;#5 w;fanpri}
+#alias {hk} {tkeep;#2 w}
+#alias {fhk} {#2 e;ftkeep}
+
+#nop 130 = Catacombs by Nanook.
+#alias {cata} {fr;#7 e;n;d}
+#alias {fcata} {u;s;#7 w;fanpri}
+
+#nop 131 = Mage Tower by Rastafan.
+#alias {hcmage} {fr;#12 e;n;enter}
+#alias {fhcmage} {leave;s;#12 w;fanpri}
+
+#nop 132 = Roc's Nest.
+#alias {roc} {fr;#14 e;n;climb}
+#alias {froc} {leave;s;#14 w;fanpri}
+
+#nop 152 = Troll Den by Peeron.
+#alias {superheal} {fi;#5 s;#4 e;enter}
+#alias {fsuperheal} {leave;#4 w;#5 n;fanpri}
+

@@ -1,0 +1,82 @@
+#nop Fantasy Ice area macros.
+
+#nop 72 = Jaffa's Lair by Caalan.
+#nop Minion=10k, Mage=18k
+#alias {jlair} {fi;#3 s;#4 e;enter}
+#alias {fjlair} {leave;#4 w;#3 n;fanpri}
+
+#nop 73 = Ice Dragon
+#nop Dragon=142k
+#nop MARBLE: Ice
+#alias {idragon} {fi;#2 s;#6 e;s;d}
+#alias {fidragon} {leave;n;#6 w;#2 n;fanpri}
+
+#nop 121 = Valley of Forests and Glaciers by Thorin.
+#alias {forglac} {fi;#3 s;#4 w;touch statue}
+#alias {fforglac} {touch statue;#4 e;#3 n;fanpri}
+
+#nop 122 = Demon Summoners by Mors.
+#alias {demonsum} {fi;#2 s;#3 w;enter}
+#alias {fdemonsum} {leave;#3 e;#2 n;fanpri}
+
+#nop 123 = Excavation Site by Stelari.
+#nop Follower=2500, Priest=15k, Dolo=54k
+#alias {excavation} {fi;#3 s;#2 w;enter}
+#alias {fexcavation} {leave;#2 e;#3 n;fanpri}
+
+#nop 124 = Icy Blue Portal by Rastafan.  Under Level 15 only.
+#nop Kids are 70-150, Women are 650, Men are 1600-2500.
+#alias {icy} {fi;#4 s;portal;loadmap icy}
+#alias {ficy} {#map leave;portal;#4 n;fanpri}
+
+#nop 133 = Frost Giants??
+#alias {fgiant} {fi;s;#2 w;path}
+#alias {ffgiant} {leave;#2 e;n;fanpri}
+
+#nop 134 = Black Pyramid by Kohl.
+#nop MARBLE: Inyxx
+#alias {pyramid} {fi;s;w;n}
+#alias {fpyramid} {s;e;n;fanpri}
+
+#nop 135 = Troll Caves by Morkin.
+#alias {trollcave} {fi;s;#3 e;enter}
+#alias {ftrollcave} {leave;#3 w;n;fanpri}
+
+#nop 136 = Snowbeast Lair by Mischief.
+#alias {sbeast} {fi;s;#4 e;enter}
+#alias {fsbeast} {leave;#4 w;n;fanpri}
+
+#nop 137 = Pirate Ship by Lostar.
+#alias {pirship} {fi;s;#4 e;n;climb}
+#alias {fpirship} {overboard;s;#4 w;n;fanpri}
+
+#nop 138 = Winter Wonderland by Alayna.
+#alias {wland} {glacier;#2 n;path}
+#alias {fwland} {path;#2 s;fglacier}
+
+#nop 139 = Bear Cave by Jux.
+#alias {bcave} {glacier;#3 n}
+#alias {fbcave} {#3 s;fglacier}
+
+#nop 140 = Ice Cave by Tensor.
+#alias {icave} {glacier;n;#2 e;s;enter}
+#alias {ficave} {leave;n;#2 w;s;fglacier}
+
+#nop 141 = Tower of Frost by Nanook.
+#alias {frtower} {glacier;n;#3 e;ne}
+#alias {ffrtower} {sw;#3 w;s;fglacier}
+
+#nop 142 = Seahaven by Cirrus.
+#alias {seahaven} {glacier;n;#2 e;n;climb ramp}
+#alias {fseahaven} {d;s;#2 w;s;fglacier}
+
+#nop 143 = Realm of the Verbeeg by Vexorg.
+#nop Weasel=2k, Verbeeg=20k, Bulky Verbeeg=28k, Cook=38k, Sentinel=56k, Biggrin=54k, Cryohydra=170k
+#alias {verbeeg} {fi;e;n;trail;#var kstr verbeeg}
+#alias {fverbeeg} {leav;s;w;fanpri}
+
+#nop 151 = Cave of the Snowbeast by Shadowlotus.
+#nop Monster class range since inception: 39,010 to 41,185
+#alias {sbeast2} {glacier;n;#3 e;#2 s;search snow;hole}
+#alias {fsbeast2} {u;#2 n;#3 w;s;fglacier}
+

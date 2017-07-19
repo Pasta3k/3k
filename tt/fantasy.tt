@@ -1,0 +1,53 @@
+#nop Overarching Fantasy file.  This will eventually only include sub-domain files.
+
+#read fantasy_desert.tt
+#read fantasy_eforest.tt
+#read fantasy_wforest.tt
+#read fantasy_northeast.tt
+#read fantasy_swamp.tt
+#read fantasy_tundra.tt
+#read fantasy_ice.tt
+
+
+#nop Underdark, a sub-area of the Rabbit Fields.
+#act {Stone Shed (u,d,out)} {loadmap ud}
+#act {Fields (sw,ne,nw,n,s,w,e)} {#map read maps/rabbit.map;#map go udstart;#delay 1 #map map}
+#alias {ud} {rabbit;#4 s;#2 sw;s}
+#alias {fud} {out;#2 ne;#4 n;frabbit;#delay 1 #map destroy}
+
+
+
+
+
+#nop #alias {myth} {fw;e;#6 s;sleep;gate}
+#nop #alias {fmyth} {gate;awaken;#6 n;w;fanpri}
+
+#nop #alias {jack} {fp;portal;#12 w;leave;#2 w;#5 n;enter}
+#nop #alias {fjack} {leave;#5 s;#2 e;enter;#12 e;fanpri}
+
+#nop #alias {obtower} {fe;#2 e;#10 s;e}
+#nop #alias {fobtower} {w;#10 n;#2 w;fanpri}
+
+#nop #alias {witchisle} {fd;#2 n;#7 e;#2 s;sw;e;#2 s;swim}
+#nop #alias {fwitchisle} {#2 n;climb hill;ne;#2 n;#7 w;#2 s;fanpri}
+
+#nop Macros that extend generic Fantasy ones, used for going to specific pieces of eq or mobs, etc.
+#nop UNORGANIZED - 6/1/2001
+
+#alias {cent} {ant;in;n;n;n;n;w;n;w;w;s;w;n;n;n;e;e;n;e;s;e;d;s;s;s;s;e;e;e;n;n;e;s;e;s;s;e;s;e;s;w;s;s;e;s;e;n;d;n;n;w;w;w;w;w;s;s;w;w;n;n;n;n;d;s;s;e;e;e;s;s;s;e;d;e;e;n;e;n;e;e;n;u;u;u;w;n;n;n;n;d;w;n;w;w;w;n;w;w;w;n;d;d}
+#alias {fcent} {u;u;s;e;e;e;s;e;e;e;s;e;u;s;s;s;s;e;d;d;d;s;w;w;s;w;s;w;w;u;w;n;n;n;w;w;w;n;n;u;s;s;s;s;e;e;n;n;e;e;e;e;e;s;s;u;s;w;n;w;n;n;e;n;w;n;w;n;n;w;n;w;s;s;w;w;w;n;n;n;n;u;w;n;w;s;w;w;s;s;s;e;n;e;e;s;e;s;s;s;s;s;fant}
+#alias {chabook} {angelon;#2 climb;#12 n;#8 e;enter hut;search books;get book;out;#8 w;#12 s;climb down;d;fangelon}
+#alias {miranda} {fp;#7 w;#3 n;#2 e;enter;s;open door;#2 s;e;flick switch;n;d;#2 e}
+#alias {fmiranda} {#2 w;u;wait 1;pull torch;s;w;n;open doors;#2 n;leave;#2 w;#3 s;#7 e;fanpri}
+#alias {well} {fp;portal;#11 n;#9 w;n;climb well;#3 d}
+#alias {fwell} {#4 u;s;#9 e;#11 s;fanpri}
+#alias {bomr} {baloogan;chilltouch billirubin;#3 s;#9 e;entangle billirubin}
+#alias {adam} {pol;#2 n;#8 ne;#4 n;#3 nw;#3 sw;cave;w;sw}
+#alias {fadam} {ne;e;out;#3 ne;#3 se;#4 s;#8 sw;#2 s;fpol}
+#alias {adam1} {w;home;fantasy;portal eforest;#2 e;#4 s;#5 w;portal;#2 n;#8 ne;#4 n;#3 nw;#3 sw;cave;w;sw}
+
+
+#nop From talking with ...Someone
+#nop Padrin == low class.
+#nop ring of speed (+3 dexterity) fantasy/7w/3n/2e/enter/s/w/enter maze/2w/n/e/n/e/n/w/2n/w/n/2w/s/e/2s/kill padrin
+

@@ -1,0 +1,43 @@
+#nop Let's walk between Fantasy portals nicely.
+#alias {roadway} {#9 e;#6 s;#4 w;#8 s;enter;#12 s}
+#alias {roadice} {#8 e;#10 n}
+#alias {roadwfor} {#9 e;#4 s;#14 w}
+#alias {wayroad} {#12 n;leave;#8 n;#4 e;#6 n;#9 w}
+#alias {wayefor} {#15 e;leave;#4 e;#2 ne;n;#2 ne;#3 e}
+#alias {waydes} {#12 w;leave;#8 w;#3 s}
+#alias {wayice} {#12 n;leave;#12 n;#3 e;#13 n}
+#alias {waywfor} {#12 n;leave;#10 n;#10 w}
+#alias {wforroad} {#14 e;#4 n;#9 w}
+#alias {wforway} {#10 e;#10 s;enter;#12 s}
+#alias {wforice} {#13 e;#14 n}
+#alias {iceway} {#23 s;#3 w;s;enter;#12 s}
+#alias {iceroad} {#10 s;#8 w}
+#alias {icewfor} {#14 s;#13 w}
+#alias {eforway} {#3 w;#2 sw;s;#2 sw;#4 w;enter;#15 w}
+#alias {desway} {#3 n;#8 e;enter;#12 e}
+#alias {roadefor} {roadway;wayefor}
+#alias {roaddes} {roadway;waydes}
+#alias {wforefor} {wforway;wayefor}
+#alias {wfordes} {#3 e;#13 s;#2 w;s}
+#alias {iceefor} {iceway;wayefor}
+#alias {icedes} {iceway;waydes}
+#alias {efordes} {eforway;waydes}
+#alias {eforwfor} {eforway;waywfor}
+#alias {eforroad} {eforway;wayroad}
+#alias {eforice} {eforway;wayice}
+#alias {desefor} {desway;wayefor}
+#alias {deswfor} {n;#2 e;#13 n;#3 w}
+#alias {desroad} {deswfor;wforroad}
+#alias {desice} {deswfor;wforice}
+
+#nop Fantasy portals and associated sub-areas
+#alias {fi} {fp;wayice}
+#alias {fw} {fp;waywfor}
+#alias {fr} {fp;wayroad}
+#alias {fd} {fp;waydes}
+#alias {fe} {fp;wayefor}
+#alias {glacier} {fi;#2 s;#5 e}
+#alias {fglacier} {#5 w;#2 n;fanpri}
+#alias {swamp} {fe;#5 w;#7 s}
+#alias {fswamp} {#7 n;#5 e;fanpri}
+

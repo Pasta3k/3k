@@ -1,0 +1,9 @@
+#act {You sense the power of your protective aura failing.} {protection}
+#act {The magical vestment fades into nothingness...} {vestment}
+#act {Your bark-like skin withers away.} {barkskin}
+#act {You feel more vulnerable to fire.} {profire}
+#act {You feel more vulnerable to lightning.} {prolight}
+#act {The white aura fades away. You feel less effective.} {bless}
+#act {The cobalt aura shimmers away. You feel less charismatic.} {bene}
+#act {The golden glow around you fades away.} {glight on}
+

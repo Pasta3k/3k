@@ -1,0 +1,28 @@
+#gag {^Champion.$}
+#gag {^Commander.$}
+#gag {^Warlord.$}
+#gag {^Lieutenant.$}
+
+#gag {A gusty wind from the emerging storm blasts through you!}
+#gag {Orc high warlord slashes %0 with a deadly axe!}
+#gag {%0 clobbers %1 with a shield!}
+
+#gag {Elf high champion cracks %0 on the head with a massive}
+#gag {^mace!$}
+#gag {Elf high commander slices %0 with a massive polearm!}
+#gag {Elf commander slices %0 with a massive polearm!}
+#gag {Elf commander blasts %0 with a pulse of light from its}
+#gag {^shield!$}
+
+#gag {Orc warlord shocks %0 with the energy surrounding its}
+
+#gag {Orc warlock drains the life force from the body of}
+#gag {^Zanadu!$}
+
+
+#gag {The roar of an orcish war cry can be heard in the distance.}
+#gag {A large thunderous crack from the stormy clouds rattle your ears!}
+#gag {A huge *CRACK* can be heard in the distance as a boulder crashes into}
+#gag {its victims.}
+
+

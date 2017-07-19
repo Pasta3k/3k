@@ -1,5 +1,9 @@
 #class {jugg}
 
+#var guildName juggernaut
+
+#alias {.cbot} {.bot}
+
 #highlight {WARNING Stim energy levels too low} {b red}
 #act {WARNING Stim energy levels too low} {ucd}
 
@@ -24,6 +28,8 @@
 #alias {cee} {eju %0}
 #alias {ucd} {unwrap corpse;deener}
 #alias {bamm} {ammo;vbuy missile 7 1 1234567;fammo}
+#alias {c1} {#read corpse1.tt}
+#alias {c2} {#read jugger/corpse2.tt}
 
 #alias {getcash} {vault;withdraw 1000;fvault}
 #alias {dodeposit} {vault;deposit all;fvault;coins}

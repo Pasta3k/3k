@@ -1,0 +1,59 @@
+#nop Fantasy Desert area macros.
+
+#nop 1 = Ruins of an Old City by Johnny.
+#nop Monster class range since inception: 145 to 26,920
+#alias {oldcity} {fd;s}
+#alias {foldcity} {n;fanpri}
+#alias {mummy} {oldcity;s;e;d;#7 n;#10 smash;n;#10 search;open sar}
+#alias {fmummy} {#6 s;u;w;n;foldcity}
+#alias {stones} {get stone;w;drop stone;e;get stone;w;drop stone;e;get stone;w;drop stone;e;get stone;w;drop stone;e;get stone;w;drop stone;e;e}
+
+#nop 16 = Sphinx by Olower.
+#nop Monster class range since inception: 165 to 47,340
+#alias {sphinx} {fd;#2 n;#7 w}
+#alias {fsphinx} {#7 e;#2 s;fanpri}
+
+#nop 17 = Ascended Guild.
+#alias {ascended} {fd;#6 w;#2 s}
+#alias {fascended} {#2 n;#6 e;fanpri}
+
+#nop 18 = Desert Palace by Damo.
+#nop Monster class range since inception: 6,385 to 70,825
+#alias {despal} {fd;#6 w;#3 s}
+#alias {fdespal} {#3 n;#6 e;fanpri}
+
+#nop 19 = Nomad Camp by Dayln.
+#nop Monster class range since inception: 2,415 to 6,275
+#alias {nomad} {fd;#2 w;#2 s;path}
+#alias {fnomad} {path; #2 n;#2 e;fanpri}
+
+#nop 20 = Sand Pit by Olower/Loomer.
+#nop Monster class range since inception: 28,185 to 33,070
+#alias {sandpit} {fd;#5 w;n;d}
+#alias {fsandpit} {#10 u;s;#5 e;fanpri}
+
+#nop 21 = Xaxis by Rumor.
+#nop Monster class range since inception: 6,575 to 210,530
+#alias {xaxis} {getcash 1000;fd;#4 w;#2 n;rent carpet;loadmap xaxis}
+#alias {fxaxis} {#map leave;hop carpet;#2 s; #4 e;fanpri}
+
+#nop 22 = Rampage by Rampage.
+#nop Monster class range since inception: 1,580 to 10,800
+#alias {rampage} {fd;#2 w;#2 n;trail}
+#alias {frampage} {trail;#2 s;#2 e;fanpri}
+
+#nop 23 = Scorpion Caves by Skeet.
+#nop Monster class range since inception: 1,915 to 3,085
+#alias {scorp} {#var {kstr} {scorpion};fd;#3 w;#3 n;enter;loadmap scorp}
+#alias {fscorp} {#map leave;leave;#3 s;#3 e;fanpri}
+
+#nop 24 = Rocky Hill by Thyros.
+#nop Monster class range since inception: 2,405 to 39,805
+#alias {rhill} {fd;#2 w;#6 n}
+#alias {frhill} {#6 s;#2 e;fanpri}
+
+#nop 144 = Temple of Light by Wain.
+#nop Monster class range since inception: 180 to 7,280
+#alias {temlight} {fd;#5 w;#4 n;enter}
+#alias {ftemlight} {leave;#4 s;#5 e;fanpri}
+

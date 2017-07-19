@@ -1,0 +1,87 @@
+#nop *a strangely shimmering suit of chainmail (glowing) (worn).
+#gag {%0 gets injured on %1 armor!}
+
+#nop Ring of Thundering
+#gag {screams as titanic bolts of lightning explode from %0 ring}
+
+#nop Buckler of Eternia
+#gag {The star on %0 buckler flashes like a sun!}
+
+#nop Biker Boots
+#gag {KICKS a Biker boot right up}
+
+#nop Shimmering Octachromatic Dragon Armour
+#gag {The hit strikes a blue scale, releasing a small bolt of lightning!}
+#gag {The hit strikes a green scale splashing your opponent with poison!}
+#gag {The hit strikes a black scale, releasing a spray of acid!}
+#gag {The hit strikes a dark scale, releasing a draining cloud!}
+#gag {The hit strikes a yellow scale, releasing a blinding flash of light!}
+#gag {The hit strikes a grey scale, overwhelming your opponent with waves}
+#gag {The hit strikes a white scale, freezing your opponent!}
+#gag {The hit strikes a red scale, releasing a small burst of fire!}
+#gag {doubles over in pain.}
+
+#nop Duke Nukem Helmet
+#gag {sa{y|ys}: Come get some.$}
+#gag {sa{y|ys}: Damn I'm good.$}
+#gag {sa{y|ys}: Damn those alien bastards are gonna pay for shooting up my$}
+#gag {^(\W)*ride.}
+#gag {sa{y|ys}: It's time to kick ass and chew bubble gum...and I'm all$}
+#gag {sa{y|ys}: Let's rock.$}
+#gag {sa{y|ys}: Nobody steals our chicks... and lives.$}
+#gag {sa{y|ys}: Piece of cake.$}
+#gag {sa{y|ys}: What are you waiting for, Christmas?$}
+#gag {sa{y|ys}: Damn those alien bastards are gonna pay for shooting up my ride.}
+#gag {sa{y|ys}: Awww man, play time is over.}
+#gag {sa{y|ys}: I just wore the Duke Nukem helmet, and now I'm gonna kick ass!}
+#gag {sa{y|ys}: It's time to kick ass and chew bubble gum...and I'm all outta gum.}
+#gag {sa{y|ys}: It's time to kick ass and chew bubble gum...and I'm all outta}
+#gag {^(\W)*gum.}
+#gag {sa{y|ys}: See you in hell, buddy.}
+#gag {sa{y|ys}: That's right baby, I'm NUKEM.}
+#gag {sa{y|ys}: Blow it out your ass!}
+#gag {sa{y|ys}: Let god sort 'em out.}
+
+#nop Ring of Zosimus
+#gag {A weak spark jumps from %0 ring to %1.}
+#gag {%0 flesh is charred by a ligntining bolt from %1!}
+#gag {Streaks of lightning from %0 ring explode into %1!}
+
+#nop Weathermay Gloves
+#gag {The gloves course a powerful strike through your arms!}
+#gag {Ancient energies race along your arm!}
+#gag {A mighty pulse of strength wells in your arms!}
+
+#nop Adamantite Bracers
+#gag {The bracers flare brightly and your form wavers slightly!}
+#gag {The bright sphere of energy around you distorts momentarily.}
+#gag {The bracers flare out in a shower of light, your form shimmers and}
+#gag {fades momentarily, the force of your opponents attack passes right}
+#gag {through you, fueling your life force rather than draining!}
+
+#nop Talisman of Honor
+#gag {Your talisman grows warm.}
+
+#nop Strike stuff
+#gag {The visor on %0 strike helmet suddenly slams shut!}
+#gag {A %0 light flashes on %1 strike belt.}
+#gag {A small light on %0 Cyberstrike armour flashes %1.}
+#gag {%0 strike gloves beep.}
+#gag {%0 boots crackle with energy and seem to move %1 on their}
+#gag {own accord!}
+#gag {%0 Cyberstrike armour beeps quietly as a %1 field of}
+#gag {energy appears around it for a moment.}
+#gag {%0 grunts and is suddenly moving with amazing speed!}
+#gag {%0 energy radiates from %1 strike armour and %2 image}
+#gag {%0 energy radiates from %1 strike armour and %2}
+#gag {appears to blur!}
+#gag {%0 boots crackle with energy and seem to move %1 on}
+#gag {their own accord!}
+#gag {%0 strike armour appears to adjust itself.}
+#gag {%0 shield suddenly changes shape!}
+#gag {A small light on %0 Cyberstrike armour flashes}
+#gag {^magenta.                                                             $}
+
+
+
+

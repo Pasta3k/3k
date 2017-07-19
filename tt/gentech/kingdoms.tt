@@ -1,0 +1,21 @@
+#nop To COT
+#alias {cot} {slide shop;w}
+#alias {fcot} {s;e;e;s;s;s;v;activate pillar}
+
+#nop Getting to/from the 3 Kingdoms easily...
+#alias {fp} {slide fantasy;portal}
+#alias {sp} {slide science;enter}
+#alias {cp} {slide chaos;enter}
+
+#nop Unload bot stuff
+#alias {unbot} {#class pastabot kill;#class areabot kill;#read general.tt}
+
+#nop Get back to the Elemental guild hall...
+#alias {fanpri} {portal;home;guild;unbot}
+#alias {scipri} {out;home;guild;unbot}
+#alias {chapri} {vortex;home;guild;unbot}
+
+#nop Let's get to the newbie bin.
+#alias {newb}  {slide surface;q;#2 w;s}
+#alias {fnewb} {n;#2 e;v;activate pillar}
+

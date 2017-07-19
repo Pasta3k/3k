@@ -1,0 +1,31 @@
+#class {jugger_guild}
+
+#alias {med} {s;e;ne;w}
+#alias {fmed} {e;sw;w;n}
+#alias {ammo} {s;w;nw;e}
+#alias {fammo} {w;se;e;n}
+
+#alias {sub2} {s;e;se;board dropship;n}
+#alias {fsub2} {s;board dropship;nw;w;n}
+#alias {sub1} {sub2;u}
+#alias {fsub1} {d;fsub2}
+#alias {pray} {sub1;n}
+#alias {fpray} {s;fsub1}
+
+#alias {lev1} {sub1;u}
+#alias {flev1} {d;fsub1}
+#alias {tech} {lev1;#2 s;e;ne;#2 n;w}
+#alias {ftech} {e;#2 s;sw;w;#2 n;flev1}
+#alias {weap} {lev1;#2 s;w;nw;#2 n;e}
+#alias {fweap} {w;#2 s;se;e;#2 n;flev1}
+#alias {vault} {lev1;#2 s;e;ne;n;w}
+#alias {fvault} {e;s;sw;w;#2 n;flev1}
+
+#alias {lev2} {lev1;u}
+#alias {flev2} {d;flev1}
+#alias {newbie} {lev2;#2 s;w;nw;e}
+#alias {fnewbie} {w;se;e;#2 n;flev2}
+
+#alias {falcon} {lev1;#2 s;e;ne;#2 n;nw;w;#3 n}
+#alias {ffalcon} {#3 s;e;se;#2 s;sw;w;#2 n;flev1}
+
