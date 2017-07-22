@@ -126,4 +126,3 @@
 #nop QUEST: Covenant
 #nop Monster class range since inception: 75 to 76,725
 #act {covenant} {cp;#4 w;e;s;w;s;read book;loadmap covenant}
-

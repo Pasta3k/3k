@@ -1,4 +1,4 @@
-#alias {k} {kill}
+#alias {k} {kill %0;#var {new_mob} {1}}
 #alias {l} {look}
 #alias {t} {tell}
 

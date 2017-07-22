@@ -1,0 +1,18 @@
+#function {colscale}
+{
+        #switch {10 * %1 / %2}
+        {
+                #case {0} {#return <faa>};
+                #case {1} {#return <fba>};
+                #case {2} {#return <fca>};
+                #case {3} {#return <fda>};
+                #case {4} {#return <fea>};
+                #case {5} {#return <ffa>};
+                #case {6} {#return <efa>};
+                #case {7} {#return <dfa>};
+                #case {8} {#return <cfa>};
+                #case {9} {#return <bfa>};
+                #default  {#return <afa>}
+        }
+}
+

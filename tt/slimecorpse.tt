@@ -1,0 +1,2 @@
+#alias {cor} {slime feed corpse;#if {$autobag == 1} {divvy gold;get all} {divvy gold}}
+

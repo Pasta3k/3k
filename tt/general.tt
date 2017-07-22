@@ -1,0 +1,63 @@
+#config {packet patch} {1.1}
+
+#act {Game driver tells you: You have no heart beat} {kickstart}
+
+#nop #alias {reset} {#kill;#read .3k} @ {5}
+#substitute {^[RS!]} {};
+#nop #prompt {^>$} {>} {0};
+#gag {^>$};
+
+#nop Corpse trigger.
+#act {Pastafarian dealt the killing blow to} {cor}
+#act {Guardian Angel dealt the killing blow to} {cor}
+#act {Appendage dealt the killing blow to} {cor}
+#act {Fsm dealt the killing blow to} {cor}
+#act {Ramen dealt the killing blow to} {cor}
+
+#nop Lore 5 mskill
+#act {You see a ghostly image of %0 appear then dissolve away...} {#format {tellee} {%l} {%0};tell ${tellee} You just found an artifact.  This is an automated notification...I might actually be idle.;ce ${tellee} just found an artifact.  If I'm idle, please contact them for picking it up.}
+
+#gag {There is no coins here.}
+#gag {There are no coins here to share!}
+#gag {coins: Taken}
+#gag {gold coins: Ok.}
+#gag {There is no corpse here to wrap!}
+#gag {There are no corpses here to wrap!}
+#gag {Warmth and life force flows into you through your hand.}
+#gag {Your wimpy fails you here!!!}
+#gag {You try and run away, but can't find a way out!!!}
+
+#nop Drop puppies.
+#nop #act {an %0 puppy: Ok.} {drop puppy}
+#nop #act {a %0 puppy: Ok.} {drop puppy}
+
+#nop Mute the fucking OMP line.
+#act {-=(OMP)=-} {omp -b}
+
+#nop If a Priest wants to atone me, accept.
+#act {Accept by typing <yes> to begin the ritual, or <no> to decline.} {yes}
+
+#highlight {** You have items/money to collect from the auction house **} {b magenta}
+#highlight {^{\[MONSTAR!\]%*}} {red}
+#highlight {^{\[PLAYAR!\]%*}} {yellow}
+
+#alias {bb %1} {#read bots/%1.tt;.bot}
+#alias {kb} {#class pastabot kill;#class areabot kill;#class xbot kill;#class priestbot kill;#read general.tt}
+
+#alias {t %1} {\tell %1}
+#alias {uptime} {uptime2}
+#alias {date} {time}
+#alias {gags} {#read gags.tt}
+
+# Pick up random coins
+#act {A %0 of gold coins.} {get coins}
+#act {There is no reason to 'divvy' here.} {party;divvy gold}
+
+#alias {xtal} {evoke preservation at 0 evoke rebuild;dq1;wimpy 0}
+#alias {fxtal} {600;q1;wimpy 20}
+
+#alias {wear} {#send wear %0;keep %0}
+#alias {wield} {#send wield %0;keep %0}
+#alias {ls} {look at %0;search %0}
+
+#alias {fc} {flapchat}

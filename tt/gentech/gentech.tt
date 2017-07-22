@@ -52,4 +52,3 @@
 #act {[[ Insufficient Power Reserves to activate Tactical Enhancment ]]} {nc;ucd;i;tace}
 #act {[[ Insufficient Power Reserves to activate Stabilization ]]} {nc;ucd;i;stabilize}
 #act {[[ Power Not Sufficient For Field Activation. ]]} {nc;ucd;i}
-

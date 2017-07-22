@@ -1,0 +1,21 @@
+#class {crafting}
+
+#nop Crafting stuff.
+
+#gag {Saving crafting status.}
+
+#alias {sl} {stashlist}
+
+#highlight {You have advanced your %0 skill!} {b cyan}
+
+#function {makeess}   {#5 unstash %1 fragment of %2;assemble fragment of %2;stash essence}
+#function {makeheart} {#5 unstash %1 essence of %2;assemble essence of %2;stash heart}
+
+#read minewalker.tt
+
+#act {You fall through the floor into the level below!} {minewalk}
+#act {You should try to mine this instead.} {#delay 1 mine ore}
+#act {You have found a deposit of %1 ore!} {#delay 1 mine ore}
+#act {You greedily stuff it into your satchel.} {#delay 1 mine ore}
+#gag {There is no reason to 'mine' here.}
+

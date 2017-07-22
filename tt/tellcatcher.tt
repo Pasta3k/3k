@@ -1,0 +1,5 @@
+#prompt {%1 tells you: %2} {<159>%1 tells you: %2<088>} {3}
+#prompt {You tell %1: %2} {<159>To %1: %2<088>} {3}
+
+#alias {tellclear} {#split {0}{4}}
+

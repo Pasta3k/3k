@@ -4,6 +4,9 @@
 #alias {church}  {cot;s;w;s;s;e}
 #alias {fchurch} {w;n;n;e;n;fcot}
 
+#alias {gypsy} {cot;n;n;withdraw 1000;s;e;e;n;e;identify all}
+#alias {fgypsy} {w;s;w;w;s;fcot}
+
 #alias {chavee} {cot;n;w;#3 n}
 #alias {fchavee} {#3 s;e;s;fcot}
 

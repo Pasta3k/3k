@@ -1,0 +1,3 @@
+#act {The cube starts to flicker in and out of existence} {kill cube 2}
+#act {The cube fades back into view} {kill a gigantic gelatinous cube}
+

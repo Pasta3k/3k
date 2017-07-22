@@ -1,1 +1,1 @@
-#act {You can now 'choose' which stats to apply the blessing to.} {#3 choose int;#3 choose wis;#3 choose con}
+#act {You can now 'choose' which stats to apply the blessing to.} {#delay 4 #3 choose int;#delay 8 #3 choose wis;#delay 12 #3 choose con;#delay 16 #3 choose dex}

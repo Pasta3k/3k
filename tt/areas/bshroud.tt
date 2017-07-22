@@ -1,0 +1,5 @@
+#act {A drum of solid-slug shotgun rounds: Ok.} {dispose drum}
+#act {A bodyshield of translucent plaspex: Ok.} {dispose plaspex}
+#act {A drum of basic shotgun rounds: Ok.} {dispose drum}
+#act {A military shotgun: Ok.} {dispose shotgun}
+

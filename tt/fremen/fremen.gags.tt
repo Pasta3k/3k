@@ -1,8 +1,0 @@
-#nop mskill combat.proficiency.attack speed
-#gag {Your great speed allows you to attack again!}
-
-#nop Litany battle-spam.
-#gag {^[Luminous]}
-#gag {^[Lucid]}
-#gag {^[Sharp]}
-

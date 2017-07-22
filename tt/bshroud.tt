@@ -1,0 +1,25 @@
+#class {battleshroud} {open}
+
+#alias {bshroud} {#var {bshroud_dir} {in};detroit;#10 e;#10 ne;w;#3 n;stairs;say $myname};
+#alias {fbshroud2} {n;n;w;stairs;#3 s;e;#10 sw;#10 w;fdetroit};
+#act {Yeah, I've seen you already.} {e;s;sw;stairs;e;s;say job};
+#act {Strangers make me nervous.} {say azrael};
+#act {Imogen.  I'll let her know you're coming.} {e;s;sw;stairs;e;s;say job};
+#act {names in one sentence, separated by commas.} {say talon, kerrie, azrael};
+#act {Where does Azrael spend most of his time?} {say basement};
+#act {Finally, what are the names of the corporations Azrael worked} {say sonybishi, megatech};
+#act {%0, your code is %1.} {
+	#var bshroud_code %1;
+	n;w;stairs;ne;search seam;push button;enter $bshroud_code
+};
+#act {The lift doors open suddenly.} {
+	#if {"$bshroud_dir" == "in"} {n;n;ne;77} {fbshroud2}
+};
+
+#nop --------------------
+
+#alias {fbshroud} {#var {bshroud_dir} {out};sw;s;push button}
+#act {A door slides silently open in the south wall.} {
+	#if {"$bshroud_dir" == "out"} {s;push up button} {s;push down button}
+};
+

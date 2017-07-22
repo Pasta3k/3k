@@ -1,0 +1,83 @@
+#class {hpbar} {open}
+
+#function {colscale}
+{
+        #switch {10 * %1 / %2}
+        {
+                #case {0} {#return <119>};
+                #case {1} {#return <119>};
+                #case {2} {#return <119>};
+                #case {3} {#return <139>};
+                #case {4} {#return <139>};
+                #case {5} {#return <139>};
+                #case {6} {#return <139>};
+                #case {7} {#return <169>};
+                #case {8} {#return <169>};
+                #case {9} {#return <169>};
+                #default  {#return <129>}
+        }
+}
+
+#var hpbar_label <088>;
+#var hpbar_points_full <129>;
+#var hpbar_points_high <169>;
+#var hpbar_points_med <139>;
+#var hpbar_points_low <119>;
+
+
+#act {HP: %1/%2 SP: %3/%4 K: %5/%6 V: %7 S: %8(%9) G2: %10} 
+{
+    #var hpcolor @colscale{%1;%2};
+    #var spcolor @colscale{%3;%4};
+    #var kcolor @colscale{%5;%6};
+    #var vcolor @colscale{%7;100};
+    #var resetcolor @colscale{%9;100};
+
+    #var hpcur %1;
+    #var hpmax %2;
+    #var spcur %3;
+    #var spmax %4;
+    #var kcur %5;
+    #var kmax %6;
+    #var vcur %7;
+    #var smile %8;
+    #var sreset %9;
+    #var g2n %10;
+
+#format {hpmsg} {%sHP:%s%s%s/%s%s} {$hpbar_label} {$hpcolor} {$hpcur} {$hpbar_label} {$hpbar_points_full} {$hpmax};
+#format {spmsg} {%sSP:%s%s%s/%s%s%s} {$hpbar_label} {$spcolor} {$spcur} {$hpbar_label} {$hpbar_points_full} {$spmax} {$hpbar_label};
+#format {kmsg} {%sK:%s%s%s/%s%s} {$hpbar_label} {$kcolor} {$kcur} {$hpbar_label} {$hpbar_points_full} {$kmax};
+#format {vmsg} {%sV:%s%s%%} {$hpbar_label} {$vcolor} {$vcur};
+#format {smilemsg} {%sS:%s%s%s(%s%s%s%%)} {$hpbar_label} <169> {$smile} {$hpbar_label} {$resetcolor} {$sreset} {$hpbar_label};
+#format {g2nmsg} {%sG2: %s%s} {$hpbar_label} <169> {$g2n};
+
+#format {prompt1} {%s %s %s %s %s %s} {$hpmsg} {$spmsg} {$kmsg} {$vmsg} {$smilemsg} {$g2nmsg};
+}
+{2};
+
+#prompt {HP: %1/%2 SP: %3/%4 K: %5/%6 V: %7 S: %8(%9) G2: %10} {${prompt1}} {3}
+
+#nop ---HPBAR LINE2
+
+#act { {P: %1} $:%2 {[[ {O:%3} {ab} {P{E|G|N}:%4} {HS:%5}]]} {T:%6%}}
+{
+    #var perform %1;
+    #var money %2;
+    #var omuse %3;
+    #var prot %4;
+    #var hskin %5;
+    #var target %6;
+
+#format {performmsg} {%sP:%s%s} {$hpbar_label} <169> {$perform};
+#format {moneymsg} {%s$:%s%s} {$hpbar_label} <139> {$money};
+#format {omusemsg} {%sO:%s%s} {$hpbar_label} <169> {$omuse} {$hpbar_label};
+#format {protmsg} {%sPF:%s%s} {$hpbar_label} <169> {$prot};
+#format {hskinmsg} {%sHS:%s%s} {$hpbar_label} <169> {$hskin};
+#format {emsg} {%sT:%s%s%%} {$hpbar_label} <169> {$target} {$hpbar_label};
+
+#format {prompt2} {%s %s %s %s %s %s} {$performmsg} {$moneymsg} {$omusemsg} {$protmsg} {$hskinmsg} {$emsg};
+}
+{2};
+#prompt { {P: %1} $:%2 {[[ {O:%3} {ab} {P{E|G|N}:%4} {HS:%5}]]} {T:%6%}} {${prompt2}} {2};
+
+#class {hpbar} {close}

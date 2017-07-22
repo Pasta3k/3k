@@ -1,3 +1,7 @@
+#var guildName fremen
+
+#alias {.cbot} {.bot}
+
 #alias {adv} {advance}
 #alias {ce} {tp}
 #alias {cee} {tpe}
@@ -5,6 +9,13 @@
 #alias {info} {fhelp}
 #alias {ps} {gs2}
 #alias {rcost} {check cost}
+#alias {illuminate} {globe}
+#alias {glight} {globe}
+
+#highlight {You nearly pass out from the strain!} {b red}
+#highlight {Your stillsuit is full.} {b red}
+
+#alias {getcash} {go shop;withdraw 1000;go exit}
 
 #alias {c1} {#read fremen/corpse1.tt}
 #alias {c2} {#read fremen/corpse2.tt}
@@ -15,6 +26,9 @@
 #alias {ars} {go shop;deposit all;go arsenal;donate all;balance;go exit;coins}
 #alias {sus} {suspend}
 #alias {med} {suspend}
+#alias {unbox} {borrow}
+
+#act {Your handglobe deactivates and goes dark.} {globe}
 
 #alias {donatei} {ars}
 #alias {corpses} {morgue;donate coffin;top players boot;top guilds;fmorgue}
@@ -22,4 +36,7 @@
 
 #alias {bsc} {board;loadmap fremen}
 #alias {bo} {#map leave;board}
+
+#alias {1} {mode prana:major bindu:minor assault:most pain:low litany:major weirding:half attacks:fast reflexes:normal}
+#alias {2} {mode prana:some bindu:most assault:some pain:some litany:all weirding:most attacks:normal reflexes:fast}
 

@@ -1,0 +1,23 @@
+#nop Macros for places to go inside Ravenloft
+
+#act {phylactery of the mists: Ok.} {wear phylactery;keep phylactery;in}
+
+#act {A dark choice to make} {#var {kstr} {undead};loadmap derthalas}
+
+#alias {batwing} {glight on;oc;in;n;nw;n;ne;n;nw;n;ne;n;#2 ne;#2 e;#2 n;w;nw;n}
+#alias {fbatwing} {s;se;e;#2 s;#2 w;#2 sw;s;sw;s;se;s;sw;s;se;s}
+#alias {mshield} {tensor1;search stones;get block;ftensor1}
+#alias {ismark} {n;nw;n;ne;n;nw;n;ne;n;#6 w;#2 s}
+#alias {fismark} {#2 n;#6 e;s;sw;s;se;s;sw;s;se;s}
+#alias {gring} {in;n;nw;n;ne;n;nw;n;ne;n;#2 ne;#3 e;se;e;ne;e;#2 n;rightstairs;s;w;up;#2 e;u;s;open drawer;search drawer}
+#alias {fgring} {n;d;#2 w;d;n;d;#2 s;w;sw;w;nw;#3 w;#2 sw;s;sw;s;se;s;sw;s;se;s}
+#alias {george} {n;nw;n;ne;n;nw;n;ne;n;#10 w;s;#4 sw;#6 w;sw;s;follow george}
+#alias {fgeorge} {n;ne;#6 e;#4 ne;n;#10 e;s;sw;s;se;s;sw;s;se;s}
+#alias {william} {oc;in;n;nw;n;ne;n;nw;n;ne;n;#10 w;s;#4 sw;nw;#2 ne;n;#2 w;s;sw;say greetings}
+#alias {fwilliam} {ne;n;#2 e;s;#2 sw;se;#4 ne;n;#10 e;s;sw;s;se;s;sw;s;se;s}
+
+#alias {der} {george;sw}
+#alias {fder} {#map leave;ne;fgeorge}
+#alias {der2} {der;#delay 2 go part2}
+#alias {fder2} {go exit;#delay 2 fder;#delay 3 frloft}
+

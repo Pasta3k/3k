@@ -1,8 +1,9 @@
-#nop My coffin is full!
+#nop Get new coffin
 #alias {gc} {newb;#2 w;#2 s;acquire;#2 n;#2 e;fnewb}
-#highlight {The coffin is full!} {b magenta}
+
+#nop My coffin is full!
+#highlight {The coffin is{ now|} full!} {b magenta}
 #highlight {Your coffin flashes as its capacity expands!} {b magenta}
 
 #gag {^You pick up The %1, freshly slain corpse of}
 #gag {coffin's protective hold!$}
-

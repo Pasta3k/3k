@@ -1,0 +1,8 @@
+#nop this macro can take you from anywhere in the map to the same room from anywhere.
+#nop most floors you will wind up at the stairs down to the next floor.
+#nop a couple you will be at the middle somewhere but it always starts you in
+#nop the same room. so just do your walker from there, the same as a normal
+#nop area, and just spelunk each room.
+
+#alias {minewalk} {e;ne;n;nw;n;e;w;se;ne;w;n;n;e;e;e;e;n;w;w;ne;s;nw;e;s;e;sw;e;s;e;se;e;s;e;w;s;sw;w;s;se;sw;s;e;s;e;ne;w;nw;n;n;ne;n;ne;se;se;n;e;e;sw;nw;n;n;sw;w;s;w;n;}
+

@@ -1,0 +1,68 @@
+#nop Macros for towns and stuff on the Isle of Serinth - Keylon Crown
+
+#alias {serinth} {getcash;dock;pay ferryman serinth;#delay 20 loadmap serinth}
+
+#alias {desar} {#3 se;#4 e;enter tower}
+#alias {fdesar} {leave;#4 w;#3 nw}
+
+#nop City of Raric.
+#alias {raric} {#3 se;e;#5 s;#3 e;enter city}
+#alias {fraric} {leave;#3 w;#5 n;w;#3 nw}
+
+#nop City of Keyloncia.
+#alias {keylon} {#3 se;e;#5 s;w;#3 s;#2 e}
+#alias {fkeylon} {#2 w;#3 n;e;#5 n;w;#3 nw}
+
+#nop Town of Porih.
+#alias {porih} {keylon;n}
+#alias {fporih} {s;fkeylon}
+
+#nop Ivory Keep.
+#nop There's a panel/carving of a rose here.  Rosewood Pub????
+#alias {ikeep} {#3 se;e;#5 s;w;#3 s;#5 e;enter keep}
+#alias {fikeep} {#6 w;#3 n;e;#5 n;w;#3 nw}
+
+#nop Small town of Flinia.
+#alias {flin} {#3 se;e;#5 s;w;#4 s;e;#3 s;se;e}
+#alias {fflin} {w;nw;#3 n;w;#4 n;e;#5 n;w;#3 nw}
+
+#nop City of Razorin.
+#alias {raz} {#3 se;e;#5 s;w;#3 s;e;#4 s;#7w;#3 s;#3 w;enter city}
+#alias {fraz} {#3 e;#3 n;#7 e;#4 n;w;#3 n;e;#5 n;w;#3 nw}
+
+#nop City of Wexsmuk.
+#alias {wex} {#var {kstr} {minotaur};#3 se;e;#5 s;w;#3 s;e;#4 s;#7 w;#3 s;se;#3 e;enter city}
+#alias {fwex} {#3 w;nw;#3 n;#7 e;#4 n;w;#3 n;e;#5 n;w;#3 nw}
+
+#nop City of Zolifo.
+#alias {zol} {#3 se;e;#5 s;w;#4 s;e;#3 s;#7 w;#10 s;#3 w}
+#alias {fzol} {#3 e;#10 n;#7 e;#3 n;w;#4 n;e;#5 n;w;#3 nw}
+
+#nop Town of Waff.
+#alias {waff} {#3 se;e;#5 s;w;#4 s;e;#3 s;#7 w;#8 s;#9 e;#2 s;#2 e;ne;nw}
+#alias {fwaff} {se;sw;#2 w;#2 n;#9 w;#8 n;7 e;#3 n;w;#4 n;e;#5 n;w;#3 nw}
+
+#nop Fort in the Woods.
+#alias {fort} {#3 se;e;#5 s;w;#4 s;e;#3 s;#7 w;#9 s;#7 e;s}
+#alias {ffort} {n;#7 w;#9 n;#7 e;#3 n;w;#4 n;e;#5 n;w;#3 nw}
+
+#nop Town of Sopem.
+#alias {sopem} {#3 se;e;#5 s;w;#3 s;e;#4 s;#7 w;#10 s;#3 w;#3 s;se;e;s;sw;s;enter sopem;center;center;sleep upon altar}
+#alias {fsopem} {leave;n;ne;n;w;nw;#3 n;#3 e;#10 n;#7 e;#4 n;w;#3 n;e;#5 n;w;#3 nw}
+#alias {sopem2} {#10 search east wall;exa spike;push spike}
+
+#nop Small town of Pieb.
+#alias {pieb} {#3 se;e;#5 s;w;#3 s;e;#4 s;#7 w;#10 s;#3 w;#3 s;se;e;s;sw;#2 s;#3 w;#3 s}
+#alias {fpieb} {#3 n;#3 e;#2 n;ne;n;w;nw;#3 n;#3 e;#10 n;#7 e;#4 n;w;#3 n;e;#5 n;w;#3 nw}
+
+#alias {hur} {raric;#5 s;#2 sw;s;e;u;search boards;get key;u;unlock door;open door;w}
+#alias {fhur} {unlock door;open door;e;#2 d;w;leave;#2 ne;#5 n;fraric}
+
+#nop Cloak of Displacement
+#alias {cod} {serinth}
+#alias {cod2} {#2 se;#2 e;#5 s;w;#5 s;#2 e;#2 n;enter town;#4 n;ne;enter traveler;push 1}
+#alias {cod3} {leave;#5 e;s;#2 e}
+
+#alias {fcod} {#2 w;n;#5 w;enter traveler;push 5}
+#alias {fcod2} {leave;sw;#4 s;leave;#2 s;#2 w;#5 n;e;#5 n;#2 w;#2 nw;board ferry}
+#alias {fcod3} {fdock}

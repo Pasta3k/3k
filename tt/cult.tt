@@ -1,1 +1,8 @@
 #act {A small gargoyle fetish, sent by %1, suddenly materializes in your pocket.} {cult destroy}
+
+#nop Idiots shouting about playing cult must die.
+#gag {play cult}
+#gag {playcult}
+#gag {clay pult}
+#gag {CULT}
+

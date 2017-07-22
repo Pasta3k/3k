@@ -1,0 +1,70 @@
+#class {pastabot} {open}
+
+#alias {.bcmds} {
+	#showme {...............................................};
+	#showme { Sock's GenericBot v1.3  -- Area:  $areaname   };
+	#showme {  .bcmds  --  this info                        };
+	#showme {  .binfo  --  all bot commands/information     };
+	#showme {...............................................};
+};
+#alias {.binfo} {
+	#showme {...............................................};
+	#showme { Put char specific stuff in alias ".cbot"      };
+	#showme { Commands: (prefixed with ".")                 };
+	#showme {   .cbot	   --  begins the botting           };
+	#showme {   .tmode  --  toggles tankmode on/off         };
+	#showme {   .hmode  --  hardmode on/off if applicable   };
+	#showme {   .stop   --  will halt bot/to resume         };
+	#showme {   ..  --  will resume after timeout or .stop  };
+	#showme { Note:  Bot will automatically stop after 10   };
+	#showme { minutes if no input in TinTin++ window.       };
+	#showme {...............................................};
+};
+
+#var {foundplayer} {0};
+
+#var {mobname} {};
+
+#var IdleTimeout 600;
+#event {RECEIVED INPUT} {
+	#undelay {deadmanSwitch};
+	#delay {deadmanSwitch} {.stop} {$IdleTimeout};
+};
+
+#alias {.pause} {#class {xbot} {kill};#alias {yy} {.pause}};
+#alias {.stop} {#var halt 1;.pause};
+
+#alias {..} {
+	#var halt 0;
+	#class {xbot} {open};
+	#act {^[RS!]} {xx} {10};
+	#alias {xx} {#var foundplayer 0;#act {^>$} {#path walk;zz} {1}};
+	#alias {yy} {#act {^>$} {#if {$foundplayer == 1} {zz;#path walk} {zz;.pause;k $mobname;}}};
+	#alias {zz} {#unact {^>$}};
+	glance;
+	#class {xbot} {close};
+};
+
+#nop #alias {.hmode} {#math {hardmode} {!$hardmode};#if {$hardmode == 1} {#showme {Hardmode.}} {#showme {Hardmode off!}}};
+#nop #alias {.tmode} {#math {tankbot} {!$tankbot};#if {$tankbot == 1} {#showme {Tanking on.}} {#showme {Tanking off.}}};
+
+#alias {killbot} {zz;.pause;#class xbot kill;#class pastabot kill;#path run};
+
+#alias {.bot} {#if {$halt == 0} {..}};
+
+#unact {Pastafarian dealt the killing blow to};
+#unact {Guardian Angel dealt the killing blow to};
+#unact {Appendage dealt the killing blow to};
+#unact {Fsm dealt the killing blow to};
+#unact {Ramen dealt the killing blow to};
+#act {^{Pastafarian|Guardian Angel|Appendage|Fsm|Ramen|Suicide|Poisonice|Gt|Quipark|Arahnapogue|Moltar|Stormshadow|Olorin|Snoopie|Sentry|Seiko|Kraven|Zanadu|Maxx|Ghidorah} dealt the killing blow} {cor;.cbot};
+#gag {Kill what ?}
+
+#act {It is too dark.} {#path walk;zz};
+#act {^[PLAYAR!]} {#var foundplayer 1} {1};
+#act {#END OF PATH} {zz;#path load botpath;.cbot};
+
+.bcmds;.cbot;#path load botpath;#var halt 0;
+
+#class {pastabot} {close}
+

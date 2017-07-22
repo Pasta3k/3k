@@ -1,4 +1,4 @@
-#nop confighp hp HP: $+CHP$/$MHP$ SP: $+CSP$/$MSP$ W: $+CWT$/$MWT$($SWT$) L: $+LMB$%$MPS$ P: $PSN$/$+PSR$% G: $GXP$ LIT: $+LTS$ T: $+TRG$
+#nop confighp hp HP: $+CHP$/$MHP$ SP: $+CSP$/$MSP$ W: $+CWT$/$MWT$($SWT$) L: $+LMB$%$MPS$ P: $PSN$/$+PSR$% G: $GXP$ LIT: $+LTS$ COF: $CCP$ T: $+TRG$
 
 #nop #alias {test}
 {
@@ -30,14 +30,14 @@
 #var hpbar_points_med <139>;
 #var hpbar_points_low <119>;
 
-#action {^HP: %1/%2 SP: %3/%4 W: %5/%6(%7) L: %8% P: %9/%10% G: %11 LIT: %12 T: %13}
+#action {^HP: %1/%2 SP: %3/%4 W: %5/%6(%7) L: %8% P: %9/%10% G: %11 LIT: %12 COF: %13 T: %14}
 {
    #var hpcolor @colscale{%1;%2};
    #var spcolor @colscale{%3;%4};
    #var water_color @colscale{%5;%6};
    #var limber_color @colscale{%8;100};
    #var poison_color @colscale{%10;100};
-   #var enemy_color @colscale{%13;100};
+   #var enemy_color @colscale{%14;100};
 
    #var hpcur %1;
    #var hpmax %2;
@@ -56,7 +56,8 @@
 
    #var gxp_last %11;
    #var litany %12;
-   #var enemy_health %13;
+   #var coffin %13;
+   #var enemy_health %14;
 
    #format {hpmsg}    {%sHP:%s%+4s%s/%s%s} {$hpbar_label} {$hpcolor} {$hpcur} {$hpbar_label} {$hpbar_points_full} {$hpmax};
    #format {spmsg}    {%sSP:%s%+3s%s/%s%s} {$hpbar_label} {$spcolor} {$spcur} {$hpbar_label} {$hpbar_points_full} {$spmax};
@@ -65,9 +66,10 @@
    #format {poimsg}   {%sP:%s%s%s/%s%s%s%s} {$hpbar_label} {$hpbar_points_full} {$poison} {$hpbar_label} {$poison_color} {$poi_resis} {$hpbar_label} {%};
    #format {gxpmsg}   {%sG:%s%s} {$hpbar_label} <139> {$gxp_last};
    #format {litmsg}   {%sLIT:%s%s} {$hpbar_label} <139> {$litany};
+   #format {cofmsg}   {%sCOF:%s%s} {$hpbar_label} <169> {$coffin};
    #format {enemy}    {%sEnemy:%s%s%s} {$hpbar_label} {$enemy_color} {$enemy_health} {$hpbar_label};
 
-   #format {prompt1} {%s %s %s %s %s %s %s %s %s} {$hpmsg} {$spmsg} {$watermsg} {$limbmsg} {$poimsg} {$gxpmsg} {$litmsg} {$enemy} <070>;
+   #format {prompt1} {%s %s %s %s %s %s %s %s %s %s} {$hpmsg} {$spmsg} {$watermsg} {$limbmsg} {$poimsg} {$gxpmsg} {$litmsg} {$cofmsg} {$enemy} <070>;
 }
 {2};
 

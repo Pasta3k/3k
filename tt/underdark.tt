@@ -1,0 +1,28 @@
+#nop Underdark macros (fantasy)
+#alias {ud1} {d;#3 e;s;w;#3 s;e;s;e;#2 s;#2 e}
+#alias {fud1} {#2 w;#2 n;w;n;w;#3 n;e;n;#3 w}
+#alias {ud2} {d;n;#2 e;s;#2 e;s;e;s;e;s;w;#2 s;e}
+#alias {fud2} {w;#2 n;e;n;w;n;w;n;#2 w;n;#2 w;s}
+#alias {scroll} {n;#2 e;s;#4 e;n;w;#3 n;e}
+#alias {fscroll} {w;#3 s;e;s;#4 w;n;#2 w;s}
+#alias {ud3} {d;#2 s;#2 e;#2 s;#3 e;#2 n;#2 e;#2 n;#2 w;#2 n;w;s;w}
+#alias {fud3} {e;n;e;#2 s;#2 e;#2 s;#2 w;#2 s;#3 w;#2 n;#2 w;#2 n}
+#alias {spider} {d;e;s;w;#2 s;e;s;#2 w;n;w;n}
+#alias {fspider} {s;e;s;#2 e;n;w;#2 n;e;n;w}
+#alias {ugly} {d;n;w;s;w}
+#alias {fugly} {e;n;e;s}
+
+#alias {cleric} {d;n;#4 w;#3 s;#3 w}
+#alias {fcleric} {#3 e;#3 n;#4 e;s}
+#alias {magis} {e;s;w;#2 s;e;#2 s;#3 w;n}
+#alias {fmagis} {s;#3 e;#2 n;w;#2 n;e;n;w}
+#alias {shans} {glight on;ud;#2 sw;#4 w;s}
+#alias {fshans} {out;#4 e;#2 ne;fud}
+#alias {rhole} {glight on;#2 w;#2 sw;#2 se;#2 e;#12 s;#6 w;#2 n}
+#alias {frhole} {#2 s;#6 e;#12 n;#2 w;#2 nw;#2 ne;#2 e}
+
+#alias {matrix1} {e;#2 n;u;e;n;nw;sw;e;ne;n;nw;w;sw;se;dive pool}
+#alias {matrix2} {glight on;#2 s;enter;n;ne;#2 w;sw;#2 w;leap across;enter;w;d;w;sw;w;s;search stones}
+#alias {fmatrix} {w;d;s;e;leap back;#2 e;ne;#2 e;sw;#2 s;#3 n;swim n;swim e;swim n;swim n;swim w;swim s;surface;nw;ne;e;se;s;sw;w;ne;se;s;w;d;#2 s;w}
+#alias {ril} {#7 w;#3 s;e;#2 n;e}
+#alias {fril} {w;#2 s;w;#3 n;#7 e}

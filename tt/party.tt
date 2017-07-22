@@ -1,0 +1,71 @@
+#gag {[PARTY] GOLD divvy called by}
+#gag {[PARTY] Divvy of %0 coins called by}
+#gag {[PARTY] All gold divvied}
+#gag {And the remainder:}
+#gag {Your share of the GOLD:}
+#gag {Your share is %0 coins.}
+#gag {There is no money here to share!}
+#gag {You jump in and assist}
+#gag {They are not being attacked.}
+#gag {That person isn't here.}
+#gag {enters the fray.}
+
+#alias {mem} {members}
+#alias {pks} {partykills}
+#alias {pt h-} {pt -h}
+
+#act {Type 'accept' if you wish to be monitored.} {accept}
+
+#act {%1 tugs on your sleeve persistently.} {#format {assistee} {%l} {%1};#delay 1+1d4 passist ${assistee}}
+#nop #act {^%1 pokes you in the ribs.$} {#10 unwrap}
+#act {^Al pops your ego.} {#10 give bioplast to al}
+#alias {follow %1} {#format {followee} {%l} {%1};#send follow $followee;alias pa passist $followee;cassist $followee}
+
+#nop Party with Juggalos?  Yes please!
+#act {[PARTY] %0: load core} {evoke create blast;load core}
+
+#act {^%1 attacks %2} {
+	#regexp {%1} {%* %*} {} {#format {assistee} {%l} {%1};
+	#if {"${assistee}" == "azrael"}
+		{ #nop do nothing };
+	#else
+		#delay 1+1d4 passist ${assistee}};
+} @ {6}
+
+#nop Party assisting!
+#act {^%1 appears from nowhere behind %2} {#regexp {%1} {%* %*} {} {#format {assistee} {%l} {%1};#delay 1+1d4 passist ${assistee}}} @ {6}
+#nop Juggers
+#act {^%1 flipped the bird at everything in the room!} {#regexp {%1} {%* %*} {} {#format {assistee} {%l} {%1};#delay 1+1d4 passist ${assistee}}} @ {6}
+#nop Monks
+#act {^%1 closes his eyes and sends} {#regexp {%1} {%* %*} {} {#format {assistee} {%l} {%1};#delay 1+1d4 passist ${assistee}}} @ {6}
+#nop Psicorps
+#act {^%1 finds a pressure point} {#regexp {%1} {%* %*} {} {#format {assistee} {%l} {%1};#delay 1+1d4 passist ${assistee}}} @ {6}
+#act {^%1 {yells|screams|bellows}:$} {#regexp {%1} {%* %*} {} {#format {assistee} {%l} {%1};#delay 1+1d4 passist ${assistee}}} @ {6}
+#act {^%1 turns to attack} {#regexp {%1} {%* %*} {} {#format {assistee} {%l} {%1};#delay 1+1d4 passist ${assistee}}} @ {6}
+#nop Breed
+#act {^%1 focuses on} {#regexp {%1} {%* %*} {} {#format {assistee} {%l} {%1};#delay 1+1d4 passist ${assistee}}} @ {6}
+
+
+#act {[PARTY] New leader for the party: {pastafarian|appendage|fsm|ramen}.} {pname Noodly Appendages}
+#act {[PARTY] %1: refollow} {#format {followee} {%l} {%1};follow $followee};
+#act {[PARTY] %1: enter wormhole} {enter wormhole};
+#act {[PARTY] %1: GO %2!} {
+	#format {direction} {%l} {%2};
+	#if {"${direction}" == "north"} {${direction}};
+	#elseif {"${direction}" == "south"} {${direction}};
+	#elseif {"${direction}" == "east"} {${direction}};
+	#elseif {"${direction}" == "west"} {${direction}};
+	#elseif {"${direction}" == "down"} {${direction}};
+	#elseif {"${direction}" == "up"} {${direction}};
+	#elseif {"${direction}" == "northeast"} {${direction}};
+	#elseif {"${direction}" == "northwest"} {${direction}};
+	#elseif {"${direction}" == "southeast"} {${direction}};
+	#elseif {"${direction}" == "southwest"} {${direction}};
+	#else {say nuh-uh.}
+}
+
+
+#act {a projection of Alister materializes into the room.} {k small cube 2}
+
+#act {bright beam of light slams from the shimmering into the gigantic} {k gigantic gelatinous cube}
+

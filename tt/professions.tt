@@ -1,6 +1,4 @@
-#alias {p1} {mystic}
-#alias {p2} {reforger}
-#alias {p3} {acrobat}
+#act {^You have become a level %0!$} {#sys afplay Cornet-Trumpet-Fanfare.mp3 &}
 
 #alias {dodag} {buy dagger;reforge dagger little edged blunt}
 #alias {ref} {d;v;withdraw 1500;q;u;smithy;#4 dodag;fsmithy}
@@ -23,4 +21,46 @@
 #gag {You begin to dodge and weave and dance out of harm's way!}
 #gag {You dodge and weave and dodge and weave!  You're a blur!}
 #gag {You tire from the dodging and weaving and pause to catch your breath.}
+
+#nop Gag Fast Healer procs.
+#gag {Your healing ointment closes your wounds.}
+#gag {You grab your healing ointment and set to work!}
+#gag {Your healing ointment has worn off.}
+
+#nop Gag Undead Hunter procs.
+#gag {Your consuming hatred of the undead rises up within you!}
+#gag {Your consuming hatred of the undead amplifies the spell!}
+#gag {Your consuming hatred of the undead fuels your attack!}
+#gag {You take a breath and manage to control your consuming hatred of the undead.}
+
+#nop Gag Assassin procs.
+#gag {**{THWACK|THAWACK|THAWHACK}** You critically hit %0!}
+#gag {***THAWHACK*** You critically hit %0!}
+#gag {A flash of insidious insight strikes you!}
+#gag {Your insidious inspiration flows through you as you make the most of each attack!}
+#gag {Your insidious inspiration fades.}
+
+#nop Gag Boxer procs.
+#gag {A rush of blood to your head prepares you from an incoming assault!}
+#gag {The blood rushes through your head!}
+#gag {The blood stops rushing through your head and you return to normal.}
+
+#nop Drunken Master stuff
+#gag {^%0 looks drunk.$}
+#gag {^%0 burps.$}
+#gag {^%0 hiccups.$}
+#gag {%0 drinks a tall glass of wine.}
+
+#nop Swordsman
+#gag {Your swordsman's training kicks in and you press your attack!}
+#gag {You press your attack using your swordsman's training!}
+#gag {Your swordsman's advantage ends.}
+
+#nop Tactician
+#gag {You outfox your opponent and take advantage of it!}
+#gag {You press your advantage on your outsmarted foe!}
+#gag {Your tactical advantage ends.}
+
+#nop Reforger
+#gag {You adjust your reforger's kit slightly, ready to do more business.}
 

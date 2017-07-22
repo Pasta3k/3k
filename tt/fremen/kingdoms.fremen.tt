@@ -7,11 +7,20 @@
 #alias {sp} {bo;w;enter}
 #alias {cp} {bo;#3 w;#3 n;#2 w;n;enter}
 
-#nop Get back to the Fremen guild hall...
+#nop Unload bot stuff
+#alias {unbot} {#class pastabot kill;#class areabot kill;#read general.tt}
+
+#nop Get back to the Elemental guild hall...
 #alias {sqg} {#7 w;#3 s;#4 e;enter}
-#alias {fanpri} {portal;#3 e;s;#4 e;n;#3 e;bsc}
-#alias {scipri} {out;e;bsc}
-#alias {chapri} {vortex;s;#2 e;#3 s;#3 e;bsc}
+#alias {fanpri} {portal;home;guild;bsc;unbot}
+#alias {scipri} {out;home;guild;bsc;unbot}
+#alias {chapri} {vortex;home;guild;bsc;unbot}
+
+#nop Get back to the Fremen guild hall...
+#nop #alias {sqg} {#7 w;#3 s;#4 e;enter}
+#nop #alias {fanpri} {portal;#3 e;s;#4 e;n;#3 e;bsc}
+#nop #alias {scipri} {out;e;bsc}
+#nop #alias {chapri} {vortex;s;#2 e;#3 s;#3 e;bsc}
 
 #nop Let's get to the newbie bin.
 #alias {newb}  {bo;#3 w;#4 s;#2 w;s}
