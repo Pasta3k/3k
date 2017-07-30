@@ -1,0 +1,18 @@
+#class {areabot} {open}
+
+#var {botpath} {n;n;n;n;n;n;n;n;n;e;s;s;s;s;s;s;s;s;s;e;n;n;n;n;n;n;n;n;n;e;s;s;s;s;s;s;s;s;s;e;n;n;n;n;n;n;n;n;n;w;w;w;w;s;s;s;s;s;s;s;s;s}
+
+#act {^[MONSTAR!]{Chicken Guard|Chicken Foreman|Plant worker|Plant work crew|Workcrew member}} {
+    #if {"%1"=="Chicken Guard"} {#var mobname chicken};
+    #if {"%1"=="Chicken Foreman"} {#var mobname chicken};
+    #if {"%1"=="Plant worker"} {#var mobname human};
+    #if {"%1"=="Plant work crew"} {#var mobname human};
+    #if {"%1"=="Workcrew member"} {#var mobname human};
+
+	yy;
+}
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

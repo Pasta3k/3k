@@ -1,0 +1,19 @@
+#class {areabot} {open}
+
+#var {botpath} {z;w;w;z;v;s;w;q;q;v;z;r;w;w;w;w;r;z;n;s;q;v;w;e;z;r;s;n;v;q;e;e;e;e;v;e;e;r;n;z;r;w;e;r;s;n;v;q;z;s;z;w;v;s;s;n;n;z;s;n;z;w;r;r;z;z;e;r;r;q;z;z;w;w;e;z;r;s;n;e;r;w;w;w;z;s;q;v;s;n;z;q;v;w;e;s;z;r;v;z;r;v;z;z;r;v;s;n;q;r;e;v;q;r;w;e;q;v;n;s;r;z;e;e;n;s;r;z;e;w;w;w;z;w;q;q;n;r;v;e;e;e;e;e;r;n;e;v;e;z;e;w;v;w;z;w;n;q;e;r;z;e;w;v;q;w;v;s;v;z;w;w;r;z;n;s;q;v;w;e;z;r;s;n;v;q;e;e;r;v;r;z;q;s;v;r;e;w;v;q;z;v;e;v;q;r;r;z;z;e;e;r;v;z;r;q;r;z;n;n;q;v;e;q;v;w;s;s;z;w;w;w;q;q;n;r;e;v;e;s;n;q;v;w;q;r;e;w;v;v;q;q;z;w;z;q;n;q;r;n;r;r;v;q;z;n;r;v;e;w;r;z;q;r;e;r;q;q;v;n;r;z;s;v;n;n;s;s;r;r;z;n;n;r;z;s;s;z;z;e;e;v;r;r;e;e;q;v;n;s;r;z;e;w;v;q;s;n;z;r;w;w;z;z;v;q;s;s;z;r;n;n;z;q;q;w;z;z;s;v;e;r;e;n;s;z;r;w;z;v;r;r;z;v;r;v;q;r;v;r;e;q;v;n;s;r;z;e;w;v;q;s;n;z;r;w;z;s;v;v;q;r;e;e;n;e;q;n;s;v;w;s;w;w;z;q;z;w;w;w;n;s;w;e;v;e;v;e;w;r;e;q;z;r;v;w;v;e;w;z;v;s;z;r;w;n;s;e;v;s;n;r;e;n;r;z;s;w;v;e;e;v;q;w;w;q;z;q;n;q;r;s;v;e;r;r;v;z;e;v;s;n;v;q;e;w;q;w;r;e;v;n;s;q;w;q;r;w;e;s;n;v;q;e;v;q;e;r;s;n;z;w;r;z;w;r;z;n;r;z;n;s;s;q;n;r;e;v;q;w;q;r;z;v;z;s;v;z;z;z;w;q;n;q;z;q;w;q;e;e;e;r;n;q;z;z;q;z;q;w;q;z;s;z;w;w;w;w;w;q;n;r;e;e;e;r;n;q;r;e;e;r}
+
+#act {^[MONSTAR!]{Man-spider|Spider creature|Spider beast|Arachnid beast|Arachnid soldier|Arachnid warrior}} {	
+	#if {"%1"=="Man-spider"} {#var mobname spider};
+	#if {"%1"=="Spider creature"} {#var mobname spider};
+	#if {"%1"=="Spider beast"} {#var mobname spider};
+	#if {"%1"=="Arachnid beast"} {#var mobname spider};
+	#if {"%1"=="Arachnid soldier"} {#var mobname spider};
+	#if {"%1"=="Arachnid warrior"} {#var mobname spider};
+	
+	yy;
+} {1};
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

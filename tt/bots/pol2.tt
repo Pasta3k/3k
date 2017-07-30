@@ -1,0 +1,20 @@
+#class {areabot} {open}
+
+#var {botpath} {n;n;nw;nw;nw;nw;nw;nw;nw;nw;n;se;se;se;ne;nw;ne;ne;ne;nw;sw;nw;s;nw;s;nw;nw;n;n;n;n;n;ne;s;s;s;se;n;n;n;n;ne;s;s;s;s;s;ne;n;n;n;se;s;s;s;ne;n;se;n;n;n;n;n;n;sw;sw;sw;ne;se;s;s;se;se;s;se;n;n;ne;n;n;ne;nw;sw;s;s;sw;n;n;n;ne;nw;se;se;se;se;se;s;sw;sw;s;sw;sw;se;ne;ne;n;ne;ne;ne;se;sw;sw;sw;s;sw;sw;ne;ne;ne;s;ne;n;ne;s;s;s;s;s;s;s;nw;n;n;nw;s;s;s;sw;n;n;n;n;sw;s;s;nw;n;n;sw;sw;sw;nw;s;se;ne;se;sw;sw;nw;nw;s;se;se;ne;ne;s;sw;sw;nw;nw;s;se;se;ne;ne;ne;sw;sw;sw;s;s}
+
+#act {^[MONSTAR!]{Wild Stag|Faerie Lizard|Baby Dragon|Rabid Wolf|Ragged Peasant|Sylvan Elf|Wyvern}} {	
+	#if {"%1"=="Wild Stag"} {#var mobname stag};
+	#if {"%1"=="Faerie Lizard"} {#var mobname lizard};
+	#if {"%1"=="Baby Dragon"} {#var mobname dragon};
+	#if {"%1"=="Rabid Wolf"} {#var mobname rabid wolf};
+	#if {"%1"=="Ragged Peasant"} {#var mobname peasant};
+	#if {"%1"=="Sylvan Elf"} {#var mobname elf};
+	#if {"%1"=="Wyvern"} {#var mobname wyvern};
+	
+	yy;
+} {1};
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

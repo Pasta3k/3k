@@ -1,0 +1,14 @@
+#class {areabot} {open}
+
+#var {botpath} {e;r;v;n;q;v;s;v;q;s;z;w;n;e;d;n;q;r;z;v;s;u;n;w;w}
+
+#act {^[MONSTAR!]{A small Rimalkin|A large Rimalkin|A very large Rimalkin}} {	
+	#var mobname rimalkin;
+
+	yy;
+}
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

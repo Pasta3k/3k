@@ -1,0 +1,16 @@
+#class {areabot} {open}
+
+#nop Aegis Levels 1-4
+#var {botpath} {e;e;s;e;s;s;s;e;e;n;e;n;n;n;e;d;s;w;s;s;s;w;w;d;w;w;n;n;w;n;e;e;e;e;e;n;e;d;d;e;e;s;s;s;s;s;s;s;s;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;s;w;w;u;e;e;s;s;s;s;s;s;s;s;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;s;w;w;u;e;e;w;w;w;n;e;w;s;w;n;s;e;s;e;s;s;s;e;e;w;w;s;w;e;n;w;w;e;e;n;e;e;w;w;n;e;e;w;w;n;e;e;w;w;w;s;s;n;n;w;s;s;n;n;w;s;s;n;n;w;s;s;n;n;w;n;n;e;e;w;w;w;w;e;e;s;e;e;w;w;w;w;e;e;s;w;w;w;e;e;s;w;w;e;e;s;w;w;e;e;s;n;n;e;s;s;s;n;e;s;e;w;n;e;u;e;e;e;w;s;w;n;w;w;s;w;n;w;n;e;e;e;e;e;e;n;e;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;s;e;n;w;n;w;w;w;w;w;w;n;w;e;e;e;s;e;e;n;e;e;w;s;e;u;w;w;s;e;s;e;s;w;w;s;s;e;n;e;s;w;w;n;w;s;w;n;w;n;w;n;e;s;e;n;e;n;w;w;n;w;s;n;w}
+
+#act {^[MONSTAR!]{One-armed zombie|Putrid zombie|Shambling zombie|Aegis Sentry Model 60-FT|Aegis Sentry Model 62-CC|Wounded zombie|Rotting zombie|Bloody zombie|Faceless zombie|Vomit-splattered zombie|Aegis Sentry Model 64-CC|Charred zombie|Severely burnt zombie|Aegis Sentry Model 65-SE|Limping zombie|Bullet-ridden zombie|Massive zombie|Ravaged zombie|Shuffling zombie|Aegis Soldier Model 66-SO}} {
+	#if {"Putrid zombie"=="%1" || "Shambling zombie"=="%1" || "One-armed zombie"==%1 || "Wounded zombie"=="%1" || "Rotting zombie"=="%1" || "Bloody zombie"==%1 || "Faceless zombie"==%1 || "Vomit-splattered zombie"==%1 || "Charred zombie"==%1 || "Severely burnt zombie"==%1 || "Limping zombie"==%1 || "Bullet-ridden zombie"==%1 || "Massive zombie"==%1 || "Ravaged zombie"==%1 || "Shuffling zombie"==%1} {#var mobname zombie};
+	#if {"Aegis Sentry Model 60-FT"==%1 || "Aegis Sentry Model 62-CC"==%1 || "Aegis Sentry Model 64-CC"==%1 || "Aegis Sentry Model 65-SE"==%1 || "Aegis Soldier Model 66-SO"==%1} {#var mobname sentry};
+
+	yy;
+}
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

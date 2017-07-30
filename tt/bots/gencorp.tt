@@ -1,0 +1,15 @@
+#class {areabot} {open}
+
+#var {botpath} {n;e;n;w;w;s;e;n;n;n;n;e;e;e;e;open door;s;w;n;w;w;w;w;w;n;w;w;e;e;s;e;n;n;e;e;push button;w;s;s;e;e;n;w;e;s;w;w;n;n;e;push button;w;w;s;s;e;s;s;s;s;s}
+
+#act {^[MONSTAR!]{Compound Guard|M516 Patroller|Gencorps Officer|GenCorps Sergeant|Strike Guard}} {
+	#if {"%1"=="Compound Guard" || "%1"=="Gencorps Officer" || "%1"=="Gencorps Sergeant" || "%1"=="Strike Guard"} {#var mobname human};
+	#if {"%1"=="M516 Patroller"} {#var mobname patroller};
+	
+	yy;
+} {1};
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

@@ -1,0 +1,14 @@
+#class {areabot} {open}
+
+#var {botpath} {w;w;w;nw;ne;e;e;e;n;e;e;out;w;w;w;w;w;w;out;e;n;w;e;e;e;e;e;ne;w;w;w;w;w;w;w;n;w;e;e;e;e;e;e;e;e;e;w;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;s;s;s;s;s;s;se;e;s;s;se;e;e};
+
+#act {^[MONSTAR!]{An Usher|An audience member rushing to get to his seat|An angry audience member|A sleeping audience member|A polite audience member|A New Yorker|A bodyguard|]A member of the audience hurrying to his seat|A man in a hurry to find his seat|A Lady (waiting to use the toilet)}} {
+	#if {"An audience member rushing to get to his seat"=="%1" || "An angry audience member"=="%1" || "A sleeping audience member"=="%1" || "A polite audience member"=="%1" || "A New Yorker"=="%1" || "An Usher"=="%1" || "A bodyguard"=="%1" || "A member of the audience hurrying to his seat"=="%1" || "A man in a hurry to find his seat"=="%1" || "A Lady (waiting to use the toilet)"=="%1"} {#var mobname human};
+
+	yy;
+};
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

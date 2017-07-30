@@ -1,0 +1,14 @@
+#class {areabot} {open}
+
+#var {botpath} {z;w;s;n;e;s;z;r;e;e;v;w;e;q;e;w;n;e;r;z;w;w;q}
+
+#act {^[MONSTAR!]{Scorpion|Scorpion Guard}} {	
+	#var mobname scorpion;
+
+	yy;
+}
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

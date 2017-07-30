@@ -1,0 +1,16 @@
+#class {areabot} {open}
+
+#var {botpath} {s;s;s;w;w;w;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;s;s;s;s;s;s;s}
+
+#act {^[MONSTAR!]{White Charioteer|White Foot Soldier|White Counsellor|White King|White Horseman|Red Charioteer|Red Foot Soldier|Red Counsellor|Red King|Red Horseman|A War Correspondent|Red Cross Medic|Elephant|Angry Horse|A Refugee|White Priest|Red Priest}} {	
+	#if {"%1"=="White Charioteer" || "%1"=="Red Charioteer" || "%1"=="White Foot Soldier" || "%1" == "Red Foot Soldier" || "%1"=="White Counsellor" || "%1"=="Red Counsellor" || "%1"=="White King" || "%1"=="Red King" || "%1"=="White Horseman" || "%1"=="Red Horseman" || "%1"=="A War Correspondent" || "%1"=="Red Cross Medic" || "%1"=="A Refugee" || "%1"=="White Priest" || "%1"=="Red Priest"} {#var mobname human};
+	#if {"%1"=="Angry Horse"} {#var mobname horse};
+	#if {"%1"=="Elephant"} {#var mobname elephant};
+	
+	yy;
+} {1};
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

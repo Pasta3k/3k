@@ -1,0 +1,20 @@
+#class {areabot} {open}
+
+#var {botpath} {s;s;s;w;e;e;w;s;w;e;e;e;w;sw;se;w;e;e;n;n;s;s;s;e;e;e;w;w;w;w;w;w;n;s;w;e;s;w;e;e;e;e;n;e;s;e;e;w;s;e;w;s;w;n;w;s;n;w;n;w;s;w;s;w;e;e;e;e;e;e;s;e;w;s;s;n;n;w;s;s;n;n;w;s;n;n;w;w;w;w;e;s;w;e;s;s;n;n;e;s;s;n;n;e;s;n;n;e;s;s;enter;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;s;n;e;out;n}
+
+#act {^[MONSTAR!]{Brainy Smurf|Smelly Smurf|Papa Smurf|Vanity Smurf|Smurfette|Jokey Smurf|ClockWork the Robo-Smurf|Handy Smurf|Clumsy Smurf|Hefty Smurf|Crafty Smurf|Tracker Smurf|Slimy Smurf|Creepy Smurf|A cute and fuzzy Squirrel|An ugly and disgusting Smurf-Eater|A large furry spider|A very large rat|Azrael|Gargamel}} {	
+	#if {"%1"=="Brainy Smurf" || "%1"=="Smelly Smurf" || "%1"=="Papa Smurf" || "%1"=="Vanity Smurf" || "%1"=="Smurfette" || "%1"=="Jokey Smurf" || "%1"=="ClockWork the Robo-Smurf" || "%1"=="Handy Smurf" || "%1"=="Clumsy Smurf" || "%1"=="Hefty Smurf" || "%1"=="Crafty Smurf" || "%1"=="Tracker Smurf" || "%1"=="Slimy Smurf" || "%1"=="Creepy Smurf"} {#var mobname smurf};
+	#if {"%1"=="A cute and fuzzy Squirrel"} {#var mobname squirrel};
+	#if {"%1"=="An ugly and disgusting Smurf-Eater"} {#var mobname smurf-eater};
+	#if {"%1"=="A large furry spider"} {#var mobname spider};
+	#if {"%1"=="A very large rat"} {#var mobname rat};
+	#if {"%1"=="Azrael"} {#var mobname azrael};
+	#if {"%1"=="Gargamel"} {#var mobname gargamel};
+	
+	yy;
+} {1};
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

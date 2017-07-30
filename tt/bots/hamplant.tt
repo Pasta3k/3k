@@ -1,0 +1,14 @@
+#class {areabot} {open}
+
+#var {botpath} {e;e;s;s;e;e;e;n;n;e;e;e;e;e;n;n;n;s;s;u;e;w;d;s;w;w;w;w;w;s;s;w;w;w;n;n;w;w}
+
+#act {^[MONSTAR!]{Loading Dock Worker|Truck Driver|Processing Plant Guard|Warehouse Supervisor|Assembly line worker|Martin O'Dell|Jeffrey Hamilton (owner)}} {	
+	#var mobname human;
+
+	yy;
+}
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+

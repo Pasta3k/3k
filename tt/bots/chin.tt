@@ -1,0 +1,14 @@
+#class {areabot} {open}
+
+#var {botpath} {e;e;e;e;e;n;w;w;w;w;w;n;e;e;e;e;e;n;w;w;w;w;w;n;e;e;e;e;e;n;w;w;w;w;w;s;s;s;s;s}
+
+#act {^[MONSTAR!]{A Baby Chinchilla|A Young Chinchilla|A Mature Chinchilla|An Old Chinchilla}} {	
+	#var mobname chinchilla;
+
+	yy;
+}
+
+#class {areabot} {close}
+
+#read bots/generic_bot.tt
+
