@@ -1,0 +1,15 @@
+#ses 3k 3k.org 3000;ramen;passwordhere_notmyrealpassword;PLEASE KILL ME
+
+#var {split_amt} {5}
+#var {myname} {ramen}
+
+#read common_files.tt
+
+#read ramen_tellcatcher.tt
+#read gentech/gentech.tt
+#nop #read gentech/variables.tt
+#read gentech/gentech.prompt.tt
+#read gentech/kingdoms.tt
+#read gentech/professions.tt
+#read gentech/portals.hm.tt
+

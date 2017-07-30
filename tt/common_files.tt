@@ -1,0 +1,31 @@
+#split {0}{$split_amt}
+
+#read variables.tt
+#read colscale.tt
+#read common_commands.tt
+#read pinnacle.tt
+#read cult.tt
+#read mywho.tt
+#read crafting.tt
+#nop #read mosquito.tt
+#read coffin.tt
+#read corpse1.tt
+#read mapping.tt
+#read general.tt
+#read professions.tt
+#read combat.tt
+#read party.tt
+#read numbers.tt
+#read clan.tt
+#read boons.tt
+
+#read chaos.tt
+#read science.tt
+#read wayhaven.tt
+#read fantasy.tt
+#read antcaves.tt
+#read ravenloft.tt
+#read serinth.tt
+#read underdark.tt
+
+#read gags.tt
