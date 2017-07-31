@@ -78,7 +78,6 @@
 #gag {^its eyes.$}
 #gag {A Leatherback Island Turtle snarls like a wild beast, its brow beaded}
 #gag {You think the turtle moved.}
-
 #gag {Evil radiates out in waves from the leader.}
 #gag {The shady leader lets out a shriek and suddenly debris from nearby}
 #gag {buildings fall on top of you!}
@@ -151,8 +150,8 @@
 #gag {The spider seems to pulse with a slow greenish tint.}
 #gag {You detect motion above you.}
 #gag {The small rodent scurries across the sewer floor.}
-
-
+#gag {Lucas rummages around in the sewer waste.}
+#gag {With slime covering most of his arms, Lucas looks at you expectedly.}
 
 
 
