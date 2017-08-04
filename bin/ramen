@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd ~/3k/tt
+tt++ ./ramen.tt
